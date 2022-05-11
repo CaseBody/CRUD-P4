@@ -18,7 +18,9 @@
   ?>
   <body>
     <main>
-      <div class="container_startpage"></div>
+      <div class="container_startpage">
+        <img class="sea_pic" src="Assets/afbeeldingen/sea.png" alt="sea picture">
+      </div>
 
       <div class="container_aanbevolen_reizen"></div>
     </main>

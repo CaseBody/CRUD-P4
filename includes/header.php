@@ -1,24 +1,32 @@
 <header>
-    <nav>
-        <li>
+  <nav>
+    <ul>
+      <li>
+        <a href="#" class="txt_logo">
+          <img
+            class="img_logo"
+            src="Assets/afbeeldingen/logo.png"
+            alt="logo website"
+          />
+          <p>TRAVELEGY</p>
+        </a>
+      </li>
+      <li class="links">
         <ul>
-            <a href="#" class="txt_logo">
-            <img class="img_logo" src="Assets/afbeeldingen/logo.png" alt="logo website">
-            <p>TRAVELEGY</p>
-            </a>
-        </ul>
-        <ul id="txt_header" class="ul_header">  
+          <li id="txt_header" class="li_header">
             <a href="#">start</a>
-        </ul>
-        <ul class="ul_header">
+          </li>
+          <li class="li_header">
             <a href="#">aanbevolen</a>
-        </ul>
-        <ul class="ul_header">
+          </li>
+          <li class="li_header">
             <a href="#">destinations</a>
-        </ul>
-        <ul class="ul_header">
+          </li>
+          <li class="li_header">
             <a href="#">contact</a>
+          </li>
         </ul>
-        </li>
-    </nav>
+      </li>
+    </ul>
+  </nav>
 </header>
