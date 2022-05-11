@@ -8,10 +8,14 @@
 html {
     max-width: 100%;
 }
+
+body {
+    color: #fff;
+}
 header {
     width: 100%;
-    height: 7.5vh;
-    background-color: black;
+    height: 90px;
+    background-color: #3239c0;
     border-bottom: 1px solid #fff;
 }
 
@@ -19,8 +23,8 @@ header nav li {
     display: flex;
 }
 
-header nav li ul {
-    padding: 25px;
+header nav li .ul_header {
+    padding: 30px;
 }
 
 header nav li ul a {
@@ -30,11 +34,28 @@ header nav li ul a {
 }
 
 header nav li ul a:hover {
-    background-color: #fff;
+    /* background-color: #fff; */
     color: black;
 }
 
-header #header-ul {
-    margin-left: 200px;
-    margin-right: 800px;
+header .txt_logo {
+    display: flex;
+}
+
+header .txt_logo p {
+    padding: 30px;
+}
+/*hover TRAVELEGY*/
+header .txt_logo:hover {
+    color: #fff;
+}
+
+header .img_logo {
+    width: 75px;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+header #txt_header {
+    margin-left: 62%;
 }
