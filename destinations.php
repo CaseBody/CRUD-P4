@@ -23,33 +23,32 @@
 			<div class="categories">
 				<div class="categorie">
 					<p class="categorie_titel">Categorie naam</p>
-					<div class="item">
-						<p class="item_titel">Reis naam</p>
-						<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
-					</div>
 
-					<p class="categorie_titel">Categorie naam</p>
-					<div class="item">
-						<p class="item_titel">Reis naam</p>
-						<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
-					</div>
+					<div class="content">
+						<div class="item">
+							<p class="item_titel">Reis naam</p>
+							<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
+						</div>
 
-					<p class="categorie_titel">Categorie naam</p>
-					<div class="item">
-						<p class="item_titel">Reis naam</p>
-						<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
-					</div>
+						<div class="item">
+							<p class="item_titel">Reis naam</p>
+							<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
+						</div>
 
-					<p class="categorie_titel">Categorie naam</p>
-					<div class="item">
-						<p class="item_titel">Reis naam</p>
-						<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
-					</div>
+						<div class="item">
+							<p class="item_titel">Reis naam</p>
+							<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
+						</div>
 
-					<p class="categorie_titel">Categorie naam</p>
-					<div class="item">
-						<p class="item_titel">Reis naam</p>
-						<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
+						<div class="item">
+							<p class="item_titel">Reis naam</p>
+							<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
+						</div>
+
+						<div class="item">
+							<p class="item_titel">Reis naam</p>
+							<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
+						</div>
 					</div>
 				</div>
 			</div>

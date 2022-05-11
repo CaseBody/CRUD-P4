@@ -79,4 +79,28 @@ html {
 }
 
 .destinations_pagina .categories {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.destinations_pagina .categories {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.destinations_pagina .categories .categorie .categorie_titel {
+	font-size: 70px;
+}
+
+.destinations_pagina .categories .categorie .content {
+	display: flex;
+}
+
+.destinations_pagina .categories .categorie .content .item {
+	width: 200px;
+	height: 200px;
+	border-style: solid;
+	margin: 10px;
 }
