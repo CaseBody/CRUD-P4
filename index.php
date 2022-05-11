@@ -10,7 +10,9 @@
     <!-- icon page -->
     <link rel="icon" type="image/x-icon" href="Assets/afbeeldingen/.png" />
     <!-- fonts -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+  <link rel="preconnect" href="https://fonts.gstatic.com/"crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
 
   <?php
@@ -19,7 +21,9 @@
   <body>
     <main>
       <div class="container_startpage">
-        <img class="sea_pic" src="Assets/afbeeldingen/sea.png" alt="sea picture">
+        <h2>
+          Welcome to TRAVELEGY
+        </h2>
       </div>
 
       <div class="container_aanbevolen_reizen"></div>
