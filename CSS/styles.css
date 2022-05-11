@@ -43,6 +43,7 @@ header .txt_logo {
 }
 
 header .txt_logo p {
+    font-size: 25px;
     padding: 30px;
 }
 /*hover TRAVELEGY*/
@@ -51,11 +52,12 @@ header .txt_logo:hover {
 }
 
 header .img_logo {
-    width: 75px;
+    width: 72px;
+    height: 77px;
     margin-top: 5px;
     margin-left: 25px;
 }
 
 header #txt_header {
-    margin-left: 62%;
+    margin-left: 60%;
 }
