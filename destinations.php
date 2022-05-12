@@ -26,7 +26,7 @@
 
 					<div class="categorie_content">
 						<div class="item">
-							<p class="item_titel">Reis naam</p>
+							<p class="item_titel">Cairo, Egypt</p>
 							<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
 						</div>
 
