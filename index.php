@@ -26,7 +26,21 @@
         </h2>
       </div>
 
-      <div class="container_aanbevolen_reizen"></div>
+      <div class="container_categorieen">
+        <div class="box">
+          <div class="box_cat">
+            <img class="cat-img" src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+            <h2>test</h2>
+          </div>
+          <div class="box_cat"></div>
+          <div class="box_cat"></div>
+          <div class="box_cat"></div>
+        </div>
+      </div>
+
+      <div class="container_aanbevolen_reizen">
+
+      </div>
     </main>
   </body>
 </html>
