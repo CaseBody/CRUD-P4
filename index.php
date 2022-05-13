@@ -29,23 +29,23 @@
       <div class="container_categorieen">
         <div class="box">
           <div class="box_cat">
-            <img class="cat-img" src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+            <img class="cat-img" src="Assets/afbeeldingen/strand_vakantie.png" alt="placeholder">
             <h2>aanbevolen</h2>
           </div>
           <div class="box_cat">
-            <img class="cat-img" src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+            <img class="cat-img" src="Assets/afbeeldingen/strand_vakantie.png" alt="placeholder">
+            <h2>Strand Vakantie</h2>
+          </div>
+          <div class="box_cat">
+            <img class="cat-img" src="Assets/afbeeldingen/strand_vakantie.png" alt="placeholder">
             <h2>aanbevolen</h2>
           </div>
           <div class="box_cat">
-            <img class="cat-img" src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+            <img class="cat-img" src="Assets/afbeeldingen/strand_vakantie.png" alt="placeholder">
             <h2>aanbevolen</h2>
           </div>
           <div class="box_cat">
-            <img class="cat-img" src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
-            <h2>aanbevolen</h2>
-          </div>
-          <div class="box_cat">
-            <img class="cat-img" src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+            <img class="cat-img" src="Assets/afbeeldingen/strand_vakantie.png" alt="placeholder">
             <h2>aanbevolen</h2>
           </div>
         </div>
@@ -54,6 +54,24 @@
       <div class="container_aanbevolen_reizen">
         <div class="title">
           <h2>aanbevolen reizen</h2>
+        </div>
+        <div class="aanbevolen_reizen">
+          <div class="reis_abv">
+            <p class="item_titel">Cairo, Egypt</p>
+            <p class="item_subtitel">Boek Nu <img src="Assets/afbeeldingen/arrow_right.png"/></p>
+          </div>
+          <div class="reis_abv">
+            <p class="item_titel">Cairo, Egypt</p>
+            <p class="item_subtitel">Boek Nu <img src="Assets/afbeeldingen/arrow_right.png"/></p>
+          </div>
+          <div class="reis_abv">
+            <p class="item_titel">Cairo, Egypt</p>
+            <p class="item_subtitel">Boek Nu <img src="Assets/afbeeldingen/arrow_right.png"/></p>
+          </div>
+          <div class="reis_abv">
+            <p class="item_titel">Cairo, Egypt</p>
+            <p class="item_subtitel">Boek Nu <img src="Assets/afbeeldingen/arrow_right.png"/></p>
+          </div>
         </div>
       </div>
     </main>
