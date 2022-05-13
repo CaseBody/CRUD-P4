@@ -64,6 +64,7 @@ header .img_logo {
 	background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url("../Assets/afbeeldingen/sea.png");
 	background-size: cover;
 	background-position: center;
+  border-bottom: 2px solid var(--main-blue);
 }
 
 .container_startpage h2 {
@@ -72,6 +73,7 @@ header .img_logo {
 	padding-top: 185px;
 	font-size: 78px;
 	font-weight: bold;
+  color: #fff;
 }
 
 .container_categorieen {
@@ -89,7 +91,8 @@ header .img_logo {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width: 300px;
+  min-width: 170px;
+	width: 17%;
 	height: 250px;
 	background-color: #3239c0;
 	margin-top: 50px;
@@ -140,9 +143,9 @@ header .img_logo {
 	position: relative;
 	display: flex;
 	box-sizing: border-box;
-	width: 400px;
+	width: 20vw;
 	min-width: 250px;
-	height: 400px;
+	height: 20vw;
 	border-color: var(--main-blue);
 	border-radius: 10px;
 	border-width: 3px;
@@ -163,11 +166,13 @@ header .img_logo {
 .container_aanbevolen_reizen .aanbevolen_reizen .reis_abv .item_titel {
 	font-size: 45px;
 	margin-top: 10px;
+  color: #fff;
 }
 
 .container_aanbevolen_reizen .aanbevolen_reizen .reis_abv .item_subtitel {
 	font-size: 45px;
 	margin-bottom: 10px;
+  color: #fff;
 }
 
 .container_aanbevolen_reizen .aanbevolen_reizen .reis_abv img {
