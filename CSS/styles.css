@@ -294,7 +294,6 @@ header .img_logo {
 	border-color: var(--main-blue);
 	border-radius: 10px;
 	border-width: 3px;
-	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 	align-items: center;
@@ -369,4 +368,33 @@ header .img_logo {
 	.destinations_pagina .categories .categorie .categorie_content .item:hover .item_subtitel img {
 		width: 17px;
 	}
+}
+
+/* Footer */
+footer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+	row-gap: 20px;
+	height: 230px;
+	background-color: var(--main-blue);
+	border-top-color: black;
+	border-top-style: solid;
+}
+
+footer a {
+	text-decoration: none;
+	margin: 20px;
+}
+
+footer img {
+	width: 75px;
+}
+
+footer p {
+	color: white;
+	font-size: 25px;
 }
