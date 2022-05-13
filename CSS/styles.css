@@ -107,17 +107,20 @@ html {
 
 .destinations_pagina .categories .categorie .categorie_content {
 	width: 100%;
-	margin-top: 30px;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	flex-wrap: wrap;
+	margin-top: 30px;
+	column-gap: 5%;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item {
 	position: relative;
-	width: 250px;
+	display: flex;
+	box-sizing: border-box;
+	width: 20%;
+	min-width: 250px;
 	height: 350px;
-	/* border-style: solid; */
 	border-color: var(--main-blue);
 	border-radius: 10px;
 	border-width: 3px;
@@ -137,20 +140,22 @@ html {
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item .item_titel {
-	font-size: 25px;
+	font-size: 29px;
 	color: white;
 	margin-top: 10px;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item .item_subtitel {
-	font-size: 25px;
+	font-size: 29px;
 	margin-bottom: 10px;
 	color: white;
+	transition: font-size 0.8s;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item .item_subtitel img {
 	margin-left: 5px;
-	width: 10px;
+	width: 12px;
+	transition: width 0.8s;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item:hover {
@@ -158,4 +163,40 @@ html {
 	bottom: 15px;
 	cursor: pointer;
 	box-shadow: 15px 15px var(--main-blue);
+}
+
+.destinations_pagina .categories .categorie .categorie_content .item:hover .item_subtitel {
+	font-size: 35px;
+}
+
+.destinations_pagina .categories .categorie .categorie_content .item:hover .item_subtitel img {
+	font-size: 30px;
+	width: 14px;
+}
+
+/* Query voor Destinations (Niet voor mobile!) */
+@media only screen and (max-width: 1220px) {
+	.destinations_pagina .categories .categorie .categorie_content .item {
+		width: 45%;
+	}
+
+	.destinations_pagina .categories .categorie .categorie_content .item .item_titel {
+		font-size: 35px;
+	}
+
+	.destinations_pagina .categories .categorie .categorie_content .item .item_subtitel {
+		font-size: 35px;
+	}
+
+	.destinations_pagina .categories .categorie .categorie_content .item .item_subtitel img {
+		width: 15px;
+	}
+
+	.destinations_pagina .categories .categorie .categorie_content .item:hover .item_subtitel {
+		font-size: 40px;
+	}
+
+	.destinations_pagina .categories .categorie .categorie_content .item:hover .item_subtitel img {
+		width: 17px;
+	}
 }

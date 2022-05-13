@@ -24,7 +24,7 @@
 				<div class="categorie">
 					<p class="categorie_titel">Categorie naam</p>
 
-					<div class="categorie_content">
+					<div class="categorie_content" id="categorie_test">
 						<div class="item">
 							<p class="item_titel">Cairo, Egypt</p>
 							<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
@@ -55,3 +55,5 @@
 		</div>
 	</body>
 </html>
+
+<script src="js/destinations.js"></script>
