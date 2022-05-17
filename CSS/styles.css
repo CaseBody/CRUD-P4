@@ -398,3 +398,9 @@ footer p {
 	color: white;
 	font-size: 25px;
 }
+
+.container_contact {
+	width: 100%;
+	height: 500px;
+	background-color: black;
+}
