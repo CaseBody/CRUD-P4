@@ -21,12 +21,37 @@
 
 <body>
   <main>
-  <div class="container_contact">
-    <form action="">
-      <label for="name">Name</label>
-      <input type="text" placeholder="you're name">
-    </form>
-  </div>
+    <div class="container_contact">
+      <form action="">
+        <div class="form_label_input">
+          <div class="form_name">
+            <div class="fname">
+              <label class="label_name" for="name">First Name:</label>
+              <input class="input_name" type="text" >
+            </div>
+            <div class="fname">
+              <label class="label_name" for="name">Last Name:</label>
+              <input class="input_name" type="text">
+            </div>
+          </div>
+          <div class="form_other">
+            <label class="label" for="name">E-mail:</label>
+            <input class="input" type="text">
+          </div>
+          <div class="form_other">
+            <label class="label" for="name">Tel:</label>
+            <input class="input" type="text">
+          </div>
+          <div class="form_description">
+            <label class="label" for="name">Send A Message:</label>
+            <textarea class="form_des" name=""></textarea>
+          </div>
+          <div class="submit_button">
+            <input class="submit" type="submit">
+          </div>
+        </div>
+      </form>
+    </div>
   </main>
 </body>
 </html>
