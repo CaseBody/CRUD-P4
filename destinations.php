@@ -16,6 +16,7 @@
 			<?php 
 				include_once "includes/header.php";
 			?>
+			
 			<div class="top">
 				<p class="destinations_title">Discover the Travelegy destinations</p>
 				<div class="search_bar">
