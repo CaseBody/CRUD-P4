@@ -40,14 +40,6 @@
             <img class="cat-img" src="Assets/afbeeldingen/strand_vakantie.png" alt="placeholder">
             <h2>aanbevolen</h2>
           </div>
-          <div class="box_cat">
-            <img class="cat-img" src="Assets/afbeeldingen/strand_vakantie.png" alt="placeholder">
-            <h2>aanbevolen</h2>
-          </div>
-          <div class="box_cat">
-            <img class="cat-img" src="Assets/afbeeldingen/strand_vakantie.png" alt="placeholder">
-            <h2>aanbevolen</h2>
-          </div>
         </div>
       </div>
 
