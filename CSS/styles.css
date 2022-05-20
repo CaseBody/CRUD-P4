@@ -10,19 +10,19 @@ html {
 }
 
 :root {
-	--main-blue: #3239c0;
+	--main-blue: #34495e;
 	--white: #fff;
-	--contact_trans: #3239c0b5;
+	--contact_trans: #34495eb0;
 	--form_trans: #00122fb5;
 }
 
 header {
 	width: 100%;
 	height: 70px;
-	background-color: var(--main-blue);
+	background-color: #00000047;
 	position: fixed;
 	top: 0;
-  z-index: 100;
+	z-index: 100;
 }
 
 header nav ul {
@@ -110,7 +110,7 @@ footer p {
 	padding-top: 194px;
 	font-size: 78px;
 	font-weight: bold;
-  color: #fff;
+	color: #fff;
 }
 
 .container_categorieen {
@@ -131,15 +131,10 @@ footer p {
 	align-items: center;
 	flex-direction: column;
 	min-width: 170px;
-<<<<<<< Updated upstream
-	width: 17%;
-	height: 250px;
 	background-color: #3239c0;
-=======
 	width: 14%;
 	height: 230px;
 	background-color: var(--main-blue);
->>>>>>> Stashed changes
 	margin-top: 50px;
 	border: 2px solid #fff;
 	border-radius: 10px;
@@ -239,10 +234,8 @@ footer p {
 .destinations_pagina .content .top {
 	width: 100%;
 	height: 400px;
-	margin-top: 90px;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/afbeeldingen/background_one.jpeg");
 	background-position: center top;
-
 	/* background-image: url("../Assets/afbeeldingen/background_one.jpeg"); */
 	background-size: cover;
 	background-position: center;
@@ -413,7 +406,8 @@ footer p {
 	width: 100%;
 	height: 100vh;
 	color: var(--white);
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://images.pexels.com/photos/2161449/pexels-photo-2161449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+		url("https://images.pexels.com/photos/2161449/pexels-photo-2161449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 	background-size: cover;
 	align-items: center;
 	justify-content: center;
@@ -474,7 +468,7 @@ footer p {
 	width: 50%;
 	height: 100%;
 	flex-direction: column;
-	align-items: center;	
+	align-items: center;
 }
 
 .container_contact .form_label_input .form_name .fname .label_name {
@@ -546,14 +540,14 @@ footer p {
 
 .container_contact .submit {
 	margin-top: 20px;
-    width: 90%;
-    height: 55px;
-    box-shadow: 0px 0px 3px black;
-    background-color: var(--main-blue);
-    border-radius: 5px;
-    color: white;
-    font-size: 30px;
-    border-style: none;
+	width: 90%;
+	height: 55px;
+	box-shadow: 0px 0px 3px black;
+	background-color: var(--main-blue);
+	border-radius: 5px;
+	color: white;
+	font-size: 30px;
+	border-style: none;
 }
 
 .container_contact .submit_button .submit[type="submit"]:hover {
