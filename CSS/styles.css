@@ -110,7 +110,7 @@ footer p {
 	padding-top: 194px;
 	font-size: 78px;
 	font-weight: bold;
-  color: #fff;
+  	color: #fff;
 }
 
 .container_categorieen {
@@ -131,15 +131,9 @@ footer p {
 	align-items: center;
 	flex-direction: column;
 	min-width: 170px;
-<<<<<<< Updated upstream
-	width: 17%;
-	height: 250px;
-	background-color: #3239c0;
-=======
 	width: 14%;
 	height: 230px;
 	background-color: var(--main-blue);
->>>>>>> Stashed changes
 	margin-top: 50px;
 	border: 2px solid #fff;
 	border-radius: 10px;
