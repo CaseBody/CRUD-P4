@@ -22,35 +22,50 @@
 <body>
   <main>
     <div class="container_contact">
-      <form action="">
-        <div class="form_label_input">
-          <div class="form_name">
-            <div class="fname">
-              <label class="label_name" for="name">First Name:</label>
-              <input class="input_name" type="text" >
+      <div class="all_contact">
+        <div class="contact_img">
+            <div class="title">
+              <h2>Contact Us</h2>
             </div>
-            <div class="fname">
-              <label class="label_name" for="name">Last Name:</label>
-              <input class="input_name" type="text">
-            </div>
-          </div>
-          <div class="form_other">
-            <label class="label" for="name">E-mail:</label>
-            <input class="input" type="text">
-          </div>
-          <div class="form_other">
-            <label class="label" for="name">Tel:</label>
-            <input class="input" type="text">
-          </div>
-          <div class="form_description">
-            <label class="label" for="name">Send A Message:</label>
-            <textarea class="form_des" name=""></textarea>
-          </div>
-          <div class="submit_button">
-            <input class="submit" type="submit">
-          </div>
+            <p>
+              If you have questions or just want to get in touch, use the contact form. 
+              We look forward to hearing from you!
+            </p>
+            <img 
+              src="Assets/afbeeldingen/envelope.png" 
+              alt="img enveloper contact"
+            >
         </div>
-      </form>
+        <form action="">
+          <div class="form_label_input">
+            <div class="form_name">
+              <div class="fname">
+                <label class="label_name" for="name">First Name:</label>
+                <input class="input_name" type="text" >
+              </div>
+              <div class="fname">
+                <label class="label_name" for="name">Last Name:</label>
+                <input class="input_name" type="text">
+              </div>
+            </div>
+            <div class="form_other">
+              <label class="label" for="name">E-mail:</label>
+              <input class="input" type="text">
+            </div>
+            <div class="form_other">
+              <label class="label" for="name">Tel:</label>
+              <input class="input" type="text">
+            </div>
+            <div class="form_description">
+              <label class="label" for="name">Send A Message:</label>
+              <textarea class="form_des" name=""></textarea>
+            </div>
+            <div class="submit_button">
+              <input class="submit" type="submit">
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </main>
 </body>
