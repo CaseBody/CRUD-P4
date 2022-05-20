@@ -31,28 +31,75 @@
 
 					<div class="categorie_content" id="categorie_test">
 						<div class="item">
-							<p class="item_titel">Cairo, Egypt</p>
-							<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
+							<img src="https://cdn.discordapp.com/attachments/968125920038776866/968125953651920926/pexels-photo-4388167.jpeg" alt="">
+							<div class="bottom">
+								<p class="title">Hotel Naam</p>
+								<p class="locatie">Cairo, Egypt</p>
+								<p class="prijs">Vanaf<span> € 90.00</span></p>
+							</div>
 						</div>
 
 						<div class="item">
-							<p class="item_titel">Reis naam</p>
-							<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
+							<img src="https://cdn.discordapp.com/attachments/968125920038776866/968125953651920926/pexels-photo-4388167.jpeg" alt="">
+							<div class="bottom">
+								<p class="title">Hotel Naam</p>
+								<p class="locatie">Cairo, Egypt</p>
+								<p class="prijs">Vanaf<span> € 90.00</span></p>
+							</div>
 						</div>
 
 						<div class="item">
-							<p class="item_titel">Reis naam</p>
-							<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
+							<img src="https://cdn.discordapp.com/attachments/968125920038776866/968125953651920926/pexels-photo-4388167.jpeg" alt="">
+							<div class="bottom">
+								<p class="title">Hotel Naam</p>
+								<p class="locatie">Cairo, Egypt</p>
+								<p class="prijs">Vanaf<span> € 90.00</span></p>
+							</div>
 						</div>
 
 						<div class="item">
-							<p class="item_titel">Reis naam</p>
-							<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
+							<img src="https://cdn.discordapp.com/attachments/968125920038776866/968125953651920926/pexels-photo-4388167.jpeg" alt="">
+							<div class="bottom">
+								<p class="title">Hotel Naam</p>
+								<p class="locatie">Cairo, Egypt</p>
+								<p class="prijs">Vanaf<span> € 90.00</span></p>
+							</div>
 						</div>
 
 						<div class="item">
-							<p class="item_titel">Reis naam</p>
-							<p class="item_subtitel">Boek nu <img src="Assets/afbeeldingen/arrow_right.png" /></p>
+							<img src="https://cdn.discordapp.com/attachments/968125920038776866/968125953651920926/pexels-photo-4388167.jpeg" alt="">
+							<div class="bottom">
+								<p class="title">Hotel Naam</p>
+								<p class="locatie">Cairo, Egypt</p>
+								<p class="prijs">Vanaf<span> € 90.00</span></p>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="https://cdn.discordapp.com/attachments/968125920038776866/968125953651920926/pexels-photo-4388167.jpeg" alt="">
+							<div class="bottom">
+								<p class="title">Hotel Naam</p>
+								<p class="locatie">Cairo, Egypt</p>
+								<p class="prijs">Vanaf<span> € 90.00</span></p>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="https://cdn.discordapp.com/attachments/968125920038776866/968125953651920926/pexels-photo-4388167.jpeg" alt="">
+							<div class="bottom">
+								<p class="title">Hotel Naam</p>
+								<p class="locatie">Cairo, Egypt</p>
+								<p class="prijs">Vanaf<span> € 90.00</span></p>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="https://cdn.discordapp.com/attachments/968125920038776866/968125953651920926/pexels-photo-4388167.jpeg" alt="">
+							<div class="bottom">
+								<p class="title">Hotel Naam</p>
+								<p class="locatie">Cairo, Egypt</p>
+								<p class="prijs">Vanaf<span> € 90.00</span></p>
+							</div>
 						</div>
 					</div>
 				</div>
