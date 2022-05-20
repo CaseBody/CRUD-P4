@@ -31,10 +31,6 @@
               If you have questions or just want to get in touch, use the contact form. 
               We look forward to hearing from you!
             </p>
-            <img 
-              src="Assets/afbeeldingen/envelope.png" 
-              alt="img enveloper contact"
-            >
         </div>
         <form action="">
           <div class="form_label_input">
