@@ -2,21 +2,28 @@
 	margin: 0;
 	padding: 0;
 	/* fonts */
-	font-family: "Oswald", sans-serif;
+	font-family: sans-serif;
 }
 
 html {
 	max-width: 100%;
 }
 
+:root {
+	--main-blue: #3239c0;
+	--white: #fff;
+	--contact_trans: #3239c0b5;
+	--form_trans: #00122fb5;
+}
+
 header {
 	width: 100%;
-	height: 90px;
-	background-color: #3239c0;
-	border-bottom: 1px solid #fff;
+	height: 70px;
+	background-color: var(--main-blue);
 	position: fixed;
+	/* font-family: ; */
 	top: 0;
-	z-index: 100;
+  z-index: 100;
 }
 
 header nav ul {
@@ -27,7 +34,7 @@ header nav ul {
 }
 
 header nav ul .li_header {
-	padding: 30px;
+	padding: 15px;
 }
 
 header nav ul li a {
@@ -37,7 +44,6 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-	/* background-color: #fff; */
 	color: black;
 }
 
@@ -47,7 +53,7 @@ header .txt_logo {
 
 header .txt_logo p {
 	font-size: 25px;
-	padding: 30px;
+	padding: 15px;
 }
 /*hover TRAVELEGY*/
 header .txt_logo:hover {
@@ -55,10 +61,39 @@ header .txt_logo:hover {
 }
 
 header .img_logo {
-	width: 72px;
-	height: 77px;
-	margin-top: 5px;
+	width: 55px;
+	height: 55px;
+	margin-top: 7.5px;
 	margin-left: 25px;
+}
+
+/* Footer */
+footer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+	row-gap: 20px;
+	height: 200px;
+	background-color: var(--main-blue);
+	border-top-color: black;
+	border-top-style: solid;
+}
+
+footer a {
+	text-decoration: none;
+	margin: 20px;
+}
+
+footer img {
+	width: 75px;
+}
+
+footer p {
+	color: white;
+	font-size: 25px;
 }
 
 .container_startpage {
@@ -76,7 +111,7 @@ header .img_logo {
 	padding-top: 185px;
 	font-size: 78px;
 	font-weight: bold;
-	color: #fff;
+  color: #fff;
 }
 
 .container_categorieen {
@@ -180,10 +215,6 @@ header .img_logo {
 
 .container_aanbevolen_reizen .aanbevolen_reizen .reis_abv img {
 	width: 15px;
-}
-
-:root {
-	--main-blue: #3239c0;
 }
 
 /* Destinations Pagina */
@@ -374,33 +405,157 @@ header .img_logo {
 	}
 }
 
-/* Footer */
-footer {
-	width: 100%;
+.container_contact {
 	display: flex;
-	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	color: var(--white);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://images.pexels.com/photos/2161449/pexels-photo-2161449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	background-size: cover;
 	align-items: center;
 	justify-content: center;
-	margin-top: 100px;
-	row-gap: 20px;
-	height: 200px;
-	background-color: var(--main-blue);
-	border-top-color: black;
-	border-top-style: solid;
+	font-family: sans-serif;
 }
 
-footer a {
-	text-decoration: none;
-	margin: 20px;
+.container_contact .all_contact {
+	display: flex;
+	width: auto;
+	height: 600px;
+	margin-top: 90px;
+	/* box-shadow: 0px 0px 10px black; */
 }
 
-footer img {
-	width: 75px;
+.container_contact .contact_img {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 380px;
+	height: 600px;
+	background-color: var(--contact_trans);
+	border-radius: 7.5px;
 }
 
-footer p {
-	color: white;
+.container_contact .contact_img .title {
+	width: 100%;
+	height: 125px;
+	color: var(--white);
+	font-size: 40px;
+	margin-top: 150px;
+	text-align: center;
+}
+
+.container_contact .contact_img p {
+	color: var(--white);
 	font-size: 25px;
+	margin: 10px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.container_contact .form_label_input {
+	width: 800px;
+	height: 600px;
+	background-color: var(--form_trans);
+	border-radius: 7.5px;
+}
+
+.container_contact .form_label_input .form_name {
+	display: flex;
+	width: 100%;
+	height: 100px;
+	padding-top: 10px;
+}
+
+.container_contact .form_label_input .form_name .fname {
+	display: flex;
+	width: 50%;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;	
+}
+
+.container_contact .form_label_input .form_name .fname .label_name {
+	font-size: 22.5px;
+	margin-top: 10px;
+	margin-left: -200px;
+}
+
+.container_contact .form_label_input .form_name .fname .input_name {
+	width: 75%;
+	height: 40px;
+	padding-left: 10px;
+	margin-top: 5px;
+	font-size: 20px;
+	border-radius: 5px;
+	border-style: solid;
+}
+
+.container_contact .form_label_input .form_other {
+	display: flex;
+	width: 100%;
+	height: 100px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container_contact .label {
+	width: 100%;
+	height: 30px;
+	font-size: 22.5px;
+	margin-top: 5px;
+	margin-left: 105px;
+}
+
+.container_contact .input {
+	width: 700px;
+	height: 40px;
+	font-size: 20px;
+	margin-top: 5px;
+	padding-left: 10px;
+	border-radius: 5px;
+	border-style: solid;
+}
+
+.container_contact .form_description {
+	display: flex;
+	width: 100%;
+	height: 200px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container_contact .form_label_input .form_description .form_des {
+	width: 700px;
+	height: 200px;
+	font-size: 20px;
+	margin-top: 5px;
+	padding-left: 10px;
+	resize: none;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.container_contact .submit_button {
+	display: flex;
+	justify-content: center;
+}
+
+.container_contact .submit {
+	margin-top: 20px;
+    width: 90%;
+    height: 55px;
+    box-shadow: 0px 0px 3px black;
+    background-color: var(--main-blue);
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    border-style: none;
+}
+
+.container_contact .submit_button .submit[type="submit"]:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), var(--main-blue);
+	cursor: pointer;
 }
 
 /* INLOG */
