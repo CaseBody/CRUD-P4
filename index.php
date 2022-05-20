@@ -10,9 +10,9 @@
     <!-- icon page -->
     <link rel="icon" type="image/x-icon" href="Assets/afbeeldingen/.png" />
     <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
-  <link rel="preconnect" href="https://fonts.gstatic.com/"crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   </head>
 
   <?php
