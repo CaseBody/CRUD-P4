@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	/* fonts */
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 html {
@@ -95,6 +95,8 @@ footer p {
 	font-size: 25px;
 }
 
+/* Home */
+
 .container_startpage {
 	width: 100%;
 	height: 550px;
@@ -109,114 +111,110 @@ footer p {
 	justify-content: center;
 	padding-top: 194px;
 	font-size: 78px;
-	font-weight: bold;
+	font-weight: normal;
 	color: #fff;
 }
 
-.container_categorieen {
-	width: 100%;
-	height: 350px;
-	margin-top: -170px;
-	margin-bottom: 40px;
-}
-
-.container_categorieen .box {
+.home {
 	display: flex;
-	justify-content: space-around;
-}
-
-.container_categorieen .box_cat {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
-	min-width: 170px;
-	background-color: #3239c0;
-	width: 14%;
-	height: 230px;
-	background-color: var(--main-blue);
+	align-items: center;
+}
+
+.home .search {
 	margin-top: 50px;
-	border: 2px solid #fff;
-	border-radius: 10px;
+	width: 80%;
+	min-width: 700px;
+	height: 240px;
+	border-style: solid;
+	border-color: #cdcdcd;
+	border-radius: 5px;
+	border-width: 0.6px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
 }
 
-.container_categorieen .box_cat .cat-img {
-	width: 200px;
-	height: 200px;
-	margin-top: 10px;
+.home .search .titel {
+	margin: 5px;
+	font-size: 35px;
 }
 
-.container_categorieen .box_cat .cat-img:hover {
+.home .search .sub_titel {
+	font-size: 23px;
+	margin: 5px;
+}
+
+.home .search .search_bar {
+	display: flex;
+	width: 70%;
+	margin-top: 20px;
+}
+
+.home .search .search_bar input {
+	width: 85%;
+	height: 40px;
+	border-color: #cdcdcd;
+	border-style: solid;
+	border-width: 0.6px;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.home .search .search_bar button {
+	width: 15%;
+	background-color: var(--main-blue);
+	border-color: var(--main-blue);
+	border-style: solid;
+	font-size: 20px;
+	color: white;
+}
+
+.home .search .search_bar button:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), var(--main-blue);
 	cursor: pointer;
 }
 
-.container_categorieen .box_cat h2 {
-	text-align: center;
-	font-size: 30px;
-	margin-top: -10px;
-	color: #fff;
+.home .search .search_bar input:focus {
+	outline: none;
+	border-color: black;
 }
 
-.container_aanbevolen_reizen {
-	width: 100%;
-	height: 500px;
-}
-
-.container_aanbevolen_reizen .title {
+.home .recommended {
+	margin-top: 50px;
+	width: 80%;
+	height: 600px;
 	display: flex;
-	width: 100%;
-	height: 150px;
-	justify-content: center;
-	font-size: 60px;
-	font-weight: bold;
-	color: black;
 }
 
-.container_aanbevolen_reizen .aanbevolen_reizen {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-	height: 500px;
-}
-
-.container_aanbevolen_reizen .aanbevolen_reizen .reis_abv {
-	position: relative;
-	display: flex;
-	box-sizing: border-box;
-	width: 20vw;
-	min-width: 250px;
-	height: 20vw;
-	border-color: var(--main-blue);
-	border-radius: 10px;
-	border-width: 3px;
-	justify-content: space-between;
-	flex-direction: column;
-	align-items: center;
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-		url("https://cdn.discordapp.com/attachments/968125920038776866/968125953651920926/pexels-photo-4388167.jpeg");
+.home .recommended .item {
+	background-image: url("https://cdn.discordapp.com/attachments/968125920038776866/968126658219499571/unknown.png");
 	background-size: cover;
-	background-position: center;
-	margin-bottom: 25px;
-	right: 0;
-	bottom: 0;
-	transition: all 0.8s;
-	overflow: hidden;
 }
 
-.container_aanbevolen_reizen .aanbevolen_reizen .reis_abv .item_titel {
-	font-size: 45px;
-	margin-top: 10px;
-	color: #fff;
+.home .recommended .left .item {
+	width: 100%;
+	height: 100%;
 }
 
-.container_aanbevolen_reizen .aanbevolen_reizen .reis_abv .item_subtitel {
-	font-size: 45px;
-	margin-bottom: 10px;
-	color: #fff;
+.home .recommended .right .item {
+	width: 100%;
+	height: 50%;
 }
 
-.container_aanbevolen_reizen .aanbevolen_reizen .reis_abv img {
-	width: 15px;
+.home .recommended .left {
+	width: 50%;
+	height: 100%;
+	padding-right: 10px;
+}
+
+.home .recommended .right {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	width: 50%;
+	height: 100%;
 }
 
 /* Destinations Pagina */
@@ -289,7 +287,8 @@ footer p {
 }
 
 .destinations_pagina .search_bar button:hover {
-	background-color: black;
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), var(--main-blue);
+	cursor: pointer;
 }
 
 .destinations_pagina .categories {
