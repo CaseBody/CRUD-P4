@@ -191,16 +191,27 @@ footer p {
 .home .recommended .item {
 	background-image: url("https://cdn.discordapp.com/attachments/968125920038776866/968126658219499571/unknown.png");
 	background-size: cover;
+	border-radius: 5px;
+	position: relative;
 }
 
 .home .recommended .left .item {
 	width: 100%;
 	height: 100%;
+	transition: all 1s;
 }
 
 .home .recommended .right .item {
 	width: 100%;
 	height: 50%;
+}
+
+.home .recommended .item:hover {
+	cursor: pointer;
+}
+
+.home .recommended .item:hover .price {
+	font-size: 35px;
 }
 
 .home .recommended .left {
@@ -215,6 +226,27 @@ footer p {
 	row-gap: 10px;
 	width: 50%;
 	height: 100%;
+}
+
+.home .recommended .item .titel {
+	font-size: 30px;
+	padding-left: 8px;
+	padding-top: 8px;
+	font-weight: bold;
+}
+
+.home .recommended .item .sub_titel {
+	padding-left: 8px;
+	font-size: 25px;
+}
+
+.home .recommended .item .price {
+	position: absolute;
+	bottom: 5px;
+	right: 8px;
+	font-size: 30px;
+	font-weight: bold;
+	transition: all 1s;
 }
 
 /* Destinations Pagina */
