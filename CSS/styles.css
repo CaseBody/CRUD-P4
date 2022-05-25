@@ -613,6 +613,20 @@ footer p {
 	box-shadow: 0px 0px 15px black;
 }
 
+.create_account_page form {
+	background-color: white;
+	width: 350px;
+	height: 500px;
+	/* background-color: var(--main-blue); */
+	/* border-color: white; */
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	box-shadow: 0px 0px 15px black;
+}
+
 .login_page form .title {
 	display: flex;
 	font-size: 30px;
@@ -633,15 +647,21 @@ footer p {
 }
 
 .login_page form .label-input label {
-	color: lightgrey;
+	color: #cdcdcd;
 }
 
 .login_page form .label-input input {
-	border-radius: 5px;
 	font-size: 18px;
 	padding: 7px;
 	border-style: solid;
-	border-color: lightgrey;
+	border-color: #cdcdcd;
+	border-width: 0.6px;
+}
+
+.login_page form .label-input input:focus {
+	outline: none;
+	border-color: black;
+	border-width: 0.6px;
 }
 
 .login_page form .password_forgot,
