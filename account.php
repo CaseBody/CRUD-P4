@@ -33,7 +33,7 @@
                         </div>
                         <div class="link">
                             <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
-                            <a href="" id="">bookings</a>
+                            <a href="" id="">Opgeslagen Reizen</a>
                         </div>
                         <div class="link">
                             <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
@@ -53,10 +53,6 @@
                 <div class="right">
                     <div class="account">
                         <div class="cnt">
-                            <div class="title">
-                                <p>My Account</p>
-                            </div>
-
                             <div class="acc_title">
                                 <p>Account Information</p>
                             </div>
@@ -72,6 +68,17 @@
 
                                 <label class="acc_lbl" for="birthday">Birth Date</label>
                                 <input class="acc_inp" type="date">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="opgeslagen_reizen">
+                        <div class="cnt">
+                            <div class="opgesl_title">
+                                <p>Opgeslagen Reizen</p>
+                            </div>
+                            <div class="reizen">
+
                             </div>
                         </div>
                     </div>

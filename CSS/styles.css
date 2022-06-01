@@ -782,28 +782,18 @@ footer p {
   width: 30px;
 }
 
-.container_account .bottom .right .account .title {
-  font-size: 40px;
-  margin-bottom: 30px;
-  margin-left: 10px;
-}
-
-/* .container_account .bottom .account {
-
-} */
-
 .container_account .bottom .account .cnt {
   margin-top: 50px;
   margin-left: 50px;
 }
 
-.container_account .bottom .account .ctn .acc_title {
+.container_account .bottom .right .account .cnt .acc_title {
   width: 1375px;
   height: 50px;
   border-bottom: 2px solid #cdcdcd;
-  font-size: 25px;
+  font-size: 40px;
   margin-bottom: 20px;
-  padding-left: 10px;
+  padding: 10px;
 }
 
 .container_account .bottom .right .account .cnt .inputs {
@@ -821,6 +811,25 @@ footer p {
 	font-size: 20px;
 	border-radius: 5px;
 	border-style: solid;
-    border-color: lightgrey;
+  border-color: lightgrey;
 	margin-bottom: 20px;
+}
+
+/*opgeslagen reizen*/
+.container_account .bottom .right .opgeslagen_reizen .cnt {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.container_account .bottom .right .opgeslagen_reizen .cnt .opgesl_title {
+  width: 1375px;
+  height: 50px;
+  border-bottom: 2px solid #cdcdcd;
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.container_account .bottom .right .opgeslagen_reizen .cnt .reizen {
+  
 }
