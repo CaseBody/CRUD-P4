@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="right">
-                    <div class="account">
+                    <div class="account" id="">
                         <div class="cnt">
                             <div class="acc_title">
                                 <p>Account Information</p>
@@ -72,17 +72,18 @@
                         </div>
                     </div>
 
-                    <div class="opgeslagen_reizen">
+                    <div class="opgeslagen_reizen" id="">
                         <div class="cnt">
                             <div class="opgesl_title">
                                 <p>Opgeslagen Reizen</p>
                             </div>
                             <div class="reizen">
                                 <div class="reis">
-                                    <img src="" alt="">
-                                    <p></p>
-                                    <p></p>
-                                    
+                                    <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                                    <p class="reis_hotel">Hotel Naam</p>
+                                    <p class="reis_plaats">Plaats</p>
+                                    <p class="rating">★★★★★</p>
+                                    <p class="prijs">Vanaf € 90.00</p>
                                 </div>
                             </div>
                         </div>

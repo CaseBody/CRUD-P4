@@ -14,6 +14,7 @@ html {
   --white: #fff;
   --contact_trans: #34495eb0;
   --form_trans: #00122fb5;
+  --account_bckgr: #dbdce1;
 }
 
 header {
@@ -730,7 +731,7 @@ footer p {
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-color: #dbdce1;
+  background-color: var(--account_bckgr);
   overflow: hidden;
 }
 
@@ -754,6 +755,8 @@ footer p {
   border-radius: 5px;
   border-width: 2px;
   background-color: var(--white);
+  /*scroll*/
+  overflow-y: scroll;
 }
 
 .container_account .bottom .left .nav_title {
@@ -831,5 +834,37 @@ footer p {
 }
 
 .container_account .bottom .right .opgeslagen_reizen .cnt .reizen {
-  
+  margin-bottom: 50px;
 }
+
+.container_account .bottom .right .opgeslagen_reizen .cnt .reizen .reis {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 400px;
+  background-color: var(--account_bckgr);
+}
+
+.container_account .bottom .right .opgeslagen_reizen .cnt .reizen .reis img {
+  width: 100%;
+  height: 55%;
+}
+
+.container_account .bottom .right .opgeslagen_reizen .cnt .reizen .reis .reis_hotel {
+  font-size: 35px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.container_account .bottom .right .opgeslagen_reizen .cnt .reizen .reis .reis_plaats {
+  font-size: 25px;
+  margin-left: 6px;
+}
+
+/* .container_account .bottom .right .opgeslagen_reizen .cnt .reizen .reis .rating {
+  
+} */
+
+/* .container_account .bottom .right .opgeslagen_reizen .cnt .reizen .reis .prijs {
+
+} */
