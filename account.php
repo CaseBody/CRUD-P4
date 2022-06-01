@@ -20,46 +20,57 @@
 <body>
     <main>
         <div class="container_account">
-            <div class="left">
-                <div class="nav_title">
-                    <p>My Account</p>
-                </div>
+            <div class="bottom">
+                <div class="left">
+                    <div class="nav_title">
+                        <p>My Account</p>
+                    </div>
 
-                <div class="nav">
-                    <div class="link">
-                        <img src="" alt="">
-                        <p id="">test</p>
-                    </div>
-                    <div class="link">
-                        <img src="" alt="">
-                        <p id="">test</p>
-                    </div>
-                    <div class="link">
-                        <img src="" alt="">
-                        <p id="">test</p>
-                    </div>
-                    <div class="link">
-                        <img src="" alt="">
-                        <p id="">test</p>
-                    </div>
-                    <div class="link">
-                        <img src="" alt="">
-                        <p id="">test</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="right">
-                <div class="acc_title">
-                    <p>Welcome username</p>
-                </div>
-                <div class="acc_info">
-                    <div class="personal_info">
-                        <div class="personal_title">
-                            <p>Personal Information</p>
+                    <div class="nav">
+                        <div class="link">
+                            <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                            <a href="" id="">bookings</a>
                         </div>
+                        <div class="link">
+                            <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                            <a href="" id="">bookings</a>
+                        </div>
+                        <div class="link">
+                            <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                            <a href="" id="">bookings</a>
+                        </div>
+                        <div class="link">
+                            <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                            <a href="" id="">bookings</a>
+                        </div>
+                        <div class="link">
+                            <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                            <a href="" id="">bookings</a>
+                        </div>
+                    </div>
+                </div>
 
-                        
+                <div class="right">
+                    <div class="acc_title">
+                        <p>My Account</p>
+                    </div>
+                    <div class="account">
+                        <div class="acc_title">
+                            <p>Account Information</p>
+                        </div>
+                        <div class="inputs">
+                            <label for="">First Name</label>
+                            <input type="text">
+
+                            <label for="">Last Name</label>
+                            <input type="text">
+
+                            <label for="">E-Mail Name</label>
+                            <input type="text">
+
+                            <label for="">Birth Date</label>
+                            <input type="text">
+                        </div>
                     </div>
                 </div>
             </div>

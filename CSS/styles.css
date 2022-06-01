@@ -675,21 +675,74 @@ footer p {
 	width: 80px;
 }
 
+/*account*/
 .container_account {
-	display: flex	;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
-	height: 800px;
-	background-color: var(--main-blue);
+	height: 100vh;
+	background-color: #dbdce1;
+	overflow: hidden;
 }
 
-.container_account .nav {
-	width: 20%;
-	height: 500px;
-	background-color: red;
+.container_account .bottom {
+	display: flex;
+	width: 100%;
+	height: 80vh;
+	margin-top: 150px;
 }
 
-.container_account .acc_info {
-	width: 80%;
-	height: 100%;
-	background-color: #3239c0;
+.container_account .left {
+	width: 17.5%;
+	height: 750px;
+}
+
+.container_account .right {
+	width: 77.5%;
+	height: 770px;
+	border-style: solid;
+    border-color: #cdcdcd;
+    border-radius: 5px;
+    border-width: 0.6px;
+	border-bottom: none;
+	background-color: var(--white);
+}
+
+.container_account .bottom .left .nav_title {
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+}
+
+.container_account .bottom .left .nav {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.container_account .bottom .left .nav .link {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.container_account .bottom .left .nav .link a {
+	text-decoration: none;
+	padding: 5px;
+}
+
+.container_account .bottom .left .nav .link img {
+	width: 30px;
+}
+
+.container_account .bottom .right .acc_title {
+	font-size: 40px;
+	padding: 40px;
+}
+
+/* .container_account .bottom .account {
+
+} */
+
+.container_account .bottom .account .acc_title {
+	font-size: 30px;
 }
