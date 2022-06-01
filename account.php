@@ -78,7 +78,12 @@
                                 <p>Opgeslagen Reizen</p>
                             </div>
                             <div class="reizen">
-
+                                <div class="reis">
+                                    <img src="" alt="">
+                                    <p></p>
+                                    <p></p>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
