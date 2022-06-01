@@ -1,748 +1,826 @@
 * {
-	margin: 0;
-	padding: 0;
-	/* fonts */
-	font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* fonts */
+  font-family: "Open Sans", sans-serif;
 }
 
 html {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 :root {
-	--main-blue: #34495e;
-	--white: #fff;
-	--contact_trans: #34495eb0;
-	--form_trans: #00122fb5;
+  --main-blue: #34495e;
+  --white: #fff;
+  --contact_trans: #34495eb0;
+  --form_trans: #00122fb5;
 }
 
 header {
-	width: 100%;
-	height: 70px;
-	background-color: #00000047;
-	position: fixed;
-	top: 0;
-	z-index: 100;
+  width: 100%;
+  height: 70px;
+  background-color: #00000047;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 header nav ul {
-	width: 100%;
-	display: flex;
-	list-style-type: none;
-	justify-content: space-between;
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
 }
 
 header nav ul .li_header {
-	padding: 15px;
+  padding: 15px;
 }
 
 header nav ul li a {
-	text-decoration: none;
-	color: #fff;
-	font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
 }
 
 header nav ul li a:hover {
-	color: black;
+  color: black;
 }
 
 header .txt_logo {
-	display: flex;
+  display: flex;
 }
 
 header .txt_logo p {
-	font-size: 25px;
-	padding: 15px;
+  font-size: 25px;
+  padding: 15px;
 }
 /*hover TRAVELEGY*/
 header .txt_logo:hover {
-	color: #fff;
+  color: #fff;
 }
 
 header .img_logo {
-	width: 55px;
-	height: 55px;
-	margin-top: 7.5px;
-	margin-left: 25px;
+  width: 55px;
+  height: 55px;
+  margin-top: 7.5px;
+  margin-left: 25px;
 }
 
 /* Footer */
 footer {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-top: 100px;
-	row-gap: 20px;
-	height: 200px;
-	background-color: var(--main-blue);
-	border-top-color: black;
-	border-top-style: solid;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  row-gap: 20px;
+  height: 200px;
+  background-color: var(--main-blue);
+  border-top-color: black;
+  border-top-style: solid;
 }
 
 footer a {
-	text-decoration: none;
-	margin: 20px;
+  text-decoration: none;
+  margin: 20px;
 }
 
 footer img {
-	width: 75px;
+  width: 75px;
 }
 
 footer p {
-	color: white;
-	font-size: 25px;
+  color: white;
+  font-size: 25px;
 }
 
 .container_startpage {
-	width: 100%;
-	height: 550px;
-	background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url("../Assets/afbeeldingen/sea.png");
-	background-size: cover;
-	background-position: center;
-	border-bottom: 2px solid var(--main-blue);
+  width: 100%;
+  height: 550px;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)),
+    url("../Assets/afbeeldingen/sea.png");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid var(--main-blue);
 }
 
 .container_startpage h2 {
-	display: flex;
-	justify-content: center;
-	padding-top: 194px;
-	font-size: 78px;
-	font-weight: bold;
-	color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 194px;
+  font-size: 78px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .container_categorieen {
-	width: 100%;
-	height: 350px;
-	margin-top: -170px;
-	margin-bottom: 40px;
+  width: 100%;
+  height: 350px;
+  margin-top: -170px;
+  margin-bottom: 40px;
 }
 
 .container_categorieen .box {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .container_categorieen .box_cat {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	min-width: 170px;
-	background-color: #3239c0;
-	width: 14%;
-	height: 230px;
-	background-color: var(--main-blue);
-	margin-top: 50px;
-	border: 2px solid #fff;
-	border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 170px;
+  background-color: #3239c0;
+  width: 14%;
+  height: 230px;
+  background-color: var(--main-blue);
+  margin-top: 50px;
+  border: 2px solid #fff;
+  border-radius: 10px;
 }
 
 .container_categorieen .box_cat .cat-img {
-	width: 200px;
-	height: 200px;
-	margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
 }
 
 .container_categorieen .box_cat .cat-img:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .container_categorieen .box_cat h2 {
-	text-align: center;
-	font-size: 30px;
-	margin-top: -10px;
-	color: #fff;
+  text-align: center;
+  font-size: 30px;
+  margin-top: -10px;
+  color: #fff;
 }
 
 .container_aanbevolen_reizen {
-	width: 100%;
-	height: 500px;
+  width: 100%;
+  height: 500px;
 }
 
 .container_aanbevolen_reizen .title {
-	display: flex;
-	width: 100%;
-	height: 150px;
-	justify-content: center;
-	font-size: 60px;
-	font-weight: bold;
-	color: black;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
 }
 
 .container_aanbevolen_reizen .aanbevolen_reizen {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-	height: 500px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 500px;
 }
 
 .container_aanbevolen_reizen .aanbevolen_reizen .reis_abv {
-	position: relative;
-	display: flex;
-	box-sizing: border-box;
-	width: 20vw;
-	min-width: 250px;
-	height: 20vw;
-	border-color: var(--main-blue);
-	border-radius: 10px;
-	border-width: 3px;
-	justify-content: space-between;
-	flex-direction: column;
-	align-items: center;
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-		url("https://cdn.discordapp.com/attachments/968125920038776866/968125953651920926/pexels-photo-4388167.jpeg");
-	background-size: cover;
-	background-position: center;
-	margin-bottom: 25px;
-	right: 0;
-	bottom: 0;
-	transition: all 0.8s;
-	overflow: hidden;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 20vw;
+  min-width: 250px;
+  height: 20vw;
+  border-color: var(--main-blue);
+  border-radius: 10px;
+  border-width: 3px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("https://cdn.discordapp.com/attachments/968125920038776866/968125953651920926/pexels-photo-4388167.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 25px;
+  right: 0;
+  bottom: 0;
+  transition: all 0.8s;
+  overflow: hidden;
 }
 
 .container_aanbevolen_reizen .aanbevolen_reizen .reis_abv .item_titel {
-	font-size: 45px;
-	margin-top: 10px;
-	color: #fff;
+  font-size: 45px;
+  margin-top: 10px;
+  color: #fff;
 }
 
 .container_aanbevolen_reizen .aanbevolen_reizen .reis_abv .item_subtitel {
-	font-size: 45px;
-	margin-bottom: 10px;
-	color: #fff;
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 .container_aanbevolen_reizen .aanbevolen_reizen .reis_abv img {
-	width: 15px;
+  width: 15px;
 }
 
 /* Destinations Pagina */
 .destinations_pagina {
-	width: 100%;
-	max-width: 100%;
-	display: flex;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
 }
 
 .destinations_pagina .content {
-	width: 100%;
-	max-width: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 
 .destinations_pagina .content .top {
-	width: 100%;
-	height: 400px;
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/afbeeldingen/background_one.jpeg");
-	background-position: center top;
-	/* background-image: url("../Assets/afbeeldingen/background_one.jpeg"); */
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	border-bottom-style: solid;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Assets/afbeeldingen/background_one.jpeg");
+  background-position: center top;
+  /* background-image: url("../Assets/afbeeldingen/background_one.jpeg"); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom-style: solid;
 }
 
 .destinations_pagina .content .top p {
-	font-size: 50px;
-	font-weight: bold;
-	margin-top: 40px;
-	text-align: center;
-	color: white;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
 }
 
 .destinations_pagina .search_bar {
-	margin-top: 50px;
-	width: 100%;
-	max-width: 100%;
-	display: flex;
-	justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .destinations_pagina .search_bar input {
-	width: 400px;
-	/* margin-right: 10px; */
-	font-size: 24px;
-	border: 2px solid black;
-	padding: 5px;
-	border-radius: 5px;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-	border-right-width: 0;
+  width: 400px;
+  /* margin-right: 10px; */
+  font-size: 24px;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right-width: 0;
 }
 
 .destinations_pagina .search_bar input:focus {
-	outline: none;
+  outline: none;
 }
 
 .destinations_pagina .search_bar button {
-	width: 100px;
-	font-size: 24px;
-	border: 2px solid black;
-	background-color: var(--main-blue);
-	color: white;
-	border-radius: 5px;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
+  width: 100px;
+  font-size: 24px;
+  border: 2px solid black;
+  background-color: var(--main-blue);
+  color: white;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .destinations_pagina .search_bar button:hover {
-	background-color: black;
+  background-color: black;
 }
 
 .destinations_pagina .categories {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .destinations_pagina .categories {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .destinations_pagina .categories .categorie .categorie_titel {
-	font-size: 60px;
-	margin-left: 20px;
+  font-size: 60px;
+  margin-left: 20px;
 }
 
 .destinations_pagina .categories .categorie .categorie_content {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 30px;
-	column-gap: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  column-gap: 5%;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item {
-	position: relative;
-	display: flex;
-	box-sizing: border-box;
-	width: 20%;
-	min-width: 250px;
-	height: 350px;
-	border-color: var(--main-blue);
-	border-width: 3px;
-	flex-direction: column;
-	margin-bottom: 25px;
-	right: 0;
-	bottom: 0;
-	transition: all 0.8s;
-	overflow: hidden;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 20%;
+  min-width: 250px;
+  height: 350px;
+  border-color: var(--main-blue);
+  border-width: 3px;
+  flex-direction: column;
+  margin-bottom: 25px;
+  right: 0;
+  bottom: 0;
+  transition: all 0.8s;
+  overflow: hidden;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item .bottom {
-	background-color: #f3f0ec;
-	height: 45%;
+  background-color: #f3f0ec;
+  height: 45%;
 }
 
-.destinations_pagina .categories .categorie .categorie_content .item .bottom .title {
-	font-size: 35px;
-	margin-left: 5px;
-	margin-top: 5px;
+.destinations_pagina
+  .categories
+  .categorie
+  .categorie_content
+  .item
+  .bottom
+  .title {
+  font-size: 35px;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
-.destinations_pagina .categories .categorie .categorie_content .item .bottom .locatie {
-	margin-left: 6px;
-	font-size: 23px;
+.destinations_pagina
+  .categories
+  .categorie
+  .categorie_content
+  .item
+  .bottom
+  .locatie {
+  margin-left: 6px;
+  font-size: 23px;
 }
 
-.destinations_pagina .categories .categorie .categorie_content .item .bottom .prijs {
-	position: absolute;
-	font-size: 30px;
-	bottom: 0;
-	right: 0;
-	margin: 5px;
-	font-weight: bold;
+.destinations_pagina
+  .categories
+  .categorie
+  .categorie_content
+  .item
+  .bottom
+  .prijs {
+  position: absolute;
+  font-size: 30px;
+  bottom: 0;
+  right: 0;
+  margin: 5px;
+  font-weight: bold;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item img {
-	width: 100%;
-	height: 55%;
-	object-fit: cover;
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item:hover {
-	right: 15px;
-	bottom: 15px;
-	cursor: pointer;
-	box-shadow: 15px 15px var(--main-blue);
+  right: 15px;
+  bottom: 15px;
+  cursor: pointer;
+  box-shadow: 15px 15px var(--main-blue);
 }
 
 /* Query voor Destinations (Niet voor mobile!) */
 @media only screen and (max-width: 1220px) {
-	.destinations_pagina .categories .categorie .categorie_content .item {
-		width: 45%;
-	}
+  .destinations_pagina .categories .categorie .categorie_content .item {
+    width: 45%;
+  }
 
-	.destinations_pagina .categories .categorie .categorie_content .item .item_titel {
-		font-size: 35px;
-	}
+  .destinations_pagina
+    .categories
+    .categorie
+    .categorie_content
+    .item
+    .item_titel {
+    font-size: 35px;
+  }
 
-	.destinations_pagina .categories .categorie .categorie_content .item .item_subtitel {
-		font-size: 35px;
-	}
+  .destinations_pagina
+    .categories
+    .categorie
+    .categorie_content
+    .item
+    .item_subtitel {
+    font-size: 35px;
+  }
 
-	.destinations_pagina .categories .categorie .categorie_content .item .item_subtitel img {
-		width: 15px;
-	}
+  .destinations_pagina
+    .categories
+    .categorie
+    .categorie_content
+    .item
+    .item_subtitel
+    img {
+    width: 15px;
+  }
 
-	.destinations_pagina .categories .categorie .categorie_content .item:hover .item_subtitel {
-		font-size: 40px;
-	}
+  .destinations_pagina
+    .categories
+    .categorie
+    .categorie_content
+    .item:hover
+    .item_subtitel {
+    font-size: 40px;
+  }
 
-	.destinations_pagina .categories .categorie .categorie_content .item:hover .item_subtitel img {
-		width: 17px;
-	}
+  .destinations_pagina
+    .categories
+    .categorie
+    .categorie_content
+    .item:hover
+    .item_subtitel
+    img {
+    width: 17px;
+  }
 }
 
 .container_contact {
-	display: flex;
-	width: 100%;
-	height: 100vh;
-	color: var(--white);
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-		url("https://images.pexels.com/photos/2161449/pexels-photo-2161449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-	background-size: cover;
-	align-items: center;
-	justify-content: center;
-	font-family: sans-serif;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  color: var(--white);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("https://images.pexels.com/photos/2161449/pexels-photo-2161449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
 }
 
 .container_contact .all_contact {
-	display: flex;
-	width: auto;
-	height: 600px;
-	margin-top: 90px;
+  display: flex;
+  width: auto;
+  height: 600px;
+  margin-top: 90px;
 }
 
 .container_contact .contact_img {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	width: 380px;
-	height: 600px;
-	background-color: var(--contact_trans);
-	border-top-left-radius: 7.5px;
-	border-bottom-left-radius: 7.5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 380px;
+  height: 600px;
+  background-color: var(--contact_trans);
+  border-top-left-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
 }
 
 .container_contact .contact_img .title {
-	width: 100%;
-	height: 125px;
-	color: var(--white);
-	font-size: 40px;
-	margin-top: 150px;
-	text-align: center;
+  width: 100%;
+  height: 125px;
+  color: var(--white);
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
 }
 
 .container_contact .contact_img p {
-	color: var(--white);
-	font-size: 25px;
-	margin: 10px;
-	margin-top: 50px;
-	text-align: center;
+  color: var(--white);
+  font-size: 25px;
+  margin: 10px;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .container_contact .form_label_input {
-	width: 800px;
-	height: 600px;
-	background-color: var(--form_trans);
-	border-top-right-radius: 7.5px;
-	border-bottom-right-radius: 7.5px;
+  width: 800px;
+  height: 600px;
+  background-color: var(--form_trans);
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 }
 
 .container_contact input:focus {
-	outline: none;
-	border: 2.5px solid #000000;
+  outline: none;
+  border: 2.5px solid #000000;
 }
 
 .container_contact .form_label_input .form_name {
-	display: flex;
-	width: 100%;
-	height: 100px;
-	padding-top: 10px;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
 }
 
 .container_contact .form_label_input .form_name .fname {
-	display: flex;
-	width: 50%;
-	height: 100%;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container_contact .form_label_input .form_name .fname .label_name {
-	font-size: 22.5px;
-	margin-top: 10px;
-	margin-left: -200px;
+  font-size: 22.5px;
+  margin-top: 10px;
+  margin-left: -200px;
 }
 
 .container_contact .form_label_input .form_name .fname .input_name {
-	width: 75%;
-	height: 40px;
-	padding-left: 10px;
-	margin-top: 5px;
-	font-size: 20px;
-	border-color: #cdcdcd;
-    border-style: solid;
-    border-width: 0.6px;
+  width: 75%;
+  height: 40px;
+  padding-left: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+  border-color: #cdcdcd;
+  border-style: solid;
+  border-width: 0.6px;
 }
 
 .container_contact .form_label_input .form_other {
-	display: flex;
-	width: 100%;
-	height: 100px;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container_contact .label {
-	width: 100%;
-	height: 30px;
-	font-size: 22.5px;
-	margin-top: 5px;
-	margin-left: 105px;
+  width: 100%;
+  height: 30px;
+  font-size: 22.5px;
+  margin-top: 5px;
+  margin-left: 105px;
 }
 
 .container_contact .input {
-	width: 700px;
-	height: 40px;
-	font-size: 20px;
-	margin-top: 5px;
-	padding-left: 10px;
-	border-color: #cdcdcd;
-    border-style: solid;
-    border-width: 0.6px;
+  width: 700px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 5px;
+  padding-left: 10px;
+  border-color: #cdcdcd;
+  border-style: solid;
+  border-width: 0.6px;
 }
 
 .container_contact .form_description {
-	display: flex;
-	width: 100%;
-	height: 200px;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container_contact .form_label_input .form_description .form_des {
-	width: 700px;
-	height: 200px;
-	font-size: 20px;
-	margin-top: 5px;
-	padding-left: 10px;
-	resize: none;
-	border-color: #cdcdcd;
-    border-style: solid;
-    border-width: 0.6px;
+  width: 700px;
+  height: 200px;
+  font-size: 20px;
+  margin-top: 5px;
+  padding-left: 10px;
+  resize: none;
+  border-color: #cdcdcd;
+  border-style: solid;
+  border-width: 0.6px;
 }
 
 .container_contact .form_label_input .form_description .form_des:focus {
-	outline: none;
-	border: 2.5px solid #000000;
+  outline: none;
+  border: 2.5px solid #000000;
 }
 
 .container_contact .submit_button {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .container_contact .submit {
-	margin-top: 20px;
-	width: 90%;
-	height: 55px;
-	box-shadow: 0px 0px 3px black;
-	background-color: var(--main-blue);
-	border-radius: 5px;
-	color: white;
-	font-size: 30px;
-	border-style: none;
+  margin-top: 20px;
+  width: 90%;
+  height: 55px;
+  box-shadow: 0px 0px 3px black;
+  background-color: var(--main-blue);
+  border-radius: 5px;
+  color: white;
+  font-size: 30px;
+  border-style: none;
 }
 
 .container_contact .submit_button .submit[type="submit"]:hover {
-	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), var(--main-blue);
-	cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    var(--main-blue);
+  cursor: pointer;
 }
 
 /* INLOG */
 .login_page {
-	/* background-image: url("https://cdn.discordapp.com/attachments/968125920038776866/968125952418803752/pexels-photo-4356144.jpeg"); */
-	background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
-		url("https://cdn.discordapp.com/attachments/968125920038776866/968125952418803752/pexels-photo-4356144.jpeg");
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100vh;
+  /* background-image: url("https://cdn.discordapp.com/attachments/968125920038776866/968125952418803752/pexels-photo-4356144.jpeg"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
+    url("https://cdn.discordapp.com/attachments/968125920038776866/968125952418803752/pexels-photo-4356144.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .login_page form {
-	background-color: white;
-	width: 350px;
-	height: 350px;
-	/* background-color: var(--main-blue); */
-	/* border-color: white; */
-	border-radius: 5px;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	align-items: center;
-	box-shadow: 0px 0px 15px black;
+  background-color: white;
+  width: 350px;
+  height: 350px;
+  /* background-color: var(--main-blue); */
+  /* border-color: white; */
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  box-shadow: 0px 0px 15px black;
 }
 
 .login_page form .title {
-	display: flex;
-	font-size: 30px;
-	color: black;
-	font-weight: bold;
-	text-align: center;
-	margin: 10px;
-	margin-top: 29px;
-	margin-bottom: 35px;
-	text-decoration: it;
+  display: flex;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  margin-top: 29px;
+  margin-bottom: 35px;
+  text-decoration: it;
 }
 
 .login_page form .label-input {
-	display: flex;
-	flex-direction: column;
-	width: 80%;
-	margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 10px;
 }
 
 .login_page form .label-input label {
-	color: lightgrey;
+  color: lightgrey;
 }
 
 .login_page form .label-input input {
-	border-radius: 5px;
-	font-size: 18px;
-	padding: 7px;
-	border-style: solid;
-	border-color: lightgrey;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 7px;
+  border-style: solid;
+  border-color: lightgrey;
 }
 
 .login_page form .password_forgot,
 .login_page form .create_account,
 .login_page form .login_link {
-	color: var(--main-blue);
-	font-size: 15px;
-	width: 80%;
-	text-align: left;
-	text-decoration: none;
-	margin-bottom: 4px;
-	margin: 4px;
+  color: var(--main-blue);
+  font-size: 15px;
+  width: 80%;
+  text-align: left;
+  text-decoration: none;
+  margin-bottom: 4px;
+  margin: 4px;
 }
 
 .login_page form input[type="submit"] {
-	margin-top: 10px;
-	width: 80%;
-	height: 40px;
-	box-shadow: 0px 0px 3px black;
-	background-color: var(--main-blue);
-	border-radius: 5px;
-	color: white;
-	font-size: 20px;
-	border-style: none;
+  margin-top: 10px;
+  width: 80%;
+  height: 40px;
+  box-shadow: 0px 0px 3px black;
+  background-color: var(--main-blue);
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  border-style: none;
 }
 
 .login_page form input[type="submit"]:hover {
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), var(--main-blue);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    var(--main-blue);
 }
 
 .login_page form .links {
-	/* position: absolute;
+  /* position: absolute;
 	bottom: 5px; */
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 .login_page .login_link {
-	margin-right: 100px !important;
+  margin-right: 100px !important;
 }
 
 .login_page .logo {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
 }
 
 .login_page .logo img {
-	width: 80px;
+  width: 80px;
 }
 
 /*account*/
 .container_account {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 100vh;
-	background-color: #dbdce1;
-	overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #dbdce1;
+  overflow: hidden;
 }
 
 .container_account .bottom {
-	display: flex;
-	width: 100%;
-	height: 80vh;
-	margin-top: 150px;
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  margin-top: 150px;
 }
 
 .container_account .left {
-	width: 17.5%;
-	height: 750px;
+  width: 17.5%;
+  height: 750px;
 }
 
 .container_account .right {
-	width: 77.5%;
-	height: 770px;
-	border-style: solid;
-    border-color: #cdcdcd;
-    border-radius: 5px;
-    border-width: 0.6px;
-	border-bottom: none;
-	background-color: var(--white);
+  width: 77.5%;
+  height: 770px;
+  border-style: solid;
+  border-color: #cdcdcd;
+  border-radius: 5px;
+  border-width: 2px;
+  background-color: var(--white);
 }
 
 .container_account .bottom .left .nav_title {
-	width: 100%;
-	text-align: center;
-	font-size: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
 }
 
 .container_account .bottom .left .nav {
-	text-align: center;
-	margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .container_account .bottom .left .nav .link {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .container_account .bottom .left .nav .link a {
-	text-decoration: none;
-	padding: 5px;
+  text-decoration: none;
+  padding: 5px;
 }
 
 .container_account .bottom .left .nav .link img {
-	width: 30px;
+  width: 30px;
 }
 
-.container_account .bottom .right .acc_title {
-	font-size: 40px;
-	padding: 40px;
+.container_account .bottom .right .account .title {
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-left: 10px;
 }
 
 /* .container_account .bottom .account {
 
 } */
 
-.container_account .bottom .account .acc_title {
-	font-size: 30px;
+.container_account .bottom .account .cnt {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.container_account .bottom .account .ctn .acc_title {
+  width: 1375px;
+  height: 50px;
+  border-bottom: 2px solid #cdcdcd;
+  font-size: 25px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.container_account .bottom .right .account .cnt .inputs {
+	display: flex;
+	flex-direction: column;
+}
+
+.container_account .bottom .right .account .cnt .inputs .acc_lbl {
+	font-size: 25px;
+}
+
+.container_account .bottom .right .account .cnt .inputs .acc_inp {
+	width: 250px;
+	padding: 7.5px;
+	font-size: 20px;
+	border-radius: 5px;
+	border-style: solid;
+    border-color: lightgrey;
+	margin-bottom: 20px;
 }

@@ -51,25 +51,28 @@
                 </div>
 
                 <div class="right">
-                    <div class="acc_title">
-                        <p>My Account</p>
-                    </div>
                     <div class="account">
-                        <div class="acc_title">
-                            <p>Account Information</p>
-                        </div>
-                        <div class="inputs">
-                            <label for="">First Name</label>
-                            <input type="text">
+                        <div class="cnt">
+                            <div class="title">
+                                <p>My Account</p>
+                            </div>
 
-                            <label for="">Last Name</label>
-                            <input type="text">
+                            <div class="acc_title">
+                                <p>Account Information</p>
+                            </div>
+                            <div class="inputs">
+                                <label class="acc_lbl" for="firstname">First Name</label>
+                                <input class="acc_inp" type="text">
 
-                            <label for="">E-Mail Name</label>
-                            <input type="text">
+                                <label class="acc_lbl" for="lastname">Last Name</label>
+                                <input class="acc_inp" type="text">
 
-                            <label for="">Birth Date</label>
-                            <input type="text">
+                                <label class="acc_lbl" for="email">E-Mail</label>
+                                <input class="acc_inp" type="text" placeholder="example@example.com">
+
+                                <label class="acc_lbl" for="birthday">Birth Date</label>
+                                <input class="acc_inp" type="date">
+                            </div>
                         </div>
                     </div>
                 </div>
