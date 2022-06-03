@@ -11,7 +11,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
 	</head>
-	<body class="reis_pagina">
+	<body class="reis_pagina header_no_trans">
 		<?php 
 		include_once "includes/header.php";
 	?>
@@ -33,7 +33,7 @@
 
 			<div class="tabs">
 				<ul>
-					<li>Recensies</li>
+					<li class="selected">Recensies</li>
 					<li>Beschrijving</li>
 					<li>Boek nu</li>
 				</ul>
