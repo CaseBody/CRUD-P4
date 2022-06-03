@@ -29,29 +29,25 @@
                     <div class="nav">
                         <div class="link">
                             <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
-                            <a href="" id="">bookings</a>
+                            <a href="" id="">Account</a>
                         </div>
                         <div class="link">
                             <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
-                            <a href="" id="">Opgeslagen Reizen</a>
+                            <a href="" id="">Saved Destinations</a>
                         </div>
                         <div class="link">
                             <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
-                            <a href="" id="">bookings</a>
+                            <a href="" id="">Booked Destinations</a>
                         </div>
                         <div class="link">
                             <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
-                            <a href="" id="">bookings</a>
-                        </div>
-                        <div class="link">
-                            <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
-                            <a href="" id="">bookings</a>
+                            <a href="" id="">Reviews</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="right">
-                    <div class="account" id="">
+                    <div class="account">
                         <div class="cnt">
                             <div class="acc_title">
                                 <p>Account Information</p>
@@ -64,27 +60,180 @@
                                 <input class="acc_inp" type="text">
 
                                 <label class="acc_lbl" for="email">E-Mail</label>
-                                <input class="acc_inp" type="text" placeholder="example@example.com">
+                                <input class="acc_inp" type="text">
 
                                 <label class="acc_lbl" for="birthday">Birth Date</label>
                                 <input class="acc_inp" type="date">
                             </div>
+                            <button class="but_save" type="submit">Save</button>
                         </div>
                     </div>
 
-                    <div class="opgeslagen_reizen" id="">
+                    <div class="opgeslagen_reizen">
                         <div class="cnt">
                             <div class="opgesl_title">
-                                <p>Opgeslagen Reizen</p>
+                                <p>Saved Destinations</p>
                             </div>
                             <div class="reizen">
                                 <div class="reis">
                                     <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
                                     <p class="reis_hotel">Hotel Naam</p>
                                     <p class="reis_plaats">Plaats</p>
-                                    <p class="rating">★★★★★</p>
-                                    <p class="prijs">Vanaf € 90.00</p>
+                                    <div class="rt_pr">
+                                        <p class="rating">★★★★★</p>
+                                        <p class="prijs">Vanaf € 90.00</p>
+                                    </div>
                                 </div>
+
+                                <div class="reis">
+                                    <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                                    <p class="reis_hotel">Hotel Naam</p>
+                                    <p class="reis_plaats">Plaats</p>
+                                    <div class="rt_pr">
+                                        <p class="rating">★★★★★</p>
+                                        <p class="prijs">Vanaf € 90.00</p>
+                                    </div>
+                                </div>
+
+                                <div class="reis">
+                                    <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                                    <p class="reis_hotel">Hotel Naam</p>
+                                    <p class="reis_plaats">Plaats</p>
+                                    <div class="rt_pr">
+                                        <p class="rating">★★★★★</p>
+                                        <p class="prijs">Vanaf € 90.00</p>
+                                    </div>
+                                </div>
+
+                                <div class="reis">
+                                    <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                                    <p class="reis_hotel">Hotel Naam</p>
+                                    <p class="reis_plaats">Plaats</p>
+                                    <div class="rt_pr">
+                                        <p class="rating">★★★★★</p>
+                                        <p class="prijs">Vanaf € 90.00</p>
+                                    </div>
+                                </div>
+
+                                <div class="reis">
+                                    <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                                    <p class="reis_hotel">Hotel Naam</p>
+                                    <p class="reis_plaats">Plaats</p>
+                                    <div class="rt_pr">
+                                        <p class="rating">★★★★★</p>
+                                        <p class="prijs">Vanaf € 90.00</p>
+                                    </div>
+                                </div>
+
+                                <div class="reis">
+                                    <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                                    <p class="reis_hotel">Hotel Naam</p>
+                                    <p class="reis_plaats">Plaats</p>
+                                    <div class="rt_pr">
+                                        <p class="rating">★★★★★</p>
+                                        <p class="prijs">Vanaf € 90.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="geboekte_reizen">
+                        <div class="cnt">
+                            <div class="geboekte_title">
+                                <p>Booked Destinations</p>
+                            </div>
+
+                            <div class="al_geboekte_reizen">
+                                <div class="reizen">
+                                    <div class="reis">
+                                        <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                                        <p class="reis_hotel">Hotel Naam</p>
+                                        <p class="reis_plaats">Plaats</p>
+                                        <div class="rt_pr">
+                                            <p class="rating">★★★★★</p>
+                                            <p class="prijs">Vanaf € 90.00</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="reis">
+                                        <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                                        <p class="reis_hotel">Hotel Naam</p>
+                                        <p class="reis_plaats">Plaats</p>
+                                        <div class="rt_pr">
+                                            <p class="rating">★★★★★</p>
+                                            <p class="prijs">Vanaf € 90.00</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="reis">
+                                        <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                                        <p class="reis_hotel">Hotel Naam</p>
+                                        <p class="reis_plaats">Plaats</p>
+                                        <div class="rt_pr">
+                                            <p class="rating">★★★★★</p>
+                                            <p class="prijs">Vanaf € 90.00</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="reis">
+                                        <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                                        <p class="reis_hotel">Hotel Naam</p>
+                                        <p class="reis_plaats">Plaats</p>
+                                        <div class="rt_pr">
+                                            <p class="rating">★★★★★</p>
+                                            <p class="prijs">Vanaf € 90.00</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="reis">
+                                        <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                                        <p class="reis_hotel">Hotel Naam</p>
+                                        <p class="reis_plaats">Plaats</p>
+                                        <div class="rt_pr">
+                                            <p class="rating">★★★★★</p>
+                                            <p class="prijs">Vanaf € 90.00</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="reis">
+                                        <img src="Assets/afbeeldingen/placeholder.png" alt="placeholder">
+                                        <p class="reis_hotel">Hotel Naam</p>
+                                        <p class="reis_plaats">Plaats</p>
+                                        <div class="rt_pr">
+                                            <p class="rating">★★★★★</p>
+                                            <p class="prijs">Vanaf € 90.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <div class="cnt">
+                            <div class="review_title">
+                                <p>Reviews</p>
+                            </div>
+                            <div class="review_persoon">
+                                <p class="naam">gebruikersnaam</p>
+                                <p class="reisnaam">naam reis</p>
+                                <p class="rating">★★★★★</p>
+                                <p class="recensie">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ducimus voluptatibus at repellendus, tenetur et neque beatae libero impedit natus incidunt iusto aut quos itaque, maxime obcaecati, laudantium modi laborum! Ducimus repudiandae incidunt rerum aliquam accusamus nulla nihil voluptatum eveniet voluptas quo obcaecati sequi pariatur, alias voluptatibus est explicabo qui!</p>
+                            </div>
+
+                            <div class="review_persoon">
+                                <p class="naam">gebruikersnaam</p>
+                                <p class="reisnaam">naam reis</p>
+                                <p class="rating">★★★★★</p>
+                                <p class="recensie">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ducimus voluptatibus at repellendus, tenetur et neque beatae libero impedit natus incidunt iusto aut quos itaque, maxime obcaecati, laudantium modi laborum! Ducimus repudiandae incidunt rerum aliquam accusamus nulla nihil voluptatum eveniet voluptas quo obcaecati sequi pariatur, alias voluptatibus est explicabo qui!</p>
+                            </div>
+
+                            <div class="review_persoon">
+                                <p class="naam">gebruikersnaam</p>
+                                <p class="reisnaam">naam reis</p>
+                                <p class="rating">★★★★★</p>
+                                <p class="recensie">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ducimus voluptatibus at repellendus, tenetur et neque beatae libero impedit natus incidunt iusto aut quos itaque, maxime obcaecati, laudantium modi laborum! Ducimus repudiandae incidunt rerum aliquam accusamus nulla nihil voluptatum eveniet voluptas quo obcaecati sequi pariatur, alias voluptatibus est explicabo qui!</p>
                             </div>
                         </div>
                     </div>
