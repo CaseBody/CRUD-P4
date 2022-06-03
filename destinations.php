@@ -31,8 +31,6 @@
 
 			<div class="categories">
 				<div class="categorie">
-					<p class="categorie_titel">Categorie naam</p>
-
 					<div class="categorie_content" id="categorie_test">
 						<div class="item">
 							<img src="https://cdn.discordapp.com/attachments/968125920038776866/968125953651920926/pexels-photo-4388167.jpeg" alt="">

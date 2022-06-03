@@ -1,8 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
-  /* fonts */
-  font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+	/* fonts */
+	font-family: "Open Sans", sans-serif;
 }
 
 html {
@@ -16,6 +16,8 @@ html {
   --form_trans: #00122fb5;
   --account_bckgr: #dbdce1;
 }
+
+/* Header */
 
 header {
   width: 100%;
@@ -67,6 +69,11 @@ header .img_logo {
   margin-left: 25px;
 }
 
+/* HEADER - No Transparent */
+.header_no_trans header {
+	background-color: var(--main-blue);
+}
+
 /* Footer */
 footer {
   width: 100%;
@@ -96,6 +103,8 @@ footer p {
   font-size: 25px;
 }
 
+/* Home */
+
 .container_startpage {
   width: 100%;
   height: 550px;
@@ -107,118 +116,123 @@ footer p {
 }
 
 .container_startpage h2 {
-  display: flex;
-  justify-content: center;
-  padding-top: 194px;
-  font-size: 78px;
-  font-weight: bold;
-  color: #fff;
+items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
 }
 
-.container_categorieen {
-  width: 100%;
-  height: 350px;
-  margin-top: -170px;
-  margin-bottom: 40px;
+.home .search .titel {
+	margin: 5px;
+	font-size: 35px;
 }
 
-.container_categorieen .box {
-  display: flex;
-  justify-content: space-around;
+.home .search .sub_titel {
+	font-size: 23px;
+	margin: 5px;
 }
 
-.container_categorieen .box_cat {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-width: 170px;
-  background-color: #3239c0;
-  width: 14%;
-  height: 230px;
-  background-color: var(--main-blue);
-  margin-top: 50px;
-  border: 2px solid #fff;
-  border-radius: 10px;
+.home .search .search_bar {
+	display: flex;
+	width: 70%;
+	margin-top: 20px;
 }
 
-.container_categorieen .box_cat .cat-img {
-  width: 200px;
-  height: 200px;
-  margin-top: 10px;
+.home .search .search_bar input {
+	width: 85%;
+	height: 40px;
+	border-color: #cdcdcd;
+	border-style: solid;
+	border-width: 0.6px;
+	font-size: 20px;
+	padding: 5px;
 }
 
-.container_categorieen .box_cat .cat-img:hover {
-  cursor: pointer;
+.home .search .search_bar button {
+	width: 15%;
+	background-color: var(--main-blue);
+	border-color: var(--main-blue);
+	border-style: solid;
+	font-size: 20px;
+	color: white;
 }
 
-.container_categorieen .box_cat h2 {
-  text-align: center;
-  font-size: 30px;
-  margin-top: -10px;
-  color: #fff;
+.home .search .search_bar button:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), var(--main-blue);
+	cursor: pointer;
 }
 
-.container_aanbevolen_reizen {
-  width: 100%;
-  height: 500px;
+.home .search .search_bar input:focus {
+	outline: none;
+	border-color: black;
 }
 
-.container_aanbevolen_reizen .title {
-  display: flex;
-  width: 100%;
-  height: 150px;
-  justify-content: center;
-  font-size: 60px;
-  font-weight: bold;
-  color: black;
+.home .recommended {
+	margin-top: 50px;
+	width: 80%;
+	height: 600px;
+	display: flex;
 }
 
-.container_aanbevolen_reizen .aanbevolen_reizen {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 500px;
+.home .recommended .item {
+	background-image: url("https://cdn.discordapp.com/attachments/968125920038776866/968126658219499571/unknown.png");
+	background-size: cover;
+	border-radius: 5px;
+	position: relative;
 }
 
-.container_aanbevolen_reizen .aanbevolen_reizen .reis_abv {
-  position: relative;
-  display: flex;
-  box-sizing: border-box;
-  width: 20vw;
-  min-width: 250px;
-  height: 20vw;
-  border-color: var(--main-blue);
-  border-radius: 10px;
-  border-width: 3px;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("https://cdn.discordapp.com/attachments/968125920038776866/968125953651920926/pexels-photo-4388167.jpeg");
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 25px;
-  right: 0;
-  bottom: 0;
-  transition: all 0.8s;
-  overflow: hidden;
+.home .recommended .left .item {
+	width: 100%;
+	height: 100%;
+	transition: all 1s;
 }
 
-.container_aanbevolen_reizen .aanbevolen_reizen .reis_abv .item_titel {
-  font-size: 45px;
-  margin-top: 10px;
-  color: #fff;
+.home .recommended .right .item {
+	width: 100%;
+	height: 50%;
 }
 
-.container_aanbevolen_reizen .aanbevolen_reizen .reis_abv .item_subtitel {
-  font-size: 45px;
-  margin-bottom: 10px;
-  color: #fff;
+.home .recommended .item:hover {
+	cursor: pointer;
 }
 
-.container_aanbevolen_reizen .aanbevolen_reizen .reis_abv img {
-  width: 15px;
+.home .recommended .item:hover .price {
+	font-size: 35px;
+}
+
+.home .recommended .left {
+	width: 50%;
+	height: 100%;
+	padding-right: 10px;
+}
+
+.home .recommended .right {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	width: 50%;
+	height: 100%;
+}
+
+.home .recommended .item .titel {
+	font-size: 30px;
+	padding-left: 8px;
+	padding-top: 8px;
+	font-weight: bold;
+}
+
+.home .recommended .item .sub_titel {
+	padding-left: 8px;
+	font-size: 25px;
+}
+
+.home .recommended .item .price {
+	position: absolute;
+	bottom: 5px;
+	right: 8px;
+	font-size: 30px;
+	font-weight: bold;
+	transition: all 1s;
 }
 
 /* Destinations Pagina */
@@ -265,15 +279,13 @@ footer p {
 }
 
 .destinations_pagina .search_bar input {
-  width: 400px;
-  /* margin-right: 10px; */
-  font-size: 24px;
-  border: 2px solid black;
-  padding: 5px;
-  border-radius: 5px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-right-width: 0;
+	width: 35%;
+	min-width: 400px;
+	/* margin-right: 10px; */
+	font-size: 24px;
+	border: 0.6px solid #cdcdcd;
+	padding: 5px;
+	outline: none;
 }
 
 .destinations_pagina .search_bar input:focus {
@@ -281,18 +293,16 @@ footer p {
 }
 
 .destinations_pagina .search_bar button {
-  width: 100px;
-  font-size: 24px;
-  border: 2px solid black;
-  background-color: var(--main-blue);
-  color: white;
-  border-radius: 5px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+	width: 100px;
+	font-size: 20px;
+	background-color: var(--main-blue);
+	color: white;
+	border: none;
 }
 
 .destinations_pagina .search_bar button:hover {
-  background-color: black;
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), var(--main-blue);
+	cursor: pointer;
 }
 
 .destinations_pagina .categories {
@@ -532,14 +542,14 @@ footer p {
 }
 
 .container_contact .form_label_input .form_name .fname .input_name {
-  width: 75%;
-  height: 40px;
-  padding-left: 10px;
-  margin-top: 5px;
-  font-size: 20px;
-  border-color: #cdcdcd;
-  border-style: solid;
-  border-width: 0.6px;
+	width: 75%;
+	height: 40px;
+	padding-left: 10px;
+	margin-top: 5px;
+	font-size: 20px;
+	border-color: #cdcdcd;
+	border-style: solid;
+	border-width: 0.6px;
 }
 
 .container_contact .form_label_input .form_other {
@@ -559,14 +569,14 @@ footer p {
 }
 
 .container_contact .input {
-  width: 700px;
-  height: 40px;
-  font-size: 20px;
-  margin-top: 5px;
-  padding-left: 10px;
-  border-color: #cdcdcd;
-  border-style: solid;
-  border-width: 0.6px;
+	width: 700px;
+	height: 40px;
+	font-size: 20px;
+	margin-top: 5px;
+	padding-left: 10px;
+	border-color: #cdcdcd;
+	border-style: solid;
+	border-width: 0.6px;
 }
 
 .container_contact .form_description {
@@ -578,15 +588,15 @@ footer p {
 }
 
 .container_contact .form_label_input .form_description .form_des {
-  width: 700px;
-  height: 200px;
-  font-size: 20px;
-  margin-top: 5px;
-  padding-left: 10px;
-  resize: none;
-  border-color: #cdcdcd;
-  border-style: solid;
-  border-width: 0.6px;
+	width: 700px;
+	height: 200px;
+	font-size: 20px;
+	margin-top: 5px;
+	padding-left: 10px;
+	resize: none;
+	border-color: #cdcdcd;
+	border-style: solid;
+	border-width: 0.6px;
 }
 
 .container_contact .form_label_input .form_description .form_des:focus {
@@ -644,6 +654,20 @@ footer p {
   box-shadow: 0px 0px 15px black;
 }
 
+.create_account_page form {
+	background-color: white;
+	width: 350px;
+	height: 500px;
+	/* background-color: var(--main-blue); */
+	/* border-color: white; */
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	box-shadow: 0px 0px 15px black;
+}
+
 .login_page form .title {
   display: flex;
   font-size: 30px;
@@ -664,15 +688,21 @@ footer p {
 }
 
 .login_page form .label-input label {
-  color: lightgrey;
+	color: #cdcdcd;
 }
 
 .login_page form .label-input input {
-  border-radius: 5px;
-  font-size: 18px;
-  padding: 7px;
-  border-style: solid;
-  border-color: lightgrey;
+	font-size: 18px;
+	padding: 7px;
+	border-style: solid;
+	border-color: #cdcdcd;
+	border-width: 0.6px;
+}
+
+.login_page form .label-input input:focus {
+	outline: none;
+	border-color: black;
+	border-width: 0.6px;
 }
 
 .login_page form .password_forgot,
@@ -956,4 +986,128 @@ footer p {
   font-size: 20px;
   padding: 10px;
   margin-bottom: 30px;
+}
+=======
+/* Reis Pagina */
+
+.reis_pagina main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.reis_pagina .main_content {
+	width: 70%;
+	min-width: 800px;
+	display: flex;
+	margin-top: 125px;
+	height: 500px;
+}
+
+.reis_pagina .main_content .left {
+	width: 50%;
+	height: 100%;
+}
+
+.reis_pagina .main_content .left img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.reis_pagina .main_content .right {
+	width: 50%;
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: var(--main-blue);
+}
+
+.reis_pagina .main_content .right .title {
+	color: white;
+	margin-top: 25px;
+	margin-left: 8px;
+	font-size: calc(25px + 0.6vw);
+}
+
+.reis_pagina .main_content .right .sub_title {
+	color: white;
+	font-size: calc(15px + 0.6vw);
+	margin-left: 8px;
+}
+
+.reis_pagina .main_content .right .rating {
+	color: white;
+	font-size: 20px;
+}
+
+.reis_pagina .main_content .right .rating {
+	color: white;
+	font-size: calc(15px + 0.6vw);
+}
+
+.reis_pagina .main_content .right .prijs-button {
+	position: absolute;
+	bottom: 25px;
+	width: 80%;
+}
+
+.reis_pagina .main_content .right .prijs-button p {
+	font-size: calc(15px + 0.4vw);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.reis_pagina .main_content .right .prijs-button span {
+	font-size: calc(25px + 0.7vw);
+}
+
+.reis_pagina .main_content .right .prijs-button button {
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	border-style: none;
+	color: var(--main-blue);
+	font-size: 20px;
+}
+
+.reis_pagina .main_content .right .prijs-button button:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), white;
+}
+
+.reis_pagina .tabs {
+	margin-top: 20px;
+	width: 70%;
+	min-width: 800px;
+}
+
+.reis_pagina .tabs ul {
+	display: flex;
+	list-style-type: none;
+	width: 100%;
+	column-gap: 30px;
+}
+
+.reis_pagina .tabs ul li {
+	font-size: 30px;
+}
+
+.reis_pagina .tabs ul li:hover {
+	cursor: pointer;
+}
+
+.selected {
+	border-bottom-style: solid;
+	padding-bottom: 5px;
+	border-width: 4px;
 }

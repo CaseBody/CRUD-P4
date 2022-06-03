@@ -10,9 +10,9 @@
 		<!-- icon page -->
     	<link rel="icon" type="image/x-icon" href="Assets/afbeeldingen/logo.png"/>
 		<!-- fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
 	</head>
 
 	<body>
@@ -27,7 +27,7 @@
 
 				<div class="label-input">
 					<label for="">Password</label>
-					<input type="text" name="" id="" placeholder="password" />
+					<input type="password" name="" id="" placeholder="password" />
 				</div>
 
 				<input type="submit" value="Login" />

@@ -16,10 +16,21 @@
 	</head>
 
 	<body>
-		<main class="login_page">
+		<main class="login_page create_account_page">
 			<a class="logo" href="index.php"><img src="Assets/afbeeldingen/logo.png" alt="" /></a>
 			<form action="">
 				<p class="title">TRAVELEGY</p>
+
+				<div class="label-input">
+					<label for="">First name</label>
+					<input type="text" name="" id="" placeholder="John" />
+				</div>
+
+				<div class="label-input">
+					<label for="">Last name</label>
+					<input type="text" name="" id="" placeholder="Doe" />
+				</div>
+
 				<div class="label-input">
 					<label for="">Email</label>
 					<input type="text" name="" id="" placeholder="example@example.com" />
@@ -27,7 +38,7 @@
 
 				<div class="label-input">
 					<label for="">Password</label>
-					<input type="text" name="" id="" placeholder="password" />
+					<input type="password" name="" id="" placeholder="password" />
 				</div>
 
 				<input type="submit" value="Create Account" />
