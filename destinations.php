@@ -38,7 +38,7 @@
 							foreach ($result as $reis) {
 
 								?>
-								<div class="item">
+								<div class="item" onclick="window.location='<?php echo 'reis.php?id=' . $reis['id'] ?>'">
 								<img src="<?php echo $reis['afbeelding'] ?>" alt="">
 								<p class="reis_id" style="display: none;"><?php echo $reis['id'] ?></p>
 								<div class="bottom">
