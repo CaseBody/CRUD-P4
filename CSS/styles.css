@@ -375,8 +375,7 @@ footer p {
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item .bottom .title {
-	font-size: 35px;
-	margin-left: 5px;
+	margin: 5px;
 	margin-top: 5px;
 }
 
@@ -405,6 +404,13 @@ footer p {
 	bottom: 15px;
 	cursor: pointer;
 	box-shadow: 15px 15px var(--main-blue);
+}
+
+.destinations_pagina .categories .categorie .categorie_content .item_invis:hover {
+	right: 0px;
+	bottom: 0px;
+	cursor: default;
+	box-shadow: none;
 }
 
 /* Query voor Destinations (Niet voor mobile!) */
