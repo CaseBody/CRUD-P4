@@ -130,6 +130,9 @@ footer p {
 }
 
 .home .search {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	margin-top: 50px;
 	width: 80%;
 	min-width: 700px;
