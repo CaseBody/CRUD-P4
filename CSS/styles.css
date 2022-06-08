@@ -350,46 +350,27 @@ items: center;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item .bottom {
-  background-color: #f3f0ec;
-  height: 45%;
+	background-color: #f3f0ec;
+	height: 45%;
 }
 
-.destinations_pagina
-  .categories
-  .categorie
-  .categorie_content
-  .item
-  .bottom
-  .title {
-  font-size: 35px;
-  margin-left: 5px;
-  margin-top: 5px;
+.destinations_pagina .categories .categorie .categorie_content .item .bottom .title {
+	margin: 5px;
+	margin-top: 5px;
 }
 
-.destinations_pagina
-  .categories
-  .categorie
-  .categorie_content
-  .item
-  .bottom
-  .locatie {
-  margin-left: 6px;
-  font-size: 23px;
+.destinations_pagina .categories .categorie .categorie_content .item .bottom .locatie {
+	margin-left: 6px;
+	font-size: 23px;
 }
 
-.destinations_pagina
-  .categories
-  .categorie
-  .categorie_content
-  .item
-  .bottom
-  .prijs {
-  position: absolute;
-  font-size: 30px;
-  bottom: 0;
-  right: 0;
-  margin: 5px;
-  font-weight: bold;
+.destinations_pagina .categories .categorie .categorie_content .item .bottom .prijs {
+	position: absolute;
+	font-size: 30px;
+	bottom: 0;
+	right: 0;
+	margin: 5px;
+	font-weight: bold;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item img {
@@ -403,6 +384,13 @@ items: center;
   bottom: 15px;
   cursor: pointer;
   box-shadow: 15px 15px var(--main-blue);
+}
+
+.destinations_pagina .categories .categorie .categorie_content .item_invis:hover {
+	right: 0px;
+	bottom: 0px;
+	cursor: default;
+	box-shadow: none;
 }
 
 /* Query voor Destinations (Niet voor mobile!) */
