@@ -1090,9 +1090,15 @@ footer p {
 	border-width: 4px;
 }
 
+.reis_pagina .main_beschrijving {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
 .reis_pagina .recensies {
 	width: 100%;
-	display: flex;
+	display: none;
 	flex-direction: column;
 }
 
@@ -1120,4 +1126,5 @@ footer p {
 
 .reis_pagina .recensies .recensie .beschrijving {
 	margin: 10px;
+	color: black;
 }
