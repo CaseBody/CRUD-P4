@@ -10,7 +10,7 @@ function form_verzonden() {
 }
 
 js_form.addEventListener("submit", (e) => {
-  console.log(" hoi");
+  console.log("hoi");
   e.preventDefault();
 
   $.ajax({
@@ -24,7 +24,9 @@ js_form.addEventListener("submit", (e) => {
       message: js_message.value,
     },
     cache: false,
-    success: form_verzonden,
+    success: (response) => {
+      alert(response);
+    },
     error: function (xhr, status, error) {
       console.error(xhr);
     },

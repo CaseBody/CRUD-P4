@@ -19,7 +19,7 @@
 	$result = $stmt->fetchAll();
 
 	//echo
-	echo json_encode($result); 
+	echo 'Formulier verzonden'; 
 
 	exit;
 
