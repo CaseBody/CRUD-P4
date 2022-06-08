@@ -6,67 +6,67 @@
 }
 
 html {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 :root {
-  --main-blue: #34495e;
-  --white: #fff;
-  --contact_trans: #34495eb0;
-  --form_trans: #00122fb5;
-  --account_bckgr: #dbdce1;
+	--main-blue: #34495e;
+	--white: #fff;
+	--contact_trans: #34495eb0;
+	--form_trans: #00122fb5;
+	--account_bckgr: #dbdce1;
 }
 
 /* Header */
 
 header {
-  width: 100%;
-  height: 70px;
-  background-color: #00000047;
-  position: fixed;
-  top: 0;
-  z-index: 100;
+	width: 100%;
+	height: 70px;
+	background-color: #00000047;
+	position: fixed;
+	top: 0;
+	z-index: 100;
 }
 
 header nav ul {
-  width: 100%;
-  display: flex;
-  list-style-type: none;
-  justify-content: space-between;
+	width: 100%;
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
 }
 
 header nav ul .li_header {
-  padding: 15px;
+	padding: 15px;
 }
 
 header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 25px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
 }
 
 header nav ul li a:hover {
-  color: black;
+	color: black;
 }
 
 header .txt_logo {
-  display: flex;
+	display: flex;
 }
 
 header .txt_logo p {
-  font-size: 25px;
-  padding: 15px;
+	font-size: 25px;
+	padding: 15px;
 }
 /*hover TRAVELEGY*/
 header .txt_logo:hover {
-  color: #fff;
+	color: #fff;
 }
 
 header .img_logo {
-  width: 55px;
-  height: 55px;
-  margin-top: 7.5px;
-  margin-left: 25px;
+	width: 55px;
+	height: 55px;
+	margin-top: 7.5px;
+	margin-left: 25px;
 }
 
 /* HEADER - No Transparent */
@@ -76,50 +76,69 @@ header .img_logo {
 
 /* Footer */
 footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-  row-gap: 20px;
-  height: 200px;
-  background-color: var(--main-blue);
-  border-top-color: black;
-  border-top-style: solid;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+	row-gap: 20px;
+	height: 200px;
+	background-color: var(--main-blue);
+	border-top-color: black;
+	border-top-style: solid;
 }
 
 footer a {
-  text-decoration: none;
-  margin: 20px;
+	text-decoration: none;
+	margin: 20px;
 }
 
 footer img {
-  width: 75px;
+	width: 75px;
 }
 
 footer p {
-  color: white;
-  font-size: 25px;
+	color: white;
+	font-size: 25px;
 }
 
 /* Home */
 
 .container_startpage {
-  width: 100%;
-  height: 550px;
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)),
-    url("../Assets/afbeeldingen/sea.png");
-  background-size: cover;
-  background-position: center;
-  border-bottom: 2px solid var(--main-blue);
+	width: 100%;
+	height: 550px;
+	background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url("../Assets/afbeeldingen/sea.png");
+	background-size: cover;
+	background-position: center;
+	border-bottom: 2px solid var(--main-blue);
 }
 
 .container_startpage h2 {
-items: center;
+	display: flex;
 	justify-content: center;
+	padding-top: 194px;
+	font-size: 78px;
+	font-weight: normal;
+	color: #fff;
+}
+
+.home {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+}
+
+.home .search {
+	margin-top: 50px;
+	width: 80%;
+	min-width: 700px;
+	height: 240px;
+	border-style: solid;
+	border-color: #cdcdcd;
+	border-radius: 5px;
+	border-width: 0.6px;
+	align-items: center;
 }
 
 .home .search .titel {
@@ -237,45 +256,44 @@ items: center;
 
 /* Destinations Pagina */
 .destinations_pagina {
-  width: 100%;
-  max-width: 100%;
-  display: flex;
+	width: 100%;
+	max-width: 100%;
+	display: flex;
 }
 
 .destinations_pagina .content {
-  width: 100%;
-  max-width: 100%;
+	width: 100%;
+	max-width: 100%;
 }
 
 .destinations_pagina .content .top {
-  width: 100%;
-  height: 400px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../Assets/afbeeldingen/background_one.jpeg");
-  background-position: center top;
-  /* background-image: url("../Assets/afbeeldingen/background_one.jpeg"); */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-bottom-style: solid;
+	width: 100%;
+	height: 400px;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/afbeeldingen/background_one.jpeg");
+	background-position: center top;
+	/* background-image: url("../Assets/afbeeldingen/background_one.jpeg"); */
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-bottom-style: solid;
 }
 
 .destinations_pagina .content .top p {
-  font-size: 50px;
-  font-weight: bold;
-  margin-top: 40px;
-  text-align: center;
-  color: white;
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 40px;
+	text-align: center;
+	color: white;
 }
 
 .destinations_pagina .search_bar {
-  margin-top: 50px;
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
+	margin-top: 50px;
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 .destinations_pagina .search_bar input {
@@ -289,7 +307,7 @@ items: center;
 }
 
 .destinations_pagina .search_bar input:focus {
-  outline: none;
+	outline: none;
 }
 
 .destinations_pagina .search_bar button {
@@ -306,47 +324,47 @@ items: center;
 }
 
 .destinations_pagina .categories {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .destinations_pagina .categories {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .destinations_pagina .categories .categorie .categorie_titel {
-  font-size: 60px;
-  margin-left: 20px;
+	font-size: 60px;
+	margin-left: 20px;
 }
 
 .destinations_pagina .categories .categorie .categorie_content {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  column-gap: 5%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	column-gap: 5%;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item {
-  position: relative;
-  display: flex;
-  box-sizing: border-box;
-  width: 20%;
-  min-width: 250px;
-  height: 350px;
-  border-color: var(--main-blue);
-  border-width: 3px;
-  flex-direction: column;
-  margin-bottom: 25px;
-  right: 0;
-  bottom: 0;
-  transition: all 0.8s;
-  overflow: hidden;
+	position: relative;
+	display: flex;
+	box-sizing: border-box;
+	width: 20%;
+	min-width: 250px;
+	height: 350px;
+	border-color: var(--main-blue);
+	border-width: 3px;
+	flex-direction: column;
+	margin-bottom: 25px;
+	right: 0;
+	bottom: 0;
+	transition: all 0.8s;
+	overflow: hidden;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item .bottom {
@@ -374,16 +392,16 @@ items: center;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item img {
-  width: 100%;
-  height: 55%;
-  object-fit: cover;
+	width: 100%;
+	height: 55%;
+	object-fit: cover;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item:hover {
-  right: 15px;
-  bottom: 15px;
-  cursor: pointer;
-  box-shadow: 15px 15px var(--main-blue);
+	right: 15px;
+	bottom: 15px;
+	cursor: pointer;
+	box-shadow: 15px 15px var(--main-blue);
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item_invis:hover {
@@ -395,138 +413,111 @@ items: center;
 
 /* Query voor Destinations (Niet voor mobile!) */
 @media only screen and (max-width: 1220px) {
-  .destinations_pagina .categories .categorie .categorie_content .item {
-    width: 45%;
-  }
+	.destinations_pagina .categories .categorie .categorie_content .item {
+		width: 45%;
+	}
 
-  .destinations_pagina
-    .categories
-    .categorie
-    .categorie_content
-    .item
-    .item_titel {
-    font-size: 35px;
-  }
+	.destinations_pagina .categories .categorie .categorie_content .item .item_titel {
+		font-size: 35px;
+	}
 
-  .destinations_pagina
-    .categories
-    .categorie
-    .categorie_content
-    .item
-    .item_subtitel {
-    font-size: 35px;
-  }
+	.destinations_pagina .categories .categorie .categorie_content .item .item_subtitel {
+		font-size: 35px;
+	}
 
-  .destinations_pagina
-    .categories
-    .categorie
-    .categorie_content
-    .item
-    .item_subtitel
-    img {
-    width: 15px;
-  }
+	.destinations_pagina .categories .categorie .categorie_content .item .item_subtitel img {
+		width: 15px;
+	}
 
-  .destinations_pagina
-    .categories
-    .categorie
-    .categorie_content
-    .item:hover
-    .item_subtitel {
-    font-size: 40px;
-  }
+	.destinations_pagina .categories .categorie .categorie_content .item:hover .item_subtitel {
+		font-size: 40px;
+	}
 
-  .destinations_pagina
-    .categories
-    .categorie
-    .categorie_content
-    .item:hover
-    .item_subtitel
-    img {
-    width: 17px;
-  }
+	.destinations_pagina .categories .categorie .categorie_content .item:hover .item_subtitel img {
+		width: 17px;
+	}
 }
 
 .container_contact {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  color: var(--white);
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("https://images.pexels.com/photos/2161449/pexels-photo-2161449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  background-size: cover;
-  align-items: center;
-  justify-content: center;
-  font-family: sans-serif;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	color: var(--white);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+		url("https://images.pexels.com/photos/2161449/pexels-photo-2161449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif;
 }
 
 .container_contact .all_contact {
-  display: flex;
-  width: auto;
-  height: 600px;
-  margin-top: 90px;
+	display: flex;
+	width: auto;
+	height: 600px;
+	margin-top: 90px;
 }
 
 .container_contact .contact_img {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 380px;
-  height: 600px;
-  background-color: var(--contact_trans);
-  border-top-left-radius: 7.5px;
-  border-bottom-left-radius: 7.5px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 380px;
+	height: 600px;
+	background-color: var(--contact_trans);
+	border-top-left-radius: 7.5px;
+	border-bottom-left-radius: 7.5px;
 }
 
 .container_contact .contact_img .title {
-  width: 100%;
-  height: 125px;
-  color: var(--white);
-  font-size: 40px;
-  margin-top: 150px;
-  text-align: center;
+	width: 100%;
+	height: 125px;
+	color: var(--white);
+	font-size: 40px;
+	margin-top: 150px;
+	text-align: center;
 }
 
 .container_contact .contact_img p {
-  color: var(--white);
-  font-size: 25px;
-  margin: 10px;
-  margin-top: 50px;
-  text-align: center;
+	color: var(--white);
+	font-size: 25px;
+	margin: 10px;
+	margin-top: 50px;
+	text-align: center;
 }
 
 .container_contact .form_label_input {
-  width: 800px;
-  height: 600px;
-  background-color: var(--form_trans);
-  border-top-right-radius: 7.5px;
-  border-bottom-right-radius: 7.5px;
+	width: 800px;
+	height: 600px;
+	background-color: var(--form_trans);
+	border-top-right-radius: 7.5px;
+	border-bottom-right-radius: 7.5px;
 }
 
 .container_contact input:focus {
-  outline: none;
-  border: 2.5px solid #000000;
+	outline: none;
+	border: 2.5px solid #000000;
 }
 
 .container_contact .form_label_input .form_name {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  padding-top: 10px;
+	display: flex;
+	width: 100%;
+	height: 100px;
+	padding-top: 10px;
 }
 
 .container_contact .form_label_input .form_name .fname {
-  display: flex;
-  width: 50%;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	width: 50%;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
 }
 
 .container_contact .form_label_input .form_name .fname .label_name {
-  font-size: 22.5px;
-  margin-top: 10px;
-  margin-left: -200px;
+	font-size: 22.5px;
+	margin-top: 10px;
+	margin-left: -200px;
 }
 
 .container_contact .form_label_input .form_name .fname .input_name {
@@ -541,19 +532,19 @@ items: center;
 }
 
 .container_contact .form_label_input .form_other {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	width: 100%;
+	height: 100px;
+	flex-direction: column;
+	align-items: center;
 }
 
 .container_contact .label {
-  width: 100%;
-  height: 30px;
-  font-size: 22.5px;
-  margin-top: 5px;
-  margin-left: 105px;
+	width: 100%;
+	height: 30px;
+	font-size: 22.5px;
+	margin-top: 5px;
+	margin-left: 105px;
 }
 
 .container_contact .input {
@@ -568,11 +559,11 @@ items: center;
 }
 
 .container_contact .form_description {
-  display: flex;
-  width: 100%;
-  height: 200px;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	width: 100%;
+	height: 200px;
+	flex-direction: column;
+	align-items: center;
 }
 
 .container_contact .form_label_input .form_description .form_des {
@@ -588,58 +579,57 @@ items: center;
 }
 
 .container_contact .form_label_input .form_description .form_des:focus {
-  outline: none;
-  border: 2.5px solid #000000;
+	outline: none;
+	border: 2.5px solid #000000;
 }
 
 .container_contact .submit_button {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .container_contact .submit {
-  margin-top: 20px;
-  width: 90%;
-  height: 55px;
-  box-shadow: 0px 0px 3px black;
-  background-color: var(--main-blue);
-  border-radius: 5px;
-  color: white;
-  font-size: 30px;
-  border-style: none;
+	margin-top: 20px;
+	width: 90%;
+	height: 55px;
+	box-shadow: 0px 0px 3px black;
+	background-color: var(--main-blue);
+	border-radius: 5px;
+	color: white;
+	font-size: 30px;
+	border-style: none;
 }
 
 .container_contact .submit_button .submit[type="submit"]:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    var(--main-blue);
-  cursor: pointer;
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), var(--main-blue);
+	cursor: pointer;
 }
 
 /* INLOG */
 .login_page {
-  /* background-image: url("https://cdn.discordapp.com/attachments/968125920038776866/968125952418803752/pexels-photo-4356144.jpeg"); */
-  background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
-    url("https://cdn.discordapp.com/attachments/968125920038776866/968125952418803752/pexels-photo-4356144.jpeg");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
+	/* background-image: url("https://cdn.discordapp.com/attachments/968125920038776866/968125952418803752/pexels-photo-4356144.jpeg"); */
+	background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
+		url("https://cdn.discordapp.com/attachments/968125920038776866/968125952418803752/pexels-photo-4356144.jpeg");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
 }
 
 .login_page form {
-  background-color: white;
-  width: 350px;
-  height: 350px;
-  /* background-color: var(--main-blue); */
-  /* border-color: white; */
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
-  box-shadow: 0px 0px 15px black;
+	background-color: white;
+	width: 350px;
+	height: 350px;
+	/* background-color: var(--main-blue); */
+	/* border-color: white; */
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	box-shadow: 0px 0px 15px black;
 }
 
 .create_account_page form {
@@ -657,22 +647,22 @@ items: center;
 }
 
 .login_page form .title {
-  display: flex;
-  font-size: 30px;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  margin: 10px;
-  margin-top: 29px;
-  margin-bottom: 35px;
-  text-decoration: it;
+	display: flex;
+	font-size: 30px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px;
+	margin-top: 29px;
+	margin-bottom: 35px;
+	text-decoration: it;
 }
 
 .login_page form .label-input {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin-bottom: 10px;
 }
 
 .login_page form .label-input label {
@@ -696,132 +686,131 @@ items: center;
 .login_page form .password_forgot,
 .login_page form .create_account,
 .login_page form .login_link {
-  color: var(--main-blue);
-  font-size: 15px;
-  width: 80%;
-  text-align: left;
-  text-decoration: none;
-  margin-bottom: 4px;
-  margin: 4px;
+	color: var(--main-blue);
+	font-size: 15px;
+	width: 80%;
+	text-align: left;
+	text-decoration: none;
+	margin-bottom: 4px;
+	margin: 4px;
 }
 
 .login_page form input[type="submit"] {
-  margin-top: 10px;
-  width: 80%;
-  height: 40px;
-  box-shadow: 0px 0px 3px black;
-  background-color: var(--main-blue);
-  border-radius: 5px;
-  color: white;
-  font-size: 20px;
-  border-style: none;
+	margin-top: 10px;
+	width: 80%;
+	height: 40px;
+	box-shadow: 0px 0px 3px black;
+	background-color: var(--main-blue);
+	border-radius: 5px;
+	color: white;
+	font-size: 20px;
+	border-style: none;
 }
 
 .login_page form input[type="submit"]:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    var(--main-blue);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), var(--main-blue);
 }
 
 .login_page form .links {
-  /* position: absolute;
+	/* position: absolute;
 	bottom: 5px; */
-  margin-top: 10px;
+	margin-top: 10px;
 }
 
 .login_page .login_link {
-  margin-right: 100px !important;
+	margin-right: 100px !important;
 }
 
 .login_page .logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 10px;
 }
 
 .login_page .logo img {
-  width: 80px;
+	width: 80px;
 }
 
 /*account*/
 .container_account {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--account_bckgr);
-  overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--account_bckgr);
+	overflow: hidden;
 }
 
 .container_account .bottom {
-  display: flex;
-  width: 100%;
-  height: 80vh;
-  margin-top: 150px;
+	display: flex;
+	width: 100%;
+	height: 80vh;
+	margin-top: 150px;
 }
 
 .container_account .left {
-  width: 17.5%;
-  height: 750px;
+	width: 17.5%;
+	height: 750px;
 }
 
 .container_account .right {
-  width: 77.5%;
-  height: 770px;
-  border-style: solid;
-  border-color: #cdcdcd;
-  border-radius: 5px;
-  border-width: 2px;
-  background-color: var(--white);
-  /*scroll*/
-  overflow-y: scroll;
+	width: 77.5%;
+	height: 770px;
+	border-style: solid;
+	border-color: #cdcdcd;
+	border-radius: 5px;
+	border-width: 2px;
+	background-color: var(--white);
+	/*scroll*/
+	overflow-y: scroll;
 }
 
 .container_account .bottom .left .nav_title {
-  width: 100%;
-  text-align: center;
-  font-size: 40px;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
 }
 
 .container_account .bottom .left .nav {
-  text-align: left;
-  margin-top: 50px;
+	text-align: left;
+	margin-top: 50px;
 }
 
 .container_account .bottom .left .nav .link {
-  display: flex;
-  align-items: center;
-  margin-left: 75px;
-  margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	margin-left: 75px;
+	margin-bottom: 20px;
 }
 
 .container_account .bottom .left .nav .link a {
-  text-decoration: none;
-  padding: 10px;
+	text-decoration: none;
+	padding: 10px;
 }
 
 .container_account .bottom .left .nav .link img {
-  width: 30px;
+	width: 30px;
 }
 
 .container_account .bottom .account .cnt {
-  margin-top: 50px;
-  margin-left: 50px;
+	margin-top: 50px;
+	margin-left: 50px;
 }
 
 .container_account .bottom .right .account .cnt .acc_title {
-  width: 95%;
-  height: 50px;
-  border-bottom: 2px solid #cdcdcd;
-  font-size: 40px;
-  margin-bottom: 50px;
-  padding: 10px;
+	width: 95%;
+	height: 50px;
+	border-bottom: 2px solid #cdcdcd;
+	font-size: 40px;
+	margin-bottom: 50px;
+	padding: 10px;
 }
 
 .container_account .bottom .right .account .cnt .inputs {
 	display: flex;
 	flex-direction: column;
-  margin-left: 10px;
+	margin-left: 10px;
 }
 
 .container_account .bottom .right .account .cnt .inputs .acc_lbl {
@@ -834,146 +823,146 @@ items: center;
 	font-size: 20px;
 	border-radius: 5px;
 	border-style: solid;
-  border-color: lightgrey;
+	border-color: lightgrey;
 	margin-bottom: 30px;
 }
 
 .container_account .bottom .right .account .but_save {
-  width: 370px;
-  padding: 7.5px;
-  margin-left: 10px;
-  font-size: 20px;
-  color: var(--white);
-  background-color: var(--main-blue);
-  border: 1px solid #cdcdcd;
-  border-radius: 5px;
+	width: 370px;
+	padding: 7.5px;
+	margin-left: 10px;
+	font-size: 20px;
+	color: var(--white);
+	background-color: var(--main-blue);
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
 }
 
 /*opgeslagen reizen*/
 .container_account .bottom .right .opgeslagen_reizen .cnt {
-  margin-top: 20px;
-  margin-left: 50px;
+	margin-top: 20px;
+	margin-left: 50px;
 }
 
 .container_account .bottom .right .opgeslagen_reizen .cnt .opgesl_title {
-  width: 95%;
-  height: 50px;
-  border-bottom: 2px solid #cdcdcd;
-  font-size: 40px;
-  margin-bottom: 20px;
-  padding: 10px;
+	width: 95%;
+	height: 50px;
+	border-bottom: 2px solid #cdcdcd;
+	font-size: 40px;
+	margin-bottom: 20px;
+	padding: 10px;
 }
 
 .container_account .bottom .right .cnt .reizen {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  column-gap: 40px;
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	row-gap: 40px;
+	column-gap: 40px;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .container_account .bottom .right .cnt .reizen .reis {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  height: 400px;
-  background-color: var(--account_bckgr);
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	height: 400px;
+	background-color: var(--account_bckgr);
 }
 
 .container_account .bottom .right .cnt .reizen .reis img {
-  object-fit: cover;
-  width: 100%;
-  height: 55%;
+	object-fit: cover;
+	width: 100%;
+	height: 55%;
 }
 
 .container_account .bottom .right .cnt .reizen .reis .reis_hotel {
-  font-size: 35px;
-  margin-left: 5px;
-  margin-top: 5px;
+	font-size: 35px;
+	margin-left: 5px;
+	margin-top: 5px;
 }
 
 .container_account .bottom .right .cnt .reizen .reis .reis_plaats {
-  font-size: 25px;
-  margin-left: 6px;
+	font-size: 25px;
+	margin-left: 6px;
 }
 
 .container_account .bottom .right .cnt .reizen .reis .rt_pr {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 50px;
-  margin-top: 50px;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 50px;
+	margin-top: 50px;
 }
 
 .container_account .bottom .right .cnt .reizen .reis .rt_pr .rating {
-  font-size: 30px;
-  color: var(--white);
+	font-size: 30px;
+	color: var(--white);
 }
 
 .container_account .bottom .right .cnt .reizen .reis .rt_pr .prijs {
-  font-size: 30px;
+	font-size: 30px;
 }
 
 /*gebroekte reizen*/
 .container_account .bottom .right .geboekte_reizen .cnt {
-  margin-top: 20px;
-  margin-left: 50px;
+	margin-top: 20px;
+	margin-left: 50px;
 }
 
 .container_account .bottom .right .geboekte_reizen .cnt .geboekte_title {
-  width: 95%;
-  height: 50px;
-  border-bottom: 2px solid #cdcdcd;
-  font-size: 40px;
-  margin-bottom: 20px;
-  padding: 10px;
+	width: 95%;
+	height: 50px;
+	border-bottom: 2px solid #cdcdcd;
+	font-size: 40px;
+	margin-bottom: 20px;
+	padding: 10px;
 }
 /*reviews*/
 .container_account .bottom .right .reviews .cnt {
-  margin-top: 20px;
-  margin-left: 50px;
+	margin-top: 20px;
+	margin-left: 50px;
 }
 
 .container_account .bottom .right .reviews .cnt .review_title {
-  width: 95%;
-  height: 50px;
-  border-bottom: 2px solid #cdcdcd;
-  font-size: 40px;
-  margin-bottom: 30px;
-  padding: 10px;
+	width: 95%;
+	height: 50px;
+	border-bottom: 2px solid #cdcdcd;
+	font-size: 40px;
+	margin-bottom: 30px;
+	padding: 10px;
 }
 
 .container_account .bottom .right .reviews .cnt .review_persoon {
-  width: 95%;
-  background-color: var(--account_bckgr);
-  margin-top: 10px;
+	width: 95%;
+	background-color: var(--account_bckgr);
+	margin-top: 10px;
 }
 
 .container_account .bottom .right .reviews .cnt .review_persoon .naam {
-  font-size: 25px;
-  font-weight: bold;
-  padding-top: 10px;
-  padding-left: 10px;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 10px;
 }
 
 .container_account .bottom .right .reviews .cnt .review_persoon .reisnaam {
-  font-size: 22.5px;
-  margin-left: 10px;
+	font-size: 22.5px;
+	margin-left: 10px;
 }
 
 .container_account .bottom .right .reviews .cnt .review_persoon .rating {
-  padding-left: 10px;
-  color: var(--white);
-  font-size: 25px;
+	padding-left: 10px;
+	color: var(--white);
+	font-size: 25px;
 }
 
 .container_account .bottom .right .reviews .cnt .review_persoon .recensie {
-  font-size: 20px;
-  padding: 10px;
-  margin-bottom: 30px;
+	font-size: 20px;
+	padding: 10px;
+	margin-bottom: 30px;
 }
 =======
 /* Reis Pagina */
