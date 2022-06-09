@@ -35,7 +35,7 @@
 				</div>
 			</div>
 
-			<div class="recommended">
+			<div class="recommended" id="recommended">
 				<div class="left">
 					<div class="item">
 						<p class="titel">Hotel Naam</p>

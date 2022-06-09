@@ -57,7 +57,8 @@
 			<div class="tabs">
 				<ul>
 					<li id="beschrijving_button" class="selected">Description</li>
-					<li id="recensies_button">Reviews</li>
+					<li id="recensies_button" <?php 
+				if (count($result_recensies) == 0) { echo "style='display: none;'"; } ?>>Reviews</li>
 					<li id="boek_button">Book Now</li>
 				</ul>
 
