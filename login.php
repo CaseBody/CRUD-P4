@@ -5,7 +5,7 @@
 
 	if (isset($_SESSION["loggedin"]))
 	{
-		header("location: admin.php");
+		header("location: account.php");
 		exit();
 	}
 ?>
@@ -29,16 +29,16 @@
 	<body>
 		<main class="login_page">
 			<a class="logo" href="index.php"><img src="Assets/afbeeldingen/logo.png" alt="" /></a>
-			<form action="authenticate.php">
+			<form action="PHP/authenticate.php" method="post">
 				<p class="title">TRAVELEGY</p>
 				<div class="label-input">
 					<label for="">Email</label>
-					<input type="text" name="email" id="" placeholder="example@example.com" />
+					<input type="text" name="email" id="email" placeholder="example@example.com" />
 				</div>
 
 				<div class="label-input">
 					<label for="">Password</label>
-					<input type="password" name="wachtwoord" id="" placeholder="password" />
+					<input type="password" name="wachtwoord" id="wachtwoord" placeholder="password" />
 				</div>
 
 				<input type="submit" value="Login" />
