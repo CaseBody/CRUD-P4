@@ -2,7 +2,7 @@
   <nav>
     <ul>
       <li>
-        <a href="#" class="txt_logo">
+        <a href="index.php" class="txt_logo">
           <img
             class="img_logo"
             src="Assets/afbeeldingen/logo.png"
@@ -14,16 +14,16 @@
       <li class="links">
         <ul>
           <li id="txt_header" class="li_header">
-            <a href="#">start</a>
+            <a href="index.php">Home</a>
           </li>
           <li class="li_header">
-            <a href="#">aanbevolen</a>
+            <a href="index.php#recommended">Recommended</a>
           </li>
           <li class="li_header">
-            <a href="#">destinations</a>
+            <a href="destinations.php">Destinations</a>
           </li>
           <li class="li_header">
-            <a href="#">contact</a>
+            <a href="contact.php">Contact</a>
           </li>
         </ul>
       </li>
