@@ -452,6 +452,7 @@ footer p {
 	align-items: center;
 	justify-content: center;
 	font-family: sans-serif;
+	margin-bottom: -100px;
 }
 
 .container_contact .all_contact {
