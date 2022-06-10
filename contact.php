@@ -15,7 +15,13 @@
 </head>
 
   <?php
-    require_once "includes/header.php";
+      require_once "includes/header.php";
+      require_once("includes/connect.php");
+
+      $sql = 'SELECT * FROM reis';
+      $stmt = $connect->prepare($sql);
+      $stmt->execute();
+      $result = $stmt->fetchAll();
   ?>
 
 <body>
@@ -31,37 +37,45 @@
               We look forward to hearing from you!
             </p>
         </div>
-        <form action="">
+        <form method="post" id="form">
           <div class="form_label_input">
             <div class="form_name">
               <div class="fname">
                 <label class="label_name" for="name">First Name:</label>
-                <input class="input_name" type="text" >
+                <input class="input_name" type="text" id="first_name" required>
               </div>
               <div class="fname">
                 <label class="label_name" for="name">Last Name:</label>
-                <input class="input_name" type="text">
+                <input class="input_name" type="text" id="last_name" required>
               </div>
             </div>
             <div class="form_other">
               <label class="label" for="name">E-mail:</label>
-              <input class="input" type="text">
+              <input class="input" type="text" id="email" required>
             </div>
             <div class="form_other">
               <label class="label" for="name">Tel:</label>
-              <input class="input" type="text">
+              <input class="input" type="number" id="tel" minlength="10" required>
             </div>
             <div class="form_description">
               <label class="label" for="name">Send A Message:</label>
-              <textarea class="form_des" name=""></textarea>
+              <textarea class="form_des" name="" id="message" required></textarea>
             </div>
             <div class="submit_button">
-              <input class="submit" type="submit">
+              <input class="submit" type="submit" id="submit">
             </div>
           </div>
         </form>
       </div>
     </div>
+    <?php
+      include_once "includes/footer.php";
+    ?>
   </main>
+    <script 
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous">
+    </script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
