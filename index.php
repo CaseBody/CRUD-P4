@@ -16,7 +16,13 @@
 	</head>
 
 	<?php
-    require_once 'includes/header.php';
+    	require_once 'includes/header.php';
+		require_once("includes/connect.php");
+
+		$sql = 'SELECT * FROM reis ORDER BY rand()';
+		$stmt = $connect->prepare($sql);
+		$stmt->execute();
+		$result = $stmt->fetchAll();
   ?>
 
 	<body>
@@ -37,24 +43,27 @@
 
 			<div class="recommended" id="recommended">
 				<div class="left">
-					<div class="item">
-						<p class="titel">Hotel Naam</p>
-						<p class="sub_titel">Cairo, Egypt</p>
-						<p class="price">Now from $ 90.00</p>
+					<?php $item = $result[0] ?>
+					<div style="background-image: url('<?php echo $item['afbeelding'] ?>');" class="item">
+							<p class="titel"><?php echo $item['naam']?></p>
+							<p class="sub_titel"><?php echo $item['locatie']?></p>
+							<p class="price">Now from € <?php echo $item['prijs']?></p>
+
 					</div>
 				</div>
-
+				
+				<?php $item = $result[1] ?>
 				<div class="right">
-					<div class="item">
-						<p class="titel">Hotel Naam</p>
-						<p class="sub_titel">Cairo, Egypt</p>
-						<p class="price">Now from $ 90.00</p>
+					<div style="background-image: url('<?php echo $item['afbeelding'] ?>');" class="item">
+						<p class="titel"><?php echo $item['naam']?></p>
+						<p class="sub_titel"><?php echo $item['locatie']?></p>
+						<p class="price">Now from € <?php echo $item['prijs']?></p>
 					</div>
-
-					<div class="item">
-						<p class="titel">Hotel Naam</p>
-						<p class="sub_titel">Cairo, Egypt</p>
-						<p class="price">Now from $ 90.00</p>
+				<?php $item = $result[2] ?>
+					<div style="background-image: url('<?php echo $item['afbeelding'] ?>');" class="item">
+						<p class="titel"><?php echo $item['naam']?></p>
+						<p class="sub_titel"><?php echo $item['locatie']?></p>
+						<p class="price">Now from € <?php echo $item['prijs']?></p>
 					</div>
 				</div>
 			</div>

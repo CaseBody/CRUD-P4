@@ -197,10 +197,11 @@ footer p {
 	width: 80%;
 	height: 600px;
 	display: flex;
+	color: var(--white);
 }
 
 .home .recommended .item {
-	background-image: url("https://cdn.discordapp.com/attachments/968125920038776866/968126658219499571/unknown.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.discordapp.com/attachments/968125920038776866/968126658219499571/unknown.png");
 	background-size: cover;
 	border-radius: 5px;
 	position: relative;
