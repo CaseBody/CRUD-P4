@@ -42,24 +42,24 @@
             <div class="form_name">
               <div class="fname">
                 <label class="label_name" for="name">First Name:</label>
-                <input class="input_name" type="text" id="first_name">
+                <input class="input_name" type="text" id="first_name" required>
               </div>
               <div class="fname">
                 <label class="label_name" for="name">Last Name:</label>
-                <input class="input_name" type="text" id="last_name">
+                <input class="input_name" type="text" id="last_name" required>
               </div>
             </div>
             <div class="form_other">
               <label class="label" for="name">E-mail:</label>
-              <input class="input" type="text" id="email">
+              <input class="input" type="text" id="email" required>
             </div>
             <div class="form_other">
               <label class="label" for="name">Tel:</label>
-              <input class="input" type="text" id="tel">
+              <input class="input" type="number" id="tel" minlength="10" required>
             </div>
             <div class="form_description">
               <label class="label" for="name">Send A Message:</label>
-              <textarea class="form_des" name="" id="message"></textarea>
+              <textarea class="form_des" name="" id="message" required></textarea>
             </div>
             <div class="submit_button">
               <input class="submit" type="submit" id="submit">
