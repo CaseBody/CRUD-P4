@@ -18,7 +18,7 @@
 
 			if (!isset($_GET['id']))
 			{
-				header("Location: index.php");
+				header("Location: destinations.php");
 				die();
 			}
 
@@ -26,7 +26,15 @@
 			$stmt = $connect->prepare($sql); $stmt->bindParam('id', $_GET['id']); $stmt->execute(); $result = $stmt->fetchAll(); $result
 		= $result[0]; $sql = 'SELECT * FROM recensies INNER JOIN gebruikers ON recensies.gebruikerid=gebruikers.id WHERE reisid =
 		:id'; $stmt = $connect->prepare($sql); $stmt->bindParam('id', $_GET['id']); $stmt->execute(); $result_recensies =
-		$stmt->fetchAll(); ?>
+		$stmt->fetchAll(); 
+		
+		if (!isset($result))
+			{
+				header("Location: destinations.php");
+				die();
+			}
+		
+		?>
 		<main>
 			<div class="main_content">
 				<div class="left">
@@ -59,7 +67,6 @@
 					<li id="beschrijving_button" class="selected">Description</li>
 					<li id="recensies_button" <?php 
 				if (count($result_recensies) == 0) { echo "style='display: none;'"; } ?>>Reviews</li>
-					<li id="boek_button">Book Now</li>
 				</ul>
 
 				<div id="beschrijving" class="main_beschrijving">
