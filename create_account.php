@@ -23,25 +23,29 @@
 
 				<div class="label-input">
 					<label for="">First name</label>
-					<input type="text" name="" id="" placeholder="John" />
+					<input type="text" name="" id="voornaam" placeholder="John" />
 				</div>
 
 				<div class="label-input">
 					<label for="">Last name</label>
-					<input type="text" name="" id="" placeholder="Doe" />
+					<input type="text" name="" id="achternaam" placeholder="Doe" />
 				</div>
 
 				<div class="label-input">
 					<label for="">Email</label>
-					<input type="text" name="" id="" placeholder="example@example.com" />
+					<input type="text" name="" id="email" placeholder="example@example.com" />
 				</div>
 
 				<div class="label-input">
 					<label for="">Password</label>
-					<input type="password" name="" id="" placeholder="password" />
+					<input type="password" name="" id="wachtwoord" placeholder="password" />
 				</div>
 
-				<input type="submit" value="Create Account" />
+				<p class="error_code" id="error_code">
+					Error Code
+				</p>
+
+				<input type="submit" id="submit" value="Create Account" />
 
 				<div class="links">
 					<a href="login.php" class="login_link">Already have an account?</a>
@@ -49,4 +53,7 @@
 			</form>
 		</main>
 	</body>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<script src="js/create_account.js"></script>
 </html>

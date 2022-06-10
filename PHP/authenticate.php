@@ -31,7 +31,7 @@ if ($stmt = $con->prepare('SELECT id, wachtwoord, isAdmin FROM gebruikers WHERE 
         $stmt->fetch();
         // Account exists, now we verify the password.
         // Note: remember to use password_hash in your registration file to store the hashed passwords.
-        if (password_verify($_POST['wachtwoord'], $password)) {
+        if (password_verify($_POST['wachtwoord'], $wachtwoord)) {
             // Verification success! User has logged-in!
             // Create sessions, so we know the user is logged in, they basically act like cookies but remember the data on the server.
             session_regenerate_id();
@@ -39,7 +39,7 @@ if ($stmt = $con->prepare('SELECT id, wachtwoord, isAdmin FROM gebruikers WHERE 
             $_SESSION['email'] = $_POST['email'];
             $_SESSION['id'] = $id;
             $_SESSION['isAdmin'] = $isAdmin;
-            header("location: account.php");
+            header("location: ../account.php");
         } else {
             // Incorrect password
             echo 'Incorrect username and/or password!';
