@@ -21,6 +21,15 @@ search_button.addEventListener("click", () => {
 	});
 });
 
+search_bar.addEventListener("keypress", (e) => {
+	console.log("e");
+
+	if (e.key === "Enter") {
+		e.preventDefault();
+		search_button.click();
+	}
+});
+
 items.forEach((i) => {
 	const titel = i.querySelector(".title");
 	titel.style.fontSize = (35 - 0.5 * titel.innerHTML.length).toString() + "px";
