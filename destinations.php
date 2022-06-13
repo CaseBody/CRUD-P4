@@ -30,14 +30,14 @@
 			<div class="top">
 				<p class="destinations_title">Discover the Travelegy destinations</p>
 				<div class="search_bar">
-					<input type="text" placeholder="Search by name..." />
-					<button>Search</button>
+					<input type="text" id="search_bar" placeholder="Search by name..." />
+					<button id="search_button">Search</button>
 				</div>
 			</div>
 
 			<div class="categories">
 				<div class="categorie">
-					<div class="categorie_content" id="categorie_test">
+					<div class="categorie_content" id="categorie_content">
 						<?php 
 							foreach ($result as $reis) {
 

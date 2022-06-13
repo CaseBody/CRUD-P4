@@ -1,23 +1,61 @@
 const items = document.querySelectorAll(".item");
 const items_container = document.querySelector(".categorie_content");
+const search_bar = document.querySelector("#search_bar");
+const search_button = document.querySelector("#search_button");
+
+search_button.addEventListener("click", () => {
+	items.forEach((element) => {
+		const bot = element.children[2];
+
+		if (search_bar.value == "") {
+			element.style.display = "flex";
+		} else {
+			if (bot.children[0].innerHTML.toLowerCase().includes(search_bar.value.toLowerCase())) {
+				element.style.display = "flex";
+			} else {
+				element.style.display = "none";
+				console.log("test");
+				console.log(element);
+			}
+		}
+	});
+});
+
+search_bar.addEventListener("keypress", (e) => {
+	console.log("e");
+
+	if (e.key === "Enter") {
+		e.preventDefault();
+		search_button.click();
+	}
+});
 
 items.forEach((i) => {
 	const titel = i.querySelector(".title");
-	console.log(items.length % 4);
 	titel.style.fontSize = (35 - 0.5 * titel.innerHTML.length).toString() + "px";
 });
 
-if (screen.width <= 1220) {
-	let sum = items.length % 2;
+address = window.location.search;
+const urlParams = new URLSearchParams(address);
+const search = urlParams.get("search");
 
-	for (let i = 0; i <= sum; i++) {
-		items_container.innerHTML += "<div class='item item_invis'></div>";
-	}
-} else {
-	let sum = items.length % 4;
+if (search != null) {
+	const search = urlParams.get("search");
+	search_bar.value = search;
 
-	for (let i = 0; i < sum; i++) {
-		console.log("test");
-		items_container.innerHTML += "<div class='item item_invis'></div>";
-	}
+	items.forEach((element) => {
+		const bot = element.children[2];
+
+		if (search_bar.value == "") {
+			element.style.display = "flex";
+		} else {
+			if (bot.children[0].innerHTML.toLowerCase().includes(search_bar.value.toLowerCase())) {
+				element.style.display = "flex";
+			} else {
+				element.style.display = "none";
+				console.log("test");
+				console.log(element);
+			}
+		}
+	});
 }
