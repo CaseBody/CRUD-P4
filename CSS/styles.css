@@ -1196,3 +1196,81 @@ footer p {
   margin: 10px;
   color: black;
 }
+
+/*admin page*/
+.container_admin {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container_admin .title {
+  width: 100%;
+  font-size: 45px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.container_admin .all_data {
+  display: flex;
+  justify-content: center;
+}
+
+.container_admin .table {
+  width: 1700px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+}
+
+.container_admin .table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.container_admin .table tr,th,td {
+  width: auto;
+  padding: 7.5px;
+  text-align: center;
+  border-width: 0.8px;
+  border-color: #000000;
+  border-style: solid;
+}
+
+.container_admin .table .td_beschrijving {
+  font-size: 12px;
+}
+
+.container_admin .table .th_actions {
+  padding-right: 75px;
+}
+
+.container_admin .table .td_actions {
+  display: flex;
+  border: none;
+}
+
+/* .container_admin .table .td_actions {
+  width: 40px;
+} */
+
+.container_admin .table .td_actions .edit {
+  width: 25px;
+  border-radius: 5px;
+  padding: 7.5px;
+  background-color: orange;
+}
+
+.container_admin .table .td_actions .show {
+  width: 40px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 7.5px;
+  background-color: orangered;
+}
+
+.container_admin .table .td_actions .delete {
+  width: 40px;
+  border-radius: 5px;
+  padding: 7.5px;
+  background-color: red;
+}
