@@ -22,8 +22,6 @@ search_button.addEventListener("click", () => {
 });
 
 search_bar.addEventListener("keypress", (e) => {
-	console.log("e");
-
 	if (e.key === "Enter") {
 		e.preventDefault();
 		search_button.click();

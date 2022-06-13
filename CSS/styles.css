@@ -15,7 +15,7 @@ html {
 	--white: #fff;
 	--contact_trans: #34495eb0;
 	--form_trans: #00122fb5;
-	--account_bckgr: #dbdce1;
+	--account_bckgr: #eaeaea;
 	--sterren: #fdcc0d;
 }
 
@@ -579,7 +579,7 @@ footer p {
 	font-size: 20px;
 	margin-top: 5px;
 	padding-left: 10px;
-  padding-top: 10px;
+	padding-top: 10px;
 	resize: none;
 	border-color: #cdcdcd;
 	border-style: solid;
@@ -863,7 +863,6 @@ footer p {
 
 .container_account .bottom .right .cnt .reizen {
 	display: flex;
-	justify-content: space-around;
 	flex-wrap: wrap;
 	row-gap: 40px;
 	column-gap: 40px;
