@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2022 at 10:15 AM
+-- Generation Time: Jun 13, 2022 at 03:02 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -36,6 +36,41 @@ CREATE TABLE `boekingen` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `submit_ID` int(11) NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `tel` varchar(20) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `message` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`submit_ID`, `first_name`, `last_name`, `tel`, `email`, `message`) VALUES
+(1, '', '', '', '', ''),
+(2, 'e', 'e', 'e', 'e', 'e'),
+(3, '', '', '', '', ''),
+(4, 'e', 'e', '06', 'e', 'e'),
+(5, 'e', 'e', '06', 'e', 'e'),
+(6, 'e', 'e', 'e', 'e', 'e'),
+(7, 'e', 'e', '1', 'e', 'e'),
+(8, 'e', 'e', '1', 'e', 'e'),
+(9, 'e', 'e', '1', 'e', 'e'),
+(10, 'e', 'e', '1', 'e', 'e'),
+(11, 'a', 'a', '2', 'a', 'a'),
+(12, 'e', 'e', '1', 'e', 'e'),
+(13, 'e', 'e', '1', 'e', 'e'),
+(14, 'e', 'e', '1', 'e', 'e');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `gebruikers`
 --
 
@@ -47,6 +82,13 @@ CREATE TABLE `gebruikers` (
   `wachtwoord` varchar(255) NOT NULL,
   `isAdmin` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `gebruikers`
+--
+
+INSERT INTO `gebruikers` (`id`, `voornaam`, `achternaam`, `email`, `wachtwoord`, `isAdmin`) VALUES
+(1, 'rick', 'rietbergen', 'richard@gmail.com', '$2y$10$OJDdk3qJn846Gc3/Z6iA.e.sRnrgA4kqmjeRVecSr/z4ieI.fsUuO', 0);
 
 -- --------------------------------------------------------
 
@@ -125,6 +167,12 @@ ALTER TABLE `boekingen`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`submit_ID`);
+
+--
 -- Indexes for table `gebruikers`
 --
 ALTER TABLE `gebruikers`
@@ -159,10 +207,16 @@ ALTER TABLE `boekingen`
   MODIFY `id` int(6) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `submit_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
 -- AUTO_INCREMENT for table `gebruikers`
 --
 ALTER TABLE `gebruikers`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `opgeslagen_reizen`
