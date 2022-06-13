@@ -23,6 +23,9 @@
             <a href="destinations.php">Destinations</a>
           </li>
           <li class="li_header">
+            <a href="login.php">Account</a>
+          </li>
+          <li class="li_header">
             <a href="contact.php">Contact</a>
           </li>
         </ul>
