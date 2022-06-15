@@ -46,7 +46,7 @@
                             <a href="admin_bewerk.php?id=<?php echo $res['id'] ?>">
                                 <img class="edit" src="Assets/afbeeldingen/edit.png" alt="edit">
                             </a>
-                            <a href="admin_show.php">
+                            <a href="admin_show.php?id=<?php echo $res['id'] ?>">
                                 <img class="show" src="Assets/afbeeldingen/show.png" alt="show">
                             </a>
                             <a href="admin_create.php">
