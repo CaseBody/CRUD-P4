@@ -43,14 +43,17 @@
                         <td><?php echo $res['prijs'] ?></td>
                         <td class="td_beschrijving"><?php echo $res['beschrijving'] ?></td>
                         <td class="td_actions">
-                            <a href="admin_edit.php">
-                                <img class="edit" src="Assets/afbeeldingen/edit.png" alt="placeholder">
+                            <a href="admin_bewerk.php">
+                                <img class="edit" src="Assets/afbeeldingen/edit.png" alt="edit">
                             </a>
                             <a href="admin_show.php">
-                                <img class="show" src="Assets/afbeeldingen/show.png" alt="placeholder">
+                                <img class="show" src="Assets/afbeeldingen/show.png" alt="show">
+                            </a>
+                            <a href="admin_create.php">
+                                <img class="create" src="Assets/afbeeldingen/create.png" alt="create">
                             </a>
                             <a href="admin.php">
-                                <img class="delete" src="Assets/afbeeldingen/delete.png" alt="placeholder">
+                                <img class="delete" src="Assets/afbeeldingen/delete.png" alt="delete">
                             </a>
                         </td>
                     </tr>
