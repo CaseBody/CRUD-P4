@@ -75,26 +75,26 @@
 						<div class="nav">
 							<div class="link">
 								<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
-								<a href="" id="">Account</a>
+								<p href="" id="nav_account">Account</p>
 							</div>
 							<div class="link">
 								<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
-								<a href="" id="">Saved Destinations</a>
+								<p href="" id="nav_saved">Saved Destinations</p>
 							</div>
 							<div class="link">
 								<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
-								<a href="" id="">Booked Destinations</a>
+								<p href="" id="nav_booked">Booked Destinations</p>
 							</div>
 							<div class="link">
 								<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
-								<a href="" id="">Reviews</a>
+								<p href="" id="nav_review">Reviews</p>
 							</div>
 						</div>
 					</div>
 
 					<div class="right">
 						<div class="account">
-							<div class="cnt">
+							<div class="cnt" id="account">
 								<div class="acc_title">
 									<p>Account Information</p>
 								</div>
@@ -108,6 +108,8 @@
 
 									<label class="acc_lbl" for="email">E-Mail</label>
 									<input class="acc_inp" id="email" type="text" value="<?php echo $result_gebruiker['email'] ?>"/>
+
+									<label class="acc_lbl" style="display: none;" id="account_status_text">Status Text</label>
 								</div>
 
 								<button class="but_save" id="account_save" type="submit">Save</button>
@@ -115,7 +117,7 @@
 						</div>
 
 						<div class="opgeslagen_reizen">
-							<div class="cnt">
+							<div class="cnt" id="saved">
 								<div class="opgesl_title">
 									<p>Saved Destinations</p>
 								</div>
@@ -146,7 +148,7 @@
 						</div>
 
 						<div class="geboekte_reizen">
-							<div class="cnt">
+							<div class="cnt" id="booked">
 								<div class="geboekte_title">
 									<p>Booked Destinations</p>
 								</div>
@@ -179,7 +181,7 @@
 						</div>
 
 						<div class="reviews">
-							<div class="cnt">
+							<div class="cnt" id="review">
 								<div class="review_title">
 									<p>Reviews</p>
 								</div>

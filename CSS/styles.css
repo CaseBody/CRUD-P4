@@ -793,7 +793,11 @@ footer p {
 	margin-bottom: 20px;
 }
 
-.container_account .bottom .left .nav .link a {
+.container_account .bottom .left .nav .link:hover {
+	cursor: pointer;
+}
+
+.container_account .bottom .left .nav .link p {
 	text-decoration: none;
 	padding: 10px;
 }
@@ -803,7 +807,7 @@ footer p {
 }
 
 .container_account .bottom .account .cnt {
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-left: 50px;
 }
 
