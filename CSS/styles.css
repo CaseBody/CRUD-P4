@@ -1301,7 +1301,7 @@ td {
 .container_bewerk .form .bewerk_titel {
   width: 100%;
   font-size: 35px;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -1310,8 +1310,8 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
-  height: 575px;
+  width: 525px;
+  height: 700px;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0px 0px 5px black;
@@ -1323,7 +1323,7 @@ td {
 }
 
 .container_bewerk .form input {
-  width: 300px;
+  width: 350px;
   padding: 7.5px;
   font-size: 17.5px;
 }
@@ -1334,8 +1334,12 @@ td {
   margin-top: 10px;
 }
 
+.container_bewerk .form #beschrijving {
+  height: 150px;
+}
+
 .container_bewerk .form .btn_submit {
-  width: 320px;
+  width: 370px;
   font-size: 15px;
   padding: 10px;
   margin-top: 10px;

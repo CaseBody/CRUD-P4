@@ -43,7 +43,7 @@
                         <td><?php echo $res['prijs'] ?></td>
                         <td class="td_beschrijving"><?php echo $res['beschrijving'] ?></td>
                         <td class="td_actions">
-                            <a href="admin_bewerk.php">
+                            <a href="admin_bewerk.php?id=<?php echo $res['id'] ?>">
                                 <img class="edit" src="Assets/afbeeldingen/edit.png" alt="edit">
                             </a>
                             <a href="admin_show.php">

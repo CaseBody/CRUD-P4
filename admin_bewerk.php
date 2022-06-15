@@ -31,46 +31,53 @@
                         type="text"
                         name="id"
                         value="<?php echo $result[0]['id']?>"
+                        required
                     >
                 </div>
                 <div class="label_input">
                     <label for="naam">Naam</label>
                     <input 
                         type="text"
-                        name="id"
+                        name="naam"
                         value="<?php echo $result[0]['naam']?>"
+                        required
                     >
                 </div>
                 <div class="label_input">
                     <label for="locatie">Locatie</label>
                     <input 
                         type="text"
-                        name="id"
+                        name="locatie"
                         value="<?php echo $result[0]['locatie']?>"
+                        required
                     >
                 </div>
                 <div class="label_input">
                     <label for="afbeelding">Afbeelding</label>
                     <input 
                         type="text"
-                        name="id"
-                        value="<?php echo $result[0]['afbeeldingen']?>"
+                        name="afbeelding"
+                        value="<?php echo $result[0]['afbeelding']?>"
+                        required
                     >
                 </div>
                 <div class="label_input">
                     <label for="prijs">Prijs</label>
                     <input 
                         type="text"
-                        name="id"
-                        value="<?php echo $result[0]['prijs']?>"
+                        name="prijs"
+                        value="€ <?php echo $result[0]['prijs']?>"
+                        required
                     >
                 </div>
                 <div class="label_input">
                     <label for="beschrijving">Beschrijving</label>
-                    <input 
+                    <input
+                        id="beschrijving"
                         type="text"
-                        name="id"
-                        value="<?php echo $result[0]['Beschrijving']?>"
+                        name="beschrijving"
+                        value="<?php echo $result[0]['beschrijving']?>"
+                        required
                     >
                 </div>
                 <button type="submit" value="submit" class="btn_submit">Submit</button>
