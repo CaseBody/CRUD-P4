@@ -15,8 +15,9 @@
         */
 
         //connect to database
-        $sql = 'SELECT * FROM reis';
+        $sql = 'SELECT * FROM reis WHERE id = :id';
         $stmt = $connect->prepare($sql);
+        $stmt->bindParam(":id", $_GET['id']);
         $stmt->execute();
         $result = $stmt->fetchAll();
     ?>
@@ -25,30 +26,54 @@
             <form action="PHP/bewerk_item.php" method="POST" class="form">
                 <p class="bewerk_titel">Update Page</p>
                 <div class="label_input">
-                    <label for="">ID</label>
-                    <input type="text">
+                    <label for="id">ID</label>
+                    <input 
+                        type="text"
+                        name="id"
+                        value="<?php echo $result[0]['id']?>"
+                    >
                 </div>
                 <div class="label_input">
-                    <label for="">Naam</label>
-                    <input type="text">
+                    <label for="naam">Naam</label>
+                    <input 
+                        type="text"
+                        name="id"
+                        value="<?php echo $result[0]['naam']?>"
+                    >
                 </div>
                 <div class="label_input">
-                    <label for="">Locatie</label>
-                    <input type="text">
+                    <label for="locatie">Locatie</label>
+                    <input 
+                        type="text"
+                        name="id"
+                        value="<?php echo $result[0]['locatie']?>"
+                    >
                 </div>
                 <div class="label_input">
-                    <label for="">Afbeelding</label>
-                    <input type="text">
+                    <label for="afbeelding">Afbeelding</label>
+                    <input 
+                        type="text"
+                        name="id"
+                        value="<?php echo $result[0]['afbeeldingen']?>"
+                    >
                 </div>
                 <div class="label_input">
-                    <label for="">Prijs</label>
-                    <input type="text">
+                    <label for="prijs">Prijs</label>
+                    <input 
+                        type="text"
+                        name="id"
+                        value="<?php echo $result[0]['prijs']?>"
+                    >
                 </div>
                 <div class="label_input">
-                    <label for="">Beschrijving</label>
-                    <input type="text">
+                    <label for="beschrijving">Beschrijving</label>
+                    <input 
+                        type="text"
+                        name="id"
+                        value="<?php echo $result[0]['Beschrijving']?>"
+                    >
                 </div>
-                <button type="submit" value="submit" class="btn_submit  ">Submit</button>
+                <button type="submit" value="submit" class="btn_submit">Submit</button>
             </form>
         </div>
     </main>
