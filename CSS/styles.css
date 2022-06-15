@@ -784,12 +784,13 @@ footer p {
 .container_account .bottom .left .nav {
 	text-align: left;
 	margin-top: 50px;
+	width: 100%;
 }
 
 .container_account .bottom .left .nav .link {
 	display: flex;
 	align-items: center;
-	margin-left: 75px;
+	margin-left: 35px;
 	margin-bottom: 20px;
 }
 

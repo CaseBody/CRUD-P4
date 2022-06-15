@@ -74,19 +74,19 @@
 
 						<div class="nav">
 							<div class="link">
-								<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
+								<img src="Assets/afbeeldingen/account.png" alt="placeholder" />
 								<p href="" id="nav_account">Account</p>
 							</div>
 							<div class="link">
-								<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
+								<img src="Assets/afbeeldingen/heart.png" alt="placeholder" />
 								<p href="" id="nav_saved">Saved Destinations</p>
 							</div>
 							<div class="link">
-								<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
+								<img src="Assets/afbeeldingen/dollar.png" alt="placeholder" />
 								<p href="" id="nav_booked">Booked Destinations</p>
 							</div>
 							<div class="link">
-								<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
+								<img src="Assets/afbeeldingen/star.png" alt="placeholder" />
 								<p href="" id="nav_review">Reviews</p>
 							</div>
 						</div>
