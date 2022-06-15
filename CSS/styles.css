@@ -741,6 +741,7 @@ footer p {
 }
 
 /*account*/
+
 .container_account {
 	display: flex;
 	flex-direction: column;
@@ -818,7 +819,6 @@ footer p {
 .container_account .bottom .right .account .cnt .inputs {
 	display: flex;
 	flex-direction: column;
-	margin-left: 10px;
 }
 
 .container_account .bottom .right .account .cnt .inputs .acc_lbl {
@@ -829,16 +829,20 @@ footer p {
 	width: 350px;
 	padding: 7.5px;
 	font-size: 20px;
-	border-radius: 5px;
 	border-style: solid;
 	border-color: lightgrey;
+	border-width: 0.8px;
 	margin-bottom: 30px;
+}
+
+.container_account .bottom .right .account .cnt .inputs .acc_inp:focus {
+	outline: none;
+	border-color: black;
 }
 
 .container_account .bottom .right .account .but_save {
 	width: 370px;
 	padding: 7.5px;
-	margin-left: 10px;
 	font-size: 20px;
 	color: var(--white);
 	background-color: var(--main-blue);
@@ -848,6 +852,7 @@ footer p {
 
 /*opgeslagen reizen*/
 .container_account .bottom .right .opgeslagen_reizen .cnt {
+	display: none;
 	margin-top: 20px;
 	margin-left: 50px;
 }
@@ -873,13 +878,36 @@ footer p {
 
 .container_account .bottom .right .cnt .reizen .reis {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	width: 350px;
 	height: 400px;
 	background-color: var(--account_bckgr);
 }
 
-.container_account .bottom .right .cnt .reizen .reis img {
+.container_account .bottom .right .cnt .reizen .reis:hover .save_heart {
+	visibility: visible;
+	opacity: 1;
+}
+
+.container_account .bottom .right .cnt .reizen .reis .save_heart {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: 10px;
+	left: 10px;
+	width: 30px;
+	height: 30px;
+	transition: visibility 0s, opacity 0.5s;
+}
+
+.container_account .bottom .right .cnt .reizen .reis .save_heart:hover {
+	visibility: visible;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.container_account .bottom .right .cnt .reizen .reis .afbeelding {
 	object-fit: cover;
 	width: 100%;
 	height: 55%;
@@ -917,6 +945,7 @@ footer p {
 .container_account .bottom .right .geboekte_reizen .cnt {
 	margin-top: 20px;
 	margin-left: 50px;
+	display: none;
 }
 
 .container_account .bottom .right .geboekte_reizen .cnt .geboekte_title {
@@ -929,6 +958,7 @@ footer p {
 }
 /*reviews*/
 .container_account .bottom .right .reviews .cnt {
+	display: none;
 	margin-top: 20px;
 	margin-left: 50px;
 }
@@ -943,6 +973,7 @@ footer p {
 }
 
 .container_account .bottom .right .reviews .cnt .review_persoon {
+	position: relative;
 	width: 95%;
 	background-color: var(--account_bckgr);
 	margin-top: 10px;
@@ -962,7 +993,7 @@ footer p {
 
 .container_account .bottom .right .reviews .cnt .review_persoon .rating {
 	padding-left: 10px;
-	color: var(--white);
+	color: var(--sterren);
 	font-size: 25px;
 }
 
@@ -970,6 +1001,28 @@ footer p {
 	font-size: 20px;
 	padding: 10px;
 	margin-bottom: 30px;
+}
+
+.container_account .bottom .right .reviews .review_persoon:hover .delete_icon {
+	visibility: visible;
+	opacity: 1;
+}
+
+.container_account .bottom .right .reviews .review_persoon .delete_icon {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: 10px;
+	right: 10px;
+	width: 45px;
+	height: 45px;
+	transition: visibility 0s, opacity 0.5s;
+}
+
+.container_account .bottom .right .reviews .review_persoon .delete_icon:hover {
+	visibility: visible;
+	cursor: pointer;
+	opacity: 1;
 }
 
 /* Reis Pagina */

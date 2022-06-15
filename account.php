@@ -40,6 +40,23 @@
         $stmt->bindParam(":id", $_SESSION["id"]);
         $stmt->execute();
         $result_opgeslagen = $stmt->fetchAll(); 
+
+		$sql = 'SELECT * FROM boekingen 
+        INNER JOIN reis on boekingen.reisid = reis.id
+        WHERE boekingen.gebruikerid = :id';
+        $stmt = $connect->prepare($sql);
+        $stmt->bindParam(":id", $_SESSION["id"]);
+        $stmt->execute();
+        $result_boekingen = $stmt->fetchAll(); 
+
+		$sql = 'SELECT recensies.id, recensies.gebruikerid, recensies.reisid, recensies.beschrijving, recensies.sterren, gebruikers.voornaam, reis.naam FROM recensies 
+		INNER JOIN gebruikers ON recensies.gebruikerid=gebruikers.id
+		INNER JOIN reis ON recensies.reisid=reis.id 
+		WHERE recensies.gebruikerid = :id'; 
+		$stmt = $connect->prepare($sql); 
+		$stmt->bindParam('id', $_SESSION['id']); 
+		$stmt->execute(); 
+		$result_recensies =	$stmt->fetchAll(); 
     ?>
 	<body>
 		<main class="header_no_trans">
@@ -84,16 +101,16 @@
 
 								<div class="inputs">
 									<label class="acc_lbl" for="firstname">First Name</label>
-									<input class="acc_inp" type="text" value="<?php echo $result_gebruiker['voornaam'] ?>" />
+									<input class="acc_inp" id="first_name" type="text" value="<?php echo $result_gebruiker['voornaam'] ?>" />
 
 									<label class="acc_lbl" for="lastname">Last Name</label>
-									<input class="acc_inp" type="text" value="<?php echo $result_gebruiker['achternaam'] ?>"/>
+									<input class="acc_inp" id="last_name" type="text" value="<?php echo $result_gebruiker['achternaam'] ?>"/>
 
 									<label class="acc_lbl" for="email">E-Mail</label>
-									<input class="acc_inp" type="text" value="<?php echo $result_gebruiker['email'] ?>"/>
+									<input class="acc_inp" id="email" type="text" value="<?php echo $result_gebruiker['email'] ?>"/>
 								</div>
 
-								<button class="but_save" type="submit">Save</button>
+								<button class="but_save" id="account_save" type="submit">Save</button>
 							</div>
 						</div>
 
@@ -110,7 +127,8 @@
                                         ?>
 
                                         <div class="reis">
-										    <img src="<?php echo $opgeslagen['afbeelding'] ?>" alt="placeholder" />
+											<img src="Assets/afbeeldingen/heart_unsave.png" class="save_heart" id="save_heart" alt="">
+										    <img class="afbeelding" src="<?php echo $opgeslagen['afbeelding'] ?>" alt="placeholder" />
 										    <p class="reis_hotel"><?php echo $opgeslagen['naam'] ?></p>
 										    <p class="reis_plaats"><?php echo $opgeslagen['locatie'] ?></p>
 										    <div class="rt_pr">
@@ -135,65 +153,26 @@
 
 								<div class="al_geboekte_reizen">
 									<div class="reizen">
-										<div class="reis">
-											<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
-											<p class="reis_hotel">Hotel Naam</p>
-											<p class="reis_plaats">Plaats</p>
-											<div class="rt_pr">
-												<p class="rating">★★★★★</p>
-												<p class="prijs">Vanaf € 90.00</p>
-											</div>
-										</div>
+									<?php 
+                                    
+                                    foreach ($result_boekingen as $opgeslagen)
+                                    {
+                                        ?>
 
-										<div class="reis">
-											<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
-											<p class="reis_hotel">Hotel Naam</p>
-											<p class="reis_plaats">Plaats</p>
-											<div class="rt_pr">
-												<p class="rating">★★★★★</p>
-												<p class="prijs">Vanaf € 90.00</p>
-											</div>
-										</div>
+                                        <div class="reis">
+										    <img class="afbeelding" src="<?php echo $opgeslagen['afbeelding'] ?>" alt="placeholder" />
+										    <p class="reis_hotel"><?php echo $opgeslagen['naam'] ?></p>
+										    <p class="reis_plaats"><?php echo $opgeslagen['locatie'] ?></p>
+										    <div class="rt_pr">
+											    <p class="prijs">From € <?php echo $opgeslagen['prijs'] ?></p>
+										    </div>
+									    </div>
 
-										<div class="reis">
-											<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
-											<p class="reis_hotel">Hotel Naam</p>
-											<p class="reis_plaats">Plaats</p>
-											<div class="rt_pr">
-												<p class="rating">★★★★★</p>
-												<p class="prijs">Vanaf € 90.00</p>
-											</div>
-										</div>
+                                        <?php
 
-										<div class="reis">
-											<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
-											<p class="reis_hotel">Hotel Naam</p>
-											<p class="reis_plaats">Plaats</p>
-											<div class="rt_pr">
-												<p class="rating">★★★★★</p>
-												<p class="prijs">Vanaf € 90.00</p>
-											</div>
-										</div>
+                                    }
 
-										<div class="reis">
-											<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
-											<p class="reis_hotel">Hotel Naam</p>
-											<p class="reis_plaats">Plaats</p>
-											<div class="rt_pr">
-												<p class="rating">★★★★★</p>
-												<p class="prijs">Vanaf € 90.00</p>
-											</div>
-										</div>
-
-										<div class="reis">
-											<img src="Assets/afbeeldingen/placeholder.png" alt="placeholder" />
-											<p class="reis_hotel">Hotel Naam</p>
-											<p class="reis_plaats">Plaats</p>
-											<div class="rt_pr">
-												<p class="rating">★★★★★</p>
-												<p class="prijs">Vanaf € 90.00</p>
-											</div>
-										</div>
+                                    ?>
 									</div>
 								</div>
 							</div>
@@ -204,41 +183,32 @@
 								<div class="review_title">
 									<p>Reviews</p>
 								</div>
-								<div class="review_persoon">
-									<p class="naam">gebruikersnaam</p>
-									<p class="reisnaam">naam reis</p>
-									<p class="rating">★★★★★</p>
-									<p class="recensie">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ducimus voluptatibus at repellendus,
-										tenetur et neque beatae libero impedit natus incidunt iusto aut quos itaque, maxime obcaecati, laudantium
-										modi laborum! Ducimus repudiandae incidunt rerum aliquam accusamus nulla nihil voluptatum eveniet
-										voluptas quo obcaecati sequi pariatur, alias voluptatibus est explicabo qui!
-									</p>
-								</div>
+								<?php 
+                                    
+                                    foreach ($result_recensies as $opgeslagen)
+                                    {
+                                        ?>
 
-								<div class="review_persoon">
-									<p class="naam">gebruikersnaam</p>
-									<p class="reisnaam">naam reis</p>
-									<p class="rating">★★★★★</p>
-									<p class="recensie">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ducimus voluptatibus at repellendus,
-										tenetur et neque beatae libero impedit natus incidunt iusto aut quos itaque, maxime obcaecati, laudantium
-										modi laborum! Ducimus repudiandae incidunt rerum aliquam accusamus nulla nihil voluptatum eveniet
-										voluptas quo obcaecati sequi pariatur, alias voluptatibus est explicabo qui!
-									</p>
-								</div>
+										<div class="review_persoon">	
+											<img src="Assets/afbeeldingen/delete_icon.png" class="delete_icon" id="delete_icon" alt="">	
+											<p class="naam"><?php echo $opgeslagen['voornaam'] ?></p>
+											<p class="reisnaam"><?php echo $opgeslagen['naam'] ?></p>
+											<p class="rating"> <?php
+												for ($i = 0; $i < $opgeslagen['sterren']; $i++)
+												{
+													echo "★";
+												} 
+												?></p>
+											<p class="recensie">
+												<?php echo $opgeslagen['beschrijving'] ?>
+											</p>
+										</div>
 
-								<div class="review_persoon">
-									<p class="naam">gebruikersnaam</p>
-									<p class="reisnaam">naam reis</p>
-									<p class="rating">★★★★★</p>
-									<p class="recensie">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ducimus voluptatibus at repellendus,
-										tenetur et neque beatae libero impedit natus incidunt iusto aut quos itaque, maxime obcaecati, laudantium
-										modi laborum! Ducimus repudiandae incidunt rerum aliquam accusamus nulla nihil voluptatum eveniet
-										voluptas quo obcaecati sequi pariatur, alias voluptatibus est explicabo qui!
-									</p>
-								</div>
+                                        <?php
+
+                                    }
+
+                                    ?>
 							</div>
 						</div>
 					</div>
@@ -246,6 +216,7 @@
 			</div>
 		</main>
 	</body>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script src="js/account.js"></script>
 </html>
