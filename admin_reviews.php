@@ -29,29 +29,15 @@
     ?>
         <main>
         <div class="container_reviews">
+
             <div class="all_reviews">
-                <div id="recensies" class="recensies">
-					<?php 
-						foreach ($result as $rec) {
-					    ?>
-                            <div class="recensie">
-                                <p class="gebruiker_sterren">
-                                    <?php echo $rec['voornaam'] ?>
-                                    -
-                                    <span
-                                        ><?php
-                                        for ($i = 0; $i < $rec['sterren']; $i++)
-                                        {
-                                            echo "★";
-                                        } 
-                                        ?></span
-                                    >
-                                </p>
-                                <p class="beschrijving"><?php echo $rec['beschrijving'] ?></p>
-                            </div>
-					    <?php
-						}
-					?>
+                <div class="recensies">
+					<div class="naam_sterren">
+
+                    </div>
+                    <div class="beschrijving">
+                        
+                    </div>
 				</div>
             </div>
         </div>

@@ -1477,3 +1477,22 @@ td {
   color: #fff;
   background-color: var(--main-blue);
 }
+
+/*container reviews op admin*/
+
+.container_reviews {
+  display: flex;
+}
+
+.container_reviews .all_reviews {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.container_reviews .all_reviews .recensies {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
