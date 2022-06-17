@@ -1336,7 +1336,7 @@ td {
 
 .container_bewerk .form #beschrijving {
   width: 340px;
-  height: 150px;
+  height: 100px;
   padding: 15px;
   font-size: 17.5px;
   resize: none;
@@ -1462,7 +1462,7 @@ td {
 }
 
 .container_create .form #beschrijving {
-  height: 200px;
+  height: 175px;
   padding: 15px;
   resize: none;
 }

@@ -12,8 +12,6 @@ function form_verzonden() {
 js_form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // Validation();
-
   $.ajax({
     type: "POST",
     url: "PHP/add_item.php",

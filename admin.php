@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css" />
     <!-- icon page -->
-    <link rel="icon" type="image/x-icon" href="Assets/afbeeldingen/.png" />
+    <link rel="icon" type="image/x-icon" href="Assets/afbeeldingen/logo.png" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,7 +66,7 @@
                             <a href="admin_create.php">
                                 <img class="create" src="Assets/afbeeldingen/create.png" alt="create">
                             </a>
-                            <a href="PHP/delete_item.php?id=<?php echo $res['id'] ?>">
+                            <a href="PHP/delete_item.php?id=<?php echo $res['id'] ?>" id="a_delete">
                                 <img class="delete" src="Assets/afbeeldingen/delete.png" alt="delete">
                             </a>
                         </td>
@@ -78,5 +78,10 @@
             </div>
         </div>
     </main>
+    <script 
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous">
+    </script>
+    <script src="js/delete_item.js"></script>
 </body>
 </html>
