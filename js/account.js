@@ -122,3 +122,31 @@ items.forEach((i) => {
 	const titel = i.querySelector(".reis_hotel");
 	titel.style.fontSize = (35 - 0.4 * titel.innerHTML.length).toString() + "px";
 });
+
+// Remove like
+const removeLike = (event, sender, id, gebruikerid) => {
+	event.stopPropagation();
+
+	$.ajax({
+		type: "POST",
+		url: "PHP/toggle_like.php",
+		data: {
+			id: id,
+			gebruikerid: gebruikerid,
+		},
+		cache: false,
+		success: (e) => {
+			if (e != "juist") {
+				console.log(e);
+
+				return;
+			} else {
+				sender.parentElement.remove();
+			}
+		},
+		error: function (xhr, status, error) {
+			console.error(xhr);
+			return;
+		},
+	});
+};

@@ -373,6 +373,28 @@ footer p {
 	overflow: hidden;
 }
 
+.destinations_pagina .categories .categorie .categorie_content .item:hover .save_heart {
+	visibility: visible;
+	opacity: 1;
+}
+
+.destinations_pagina .categories .categorie .categorie_content .item .save_heart {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: 10px;
+	left: 10px;
+	width: 30px;
+	height: 30px;
+	transition: visibility 0s, opacity 0.5s;
+}
+
+.destinations_pagina .categories .categorie .categorie_content .item .save_heart:hover {
+	visibility: visible;
+	cursor: pointer;
+	opacity: 1;
+}
+
 .destinations_pagina .categories .categorie .categorie_content .item .bottom {
 	background-color: #f3f0ec;
 	height: 45%;
@@ -888,6 +910,10 @@ footer p {
 	width: 350px;
 	height: 400px;
 	background-color: var(--account_bckgr);
+}
+
+.container_account .bottom .right .cnt .reizen .reis:hover {
+	cursor: pointer;
 }
 
 .container_account .bottom .right .cnt .reizen .reis:hover .save_heart {

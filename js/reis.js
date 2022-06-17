@@ -19,3 +19,27 @@ res_button.addEventListener("click", () => {
 	desc.style.display = "none";
 	res.style.display = "flex";
 });
+
+// Remove like
+const toggleBooking = (sender, id, gebruikerid) => {
+	$.ajax({
+		type: "POST",
+		url: "PHP/toggle_booking.php",
+		data: {
+			id: id,
+			gebruikerid: gebruikerid,
+		},
+		cache: false,
+		success: (e) => {
+			if (sender.innerHTML == "Book Now") {
+				sender.innerHTML = "Unbook";
+			} else {
+				sender.innerHTML = "Book Now";
+			}
+		},
+		error: function (xhr, status, error) {
+			console.error(xhr);
+			return;
+		},
+	});
+};

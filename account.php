@@ -33,7 +33,7 @@
 
         $result_gebruiker = $result_gebruiker[0];
 
-        $sql = 'SELECT * FROM opgeslagen_reizen 
+        $sql = 'SELECT opgeslagen_reizen.gebruikerid, opgeslagen_reizen.reisid, reis.id, reis.naam, reis.locatie, reis.afbeelding, reis.prijs, reis.beschrijving  FROM opgeslagen_reizen 
         INNER JOIN reis on opgeslagen_reizen.reisid = reis.id
         WHERE opgeslagen_reizen.gebruikerid = :id';
         $stmt = $connect->prepare($sql);
@@ -128,8 +128,8 @@
                                     {
                                         ?>
 
-                                        <div class="reis">
-											<img src="Assets/afbeeldingen/heart_unsave.png" class="save_heart" id="save_heart" alt="">
+                                        <div class="reis"  onclick="window.location='<?php echo 'reis.php?id=' . $opgeslagen['id'] ?>'">
+											<img src="Assets/afbeeldingen/heart_unsave.png" onclick="removeLike(<?php echo 'event, this, ' . $opgeslagen['id'] . ', ' . $_SESSION['id'] ?>)" class="save_heart" id="save_heart" alt="">
 										    <img class="afbeelding" src="<?php echo $opgeslagen['afbeelding'] ?>" alt="placeholder" />
 										    <p class="reis_hotel"><?php echo $opgeslagen['naam'] ?></p>
 										    <p class="reis_plaats"><?php echo $opgeslagen['locatie'] ?></p>
@@ -161,7 +161,7 @@
                                     {
                                         ?>
 
-                                        <div class="reis">
+                                        <div class="reis" onclick="window.location='<?php echo 'reis.php?id=' . $opgeslagen['id'] ?>'">
 										    <img class="afbeelding" src="<?php echo $opgeslagen['afbeelding'] ?>" alt="placeholder" />
 										    <p class="reis_hotel"><?php echo $opgeslagen['naam'] ?></p>
 										    <p class="reis_plaats"><?php echo $opgeslagen['locatie'] ?></p>
