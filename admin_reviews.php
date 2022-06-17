@@ -31,13 +31,27 @@
         <div class="container_reviews">
 
             <div class="all_reviews">
-                <div class="recensies">
-					<div class="naam_sterren">
+                <?php
+                    foreach($result as $recensie){
+                ?>
+                <div class="recensie">
+					<p class="naam_sterren">
+                        <?php echo $recensie['voornaam']?>
+                        -
+                        <span>
+                            <?php
+                            for ($i = 0; $i < $recensie['sterren'], $i++;)
+                            {
+                                echo "★";
+                            }
+                            ?></span>
+                    </p>
+                    <div class="beschrijving">
 
                     </div>
-                    <div class="beschrijving">
-                        
-                    </div>
+                    <?php
+                    }
+                ?>
 				</div>
             </div>
         </div>
