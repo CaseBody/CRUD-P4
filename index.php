@@ -23,7 +23,7 @@
 		$stmt = $connect->prepare($sql);
 		$stmt->execute();
 		$result = $stmt->fetchAll();
-  ?>
+  	?>
 
 	<body>
 		<main class="home">
@@ -46,7 +46,7 @@
 			<div class="recommended" id="recommended">
 				<div class="left">
 					<?php $item = $result[0] ?>
-					<div style="background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url('<?php echo $item['afbeelding'] ?>');" class="item">
+					<div onclick="window.location='<?php echo 'reis.php?id=' . $item['id'] ?>'" style="background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url('<?php echo $item['afbeelding'] ?>');" class="item">
 							<p class="titel"><?php echo $item['naam']?></p>
 							<p class="sub_titel"><?php echo $item['locatie']?></p>
 							<p class="price">Now from € <?php echo $item['prijs']?></p>
@@ -56,13 +56,13 @@
 				
 				<?php $item = $result[1] ?>
 				<div class="right">
-					<div style="background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url('<?php echo $item['afbeelding'] ?>');" class="item">
+					<div onclick="window.location='<?php echo 'reis.php?id=' . $item['id'] ?>'" style="background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url('<?php echo $item['afbeelding'] ?>');" class="item">
 						<p class="titel"><?php echo $item['naam']?></p>
 						<p class="sub_titel"><?php echo $item['locatie']?></p>
 						<p class="price">Now from € <?php echo $item['prijs']?></p>
 					</div>
 				<?php $item = $result[2] ?>
-					<div style="background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url('<?php echo $item['afbeelding'] ?>');" class="item">
+					<div onclick="window.location='<?php echo 'reis.php?id=' . $item['id'] ?>'" style="background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url('<?php echo $item['afbeelding'] ?>');" class="item">
 						<p class="titel"><?php echo $item['naam']?></p>
 						<p class="sub_titel"><?php echo $item['locatie']?></p>
 						<p class="price">Now from € <?php echo $item['prijs']?></p>

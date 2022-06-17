@@ -32,16 +32,4 @@ js_form.addEventListener("submit", (e) => {
       console.error(xhr);
     },
   });
-}); 
-
-// function Validation()
-// {
-//   if(js_tel.value.length < 10)
-//   {
-//     Text = "Please enter a minimum of 10 characters";
-//   }
-//   else
-//   {
-//     Text = "";
-//   }
-// }
+});
