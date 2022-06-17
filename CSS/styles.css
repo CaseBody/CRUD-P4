@@ -1402,3 +1402,70 @@ td {
 .container_show .form #beschrijving {
   height: 190px;
 }
+
+/*container_create*/
+
+.container_create {
+  background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
+    url("https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container_create .create_titel {
+  width: 100%;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container_create .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 525px;
+  height: 700px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 7.5px black;
+}
+
+.container_create .form label {
+  font-size: 17.5px;
+  color: #cdcdcd;
+}
+
+.container_create .form input {
+  width: 350px;
+  padding: 7.5px;
+  font-size: 17.5px;
+}
+
+.container_create .form .label_input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.container_create .form #beschrijving {
+  height: 200px;
+  padding: 15px;
+  resize: none;
+}
+
+.container_create .form .btn_submit {
+  width: 370px;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 10px;
+  border-width: 1px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--main-blue);
+}
