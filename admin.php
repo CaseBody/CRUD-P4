@@ -52,7 +52,7 @@
                             <a href="admin_create.php">
                                 <img class="create" src="Assets/afbeeldingen/create.png" alt="create">
                             </a>
-                            <a href="admin.php">
+                            <a href="PHP/delete_item.php?id=<?php echo $res['id'] ?>">
                                 <img class="delete" src="Assets/afbeeldingen/delete.png" alt="delete">
                             </a>
                         </td>
