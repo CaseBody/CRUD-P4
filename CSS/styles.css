@@ -1335,7 +1335,11 @@ td {
 }
 
 .container_bewerk .form #beschrijving {
+  width: 340px;
   height: 150px;
+  padding: 15px;
+  font-size: 17.5px;
+  resize: none;
 }
 
 .container_bewerk .form .btn_submit {
@@ -1400,7 +1404,11 @@ td {
 }
 
 .container_show .form #beschrijving {
-  height: 190px;
+  width: 340px;
+  height: 150px;
+  padding: 15px;
+  font-size: 17.5px;
+  resize: none;
 }
 
 /*container_create*/

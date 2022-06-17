@@ -72,13 +72,14 @@
                 </div>
                 <div class="label_input">
                     <label for="beschrijving">Beschrijving</label>
-                    <input
+                    <textarea
                         id="beschrijving"
                         type="text"
                         name="beschrijving"
-                        value="<?php echo $result[0]['beschrijving']?>"
+                        rows="5"
+                        cols="30"
                         disabled
-                    >
+                    ><?php echo $result[0]['beschrijving']?></textarea>
                 </div>
             </form>
         </div>
