@@ -16,7 +16,13 @@
 	</head>
 
 	<?php
-    require_once 'includes/header.php';
+    	require_once 'includes/header.php';
+		require_once("includes/connect.php");
+
+		$sql = 'SELECT * FROM reis ORDER BY rand()';
+		$stmt = $connect->prepare($sql);
+		$stmt->execute();
+		$result = $stmt->fetchAll();
   ?>
 
 	<body>
@@ -30,31 +36,36 @@
 				<p class="sub_titel">Search for your dream Travelegy vacation.</p>
 
 				<div class="search_bar">
-					<input type="text" placeholder="Search by name..." />
-					<button>Search</button>
+					<form action="destinations.php" method="GET">
+						<input id="location_input" type="text" placeholder="Search by name..." name="search"  />
+						<button id="userSearch_button">Search</button>
+					</form>
 				</div>
 			</div>
 
 			<div class="recommended" id="recommended">
 				<div class="left">
-					<div class="item">
-						<p class="titel">Hotel Naam</p>
-						<p class="sub_titel">Cairo, Egypt</p>
-						<p class="price">Now from $ 90.00</p>
+					<?php $item = $result[0] ?>
+					<div style="background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url('<?php echo $item['afbeelding'] ?>');" class="item">
+							<p class="titel"><?php echo $item['naam']?></p>
+							<p class="sub_titel"><?php echo $item['locatie']?></p>
+							<p class="price">Now from € <?php echo $item['prijs']?></p>
+
 					</div>
 				</div>
-
+				
+				<?php $item = $result[1] ?>
 				<div class="right">
-					<div class="item">
-						<p class="titel">Hotel Naam</p>
-						<p class="sub_titel">Cairo, Egypt</p>
-						<p class="price">Now from $ 90.00</p>
+					<div style="background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url('<?php echo $item['afbeelding'] ?>');" class="item">
+						<p class="titel"><?php echo $item['naam']?></p>
+						<p class="sub_titel"><?php echo $item['locatie']?></p>
+						<p class="price">Now from € <?php echo $item['prijs']?></p>
 					</div>
-
-					<div class="item">
-						<p class="titel">Hotel Naam</p>
-						<p class="sub_titel">Cairo, Egypt</p>
-						<p class="price">Now from $ 90.00</p>
+				<?php $item = $result[2] ?>
+					<div style="background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url('<?php echo $item['afbeelding'] ?>');" class="item">
+						<p class="titel"><?php echo $item['naam']?></p>
+						<p class="sub_titel"><?php echo $item['locatie']?></p>
+						<p class="price">Now from € <?php echo $item['prijs']?></p>
 					</div>
 				</div>
 			</div>
@@ -62,5 +73,10 @@
 		<?php
       require_once 'includes/footer.php';
     ?>
+	<script 
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous">
+    </script>
+    <script src="js/search.js"></script>
 	</body>
 </html>

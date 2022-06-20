@@ -15,8 +15,9 @@ html {
 	--white: #fff;
 	--contact_trans: #34495eb0;
 	--form_trans: #00122fb5;
-	--account_bckgr: #eaeaea;
+	--account_bckgr: #dbdce1;
 	--sterren: #fdcc0d;
+	--logo_blue: #00aeef;
 }
 
 /* Header */
@@ -48,7 +49,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-	color: black;
+	color: var(--logo_blue);
 }
 
 header .txt_logo {
@@ -61,7 +62,7 @@ header .txt_logo p {
 }
 /*hover TRAVELEGY*/
 header .txt_logo:hover {
-	color: #fff;
+	color: var(--logo_blue);
 }
 
 header .img_logo {
@@ -157,10 +158,18 @@ footer p {
 	margin: 5px;
 }
 
-.home .search .search_bar {
+/* .home .search .search_bar form {
 	display: flex;
+} */
+
+.home .search .search_bar {
 	width: 70%;
 	margin-top: 20px;
+}
+
+.home .search .search_bar form {
+	display: flex;
+	width: 100%;
 }
 
 .home .search .search_bar input {
@@ -197,11 +206,11 @@ footer p {
 	width: 80%;
 	height: 600px;
 	display: flex;
+	color: var(--white);
 }
 
 .home .recommended .item {
-	background-image: url("https://cdn.discordapp.com/attachments/968125920038776866/968126658219499571/unknown.png");
-	background-size: cover;
+	background-size: cover !important;
 	border-radius: 5px;
 	position: relative;
 }
