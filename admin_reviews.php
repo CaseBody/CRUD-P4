@@ -17,7 +17,7 @@
     <?php
 		require_once "includes/connect.php";
 
-		$sql = 'SELECT * FROM recensies';
+		$sql = 'SELECT * FROM recensies, gebruikers';
         $stmt = $connect->prepare($sql);
         $stmt->execute();
         $result = $stmt->fetchAll();
@@ -46,9 +46,9 @@
                             }
                             ?></span>
                     </p>
-                    <div class="beschrijving">
-
-                    </div>
+                    <p class="beschrijving">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iste incidunt voluptate error id, quas ratione, vitae dolores consectetur consequatur adipisci earum corporis, neque repudiandae! Nulla enim sed ipsum consequuntur itaque a assumenda veritatis delectus aliquid commodi blanditiis quo placeat, odio vitae amet? Ducimus distinctio molestias asperiores labore reprehenderit omnis.
+                    </p>
                     <?php
                     }
                 ?>
