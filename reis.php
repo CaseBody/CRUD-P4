@@ -22,17 +22,39 @@
 				die();
 			}
 
+        	session_start(); 
+
 			$sql = 'SELECT * FROM reis WHERE reis.id = :id';
 			$stmt = $connect->prepare($sql); $stmt->bindParam('id', $_GET['id']); $stmt->execute(); $result = $stmt->fetchAll(); $result
 		= $result[0]; $sql = 'SELECT * FROM recensies INNER JOIN gebruikers ON recensies.gebruikerid=gebruikers.id WHERE reisid =
-		:id'; $stmt = $connect->prepare($sql); $stmt->bindParam('id', $_GET['id']); $stmt->execute(); $result_recensies =
+		:id AND recensies.isbevestigd = 1'; $stmt = $connect->prepare($sql); $stmt->bindParam('id', $_GET['id']); $stmt->execute(); $result_recensies =
 		$stmt->fetchAll(); 
+
 		
 		if (!isset($result))
-			{
-				header("Location: destinations.php");
-				die();
-			}
+		{
+			header("Location: destinations.php");
+			die();
+		}
+
+		$bookings = NULL;
+		if (isset($_SESSION['loggedin']))
+		{
+			$sql = 'SELECT * FROM boekingen WHERE gebruikerid = :id AND reisid = :reisid';
+			$stmt = $connect->prepare($sql); 
+			$stmt->bindParam('id', $_SESSION['id']); 
+			$stmt->bindParam('reisid', $result['id']); 
+			$stmt->execute();
+			$bookings = $stmt->fetchAll();
+
+			$sql = 'SELECT * FROM recensies WHERE gebruikerid = :id AND reisid = :reisid';
+			$stmt = $connect->prepare($sql); 
+			$stmt->bindParam('id', $_SESSION['id']); 
+			$stmt->bindParam('reisid', $result['id']); 
+			$stmt->execute();
+			$reviews = $stmt->fetchAll();
+
+		}
 		
 		?>
 		<main>
@@ -57,7 +79,29 @@
 								<?php echo $result['prijs'] ?></span
 							>
 						</p>
-						<button>Book Now</button>
+						<?php
+						if (isset($_SESSION['loggedin']))
+						{
+							if (count($bookings) > 0)
+							{
+						?>
+							<button onclick="toggleBooking(<?php echo 'this, ' . $result['id'] . ', ' . $_SESSION['id'] ?>)">Unbook</button>
+						<?php
+							}
+							else
+							{
+								?>
+								<button onclick="toggleBooking(<?php echo 'this, ' . $result['id'] . ', ' . $_SESSION['id'] ?>)">Book Now</button>
+							<?php
+							}
+						}
+						else
+						{
+						?>
+						<button type="button" disabled>Login to book</button>
+						<?php
+						}
+						?>
 					</div>
 				</div>
 			</div>
@@ -67,6 +111,8 @@
 					<li id="beschrijving_button" class="selected">Description</li>
 					<li id="recensies_button" <?php 
 				if (count($result_recensies) == 0) { echo "style='display: none;'"; } ?>>Reviews</li>
+				<li id="add_review_button" <?php 
+				if (count($bookings) == 0 || count($reviews) != 0) { echo "style='display: none;'"; } ?>>Add Review</li>
 				</ul>
 
 				<div id="beschrijving" class="main_beschrijving">
@@ -98,6 +144,19 @@
 
 					?>
 				</div>
+
+				<div id="add_review" class="add_review">
+					<div class="stars">
+						<p class="star" id='star_1'>★</p>
+						<p class="star" id='star_2'>★</p>
+						<p class="star" id='star_3'>★</p>
+						<p class="star" id='star_4'>★</p>
+						<p class="star" id='star_5'>★</p>
+					</div>
+					<label>Review Description</label>
+					<textarea id="review_desc"></textarea>	
+					<button onclick="addReview(<?php echo $result['id'] . ', ' . $_SESSION['id'] ?>)">Submit Review</button>
+				</div>
 			</div>
 
 			<div class="secondary_content"></div>
@@ -105,4 +164,6 @@
 	</body>
 
 	<script src="js/reis.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 </html>

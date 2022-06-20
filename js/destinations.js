@@ -22,8 +22,6 @@ search_button.addEventListener("click", () => {
 });
 
 search_bar.addEventListener("keypress", (e) => {
-	console.log("e");
-
 	if (e.key === "Enter") {
 		e.preventDefault();
 		search_button.click();
@@ -59,3 +57,29 @@ if (search != null) {
 		}
 	});
 }
+
+// Remove like
+const toggleLike = (event, sender, id, gebruikerid) => {
+	event.stopPropagation();
+
+	$.ajax({
+		type: "POST",
+		url: "PHP/toggle_like.php",
+		data: {
+			id: id,
+			gebruikerid: gebruikerid,
+		},
+		cache: false,
+		success: (e) => {
+			if (sender.src == window.location.origin + "/CRUD-P4/" + "Assets/afbeeldingen/heart_save.png") {
+				sender.src = "Assets/afbeeldingen/heart_unsave.png";
+			} else {
+				sender.src = "Assets/afbeeldingen/heart_save.png";
+			}
+		},
+		error: function (xhr, status, error) {
+			console.error(xhr);
+			return;
+		},
+	});
+};
