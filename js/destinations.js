@@ -5,7 +5,7 @@ const search_button = document.querySelector("#search_button");
 
 search_button.addEventListener("click", () => {
 	items.forEach((element) => {
-		const bot = element.children[2];
+		const bot = element.children[3];
 
 		if (search_bar.value == "") {
 			element.style.display = "flex";
@@ -42,7 +42,8 @@ if (search != null) {
 	search_bar.value = search;
 
 	items.forEach((element) => {
-		const bot = element.children[2];
+		const bot = element.children[3];
+		console.log(bot);
 
 		if (search_bar.value == "") {
 			element.style.display = "flex";

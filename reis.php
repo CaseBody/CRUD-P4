@@ -112,7 +112,11 @@
 					<li id="recensies_button" <?php 
 				if (count($result_recensies) == 0) { echo "style='display: none;'"; } ?>>Reviews</li>
 				<li id="add_review_button" <?php 
-				if (count($bookings) == 0 || count($reviews) != 0) { echo "style='display: none;'"; } ?>>Add Review</li>
+				if (!isset($_SESSION['loggedin']))
+				{
+					echo "style='display: none;'";
+				}
+				else if (count($bookings) == 0 || count($reviews) != 0) { echo "style='display: none;'"; } ?>>Add Review</li>
 				</ul>
 
 				<div id="beschrijving" class="main_beschrijving">
