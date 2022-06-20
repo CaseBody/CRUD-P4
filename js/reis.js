@@ -58,3 +58,73 @@ const toggleBooking = (sender, id, gebruikerid) => {
 		},
 	});
 };
+
+// Review
+const star1 = document.querySelector("#star_1");
+const star2 = document.querySelector("#star_2");
+const star3 = document.querySelector("#star_3");
+const star4 = document.querySelector("#star_4");
+const star5 = document.querySelector("#star_5");
+
+const review_desc = document.querySelector("#review_desc");
+const review_submit = document.querySelector("#review_submit");
+
+const stars = [star1, star2, star3, star4, star5];
+star_value = 1;
+
+const starClicked = (index) => {
+	star_value = index;
+	for (i = 0; i < index; i++) {
+		stars[i].style.color = "#fdcc0d";
+	}
+
+	for (i = index; i < stars.length; i++) {
+		stars[i].style.color = "black";
+	}
+
+	console.log(star_value);
+};
+
+starClicked(1);
+
+star1.addEventListener("click", () => {
+	starClicked(1);
+});
+star2.addEventListener("click", () => {
+	starClicked(2);
+});
+star3.addEventListener("click", () => {
+	starClicked(3);
+});
+star4.addEventListener("click", () => {
+	starClicked(4);
+});
+star5.addEventListener("click", () => {
+	starClicked(5);
+});
+
+const addReview = (id, gebruikerid) => {
+	if (review_desc.value == "") {
+		return;
+	}
+
+	$.ajax({
+		type: "POST",
+		url: "PHP/add_review.php",
+		data: {
+			id: id,
+			gebruikerid: gebruikerid,
+			beschrijving: review_desc.value,
+			sterren: star_value,
+		},
+		cache: false,
+		success: (e) => {
+			console.log(e);
+			location.reload();
+		},
+		error: function (xhr, status, error) {
+			console.error(xhr);
+			return;
+		},
+	});
+};

@@ -47,6 +47,13 @@
 			$stmt->execute();
 			$bookings = $stmt->fetchAll();
 
+			$sql = 'SELECT * FROM recensies WHERE gebruikerid = :id AND reisid = :reisid';
+			$stmt = $connect->prepare($sql); 
+			$stmt->bindParam('id', $_SESSION['id']); 
+			$stmt->bindParam('reisid', $result['id']); 
+			$stmt->execute();
+			$reviews = $stmt->fetchAll();
+
 		}
 		
 		?>
@@ -105,7 +112,7 @@
 					<li id="recensies_button" <?php 
 				if (count($result_recensies) == 0) { echo "style='display: none;'"; } ?>>Reviews</li>
 				<li id="add_review_button" <?php 
-				if (count($bookings) == 0) { echo "style='display: none;'"; } ?>>Add Review</li>
+				if (count($bookings) == 0 || count($reviews) != 0) { echo "style='display: none;'"; } ?>>Add Review</li>
 				</ul>
 
 				<div id="beschrijving" class="main_beschrijving">
@@ -140,15 +147,15 @@
 
 				<div id="add_review" class="add_review">
 					<div class="stars">
-						<p class="star">★</p>
-						<p class="star">★</p>
-						<p class="star">★</p>
-						<p class="star">★</p>
-						<p class="star">★</p>
+						<p class="star" id='star_1'>★</p>
+						<p class="star" id='star_2'>★</p>
+						<p class="star" id='star_3'>★</p>
+						<p class="star" id='star_4'>★</p>
+						<p class="star" id='star_5'>★</p>
 					</div>
 					<label>Review Description</label>
-					<textarea></textarea>	
-					<button>Submit Review</button>			
+					<textarea id="review_desc"></textarea>	
+					<button onclick="addReview(<?php echo $result['id'] . ', ' . $_SESSION['id'] ?>)">Submit Review</button>
 				</div>
 			</div>
 
