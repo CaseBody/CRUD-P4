@@ -1496,3 +1496,45 @@ td {
   border: 1px solid #cdcdcd;
   border-radius: 5px;
 }
+
+/*container_users*/
+.container_users {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_users .user_titel {
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+
+.container_users .users {
+  display: flex;
+  justify-content: center;
+}
+
+.container_users .users .user_data .table {
+  width: 1000px;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+}
+
+.container_users .users .user_data .table tr:nth-child(even) {
+  background-color: #cdcdcd;
+}
+
+/* .container_users .users .user_data {
+  display: flex;
+  width: 50%;
+  height: 75px;
+  background-color: var(--account_bckgr);
+  margin-top: 75px;
+} */
+
+/* .container_users .users .user_data .box {
+  width: 25%;
+  font-size: 22.5px;
+} */
