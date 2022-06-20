@@ -192,7 +192,7 @@
                                         ?>
 
 										<div class="review_persoon">	
-											<img src="Assets/afbeeldingen/delete_icon.png" class="delete_icon" id="delete_icon" alt="">	
+											<img src="Assets/afbeeldingen/delete_icon.png" onclick="removeReview(this, <?php echo $opgeslagen['id'] ?>)" class="delete_icon" id="delete_icon" alt="">	
 											<p class="naam"><?php echo $opgeslagen['voornaam'] ?></p>
 											<p class="reisnaam"><?php echo $opgeslagen['naam'] ?></p>
 											<p class="rating"> <?php

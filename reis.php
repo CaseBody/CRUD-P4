@@ -27,7 +27,7 @@
 			$sql = 'SELECT * FROM reis WHERE reis.id = :id';
 			$stmt = $connect->prepare($sql); $stmt->bindParam('id', $_GET['id']); $stmt->execute(); $result = $stmt->fetchAll(); $result
 		= $result[0]; $sql = 'SELECT * FROM recensies INNER JOIN gebruikers ON recensies.gebruikerid=gebruikers.id WHERE reisid =
-		:id'; $stmt = $connect->prepare($sql); $stmt->bindParam('id', $_GET['id']); $stmt->execute(); $result_recensies =
+		:id AND recensies.isbevestigd = 1'; $stmt = $connect->prepare($sql); $stmt->bindParam('id', $_GET['id']); $stmt->execute(); $result_recensies =
 		$stmt->fetchAll(); 
 
 		
@@ -104,6 +104,8 @@
 					<li id="beschrijving_button" class="selected">Description</li>
 					<li id="recensies_button" <?php 
 				if (count($result_recensies) == 0) { echo "style='display: none;'"; } ?>>Reviews</li>
+				<li id="add_review_button" <?php 
+				if (count($bookings) == 0) { echo "style='display: none;'"; } ?>>Add Review</li>
 				</ul>
 
 				<div id="beschrijving" class="main_beschrijving">
@@ -134,6 +136,19 @@
 						}
 
 					?>
+				</div>
+
+				<div id="add_review" class="add_review">
+					<div class="stars">
+						<p class="star">★</p>
+						<p class="star">★</p>
+						<p class="star">★</p>
+						<p class="star">★</p>
+						<p class="star">★</p>
+					</div>
+					<label>Review Description</label>
+					<textarea></textarea>	
+					<button>Submit Review</button>			
 				</div>
 			</div>
 

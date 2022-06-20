@@ -150,3 +150,23 @@ const removeLike = (event, sender, id, gebruikerid) => {
 		},
 	});
 };
+
+const removeReview = (sender, id) => {
+	$.ajax({
+		type: "POST",
+		url: "PHP/delete_review.php",
+		data: {
+			id: id,
+		},
+		cache: false,
+		success: (e) => {
+			if (e == "juist") {
+				sender.parentElement.remove();
+			}
+		},
+		error: function (xhr, status, error) {
+			console.error(xhr);
+			return;
+		},
+	});
+};
