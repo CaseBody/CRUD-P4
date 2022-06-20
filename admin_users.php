@@ -32,18 +32,30 @@
                     <table class="table">
                         <tr>
                             <th>Email</th>
+                            <th>Password</th>
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>Make Admin</th>
                         </tr>
-                        <tr>
+                        <tr id="row_user_data">
                         <?php
                             foreach($result as $user){
                             ?>
                             <td><?php echo $user['email'] ?></td>
+                            <td><input
+                                class="ww"
+                                type="text"
+                                value=""
+                                >
+                            </td>
                             <td><?php echo $user['voornaam'] ?></td>
                             <td><?php echo $user['achternaam'] ?></td>
-                            <td><input type="checkbox"></td>
+                            <td><input 
+                                id="isAdmin_box" 
+                                type="checkbox"
+                                value=""
+                                >
+                            </td>
                         </tr>
                         <?php
                         }
@@ -53,5 +65,10 @@
             </div>
         </div>
     </main>
+    <script 
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous">
+    </script>
+    <script src="js/admin.js"></script>
 </body>
 </html>

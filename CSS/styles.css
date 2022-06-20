@@ -1210,6 +1210,40 @@ footer p {
   text-align: center;
 }
 
+.container_admin .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container_admin .links .admin_review {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  transition: transform 0.5s;
+  background-color: var(--main-blue);
+  color: #fff;
+}
+
+.container_admin .links .admin_review:hover {
+  transform: scale(1.15);
+}
+
+.container_admin .links .admin_users {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+  transition: transform 0.5s;
+  background-color: var(--main-blue);
+  color: #fff;
+}
+
+.container_admin .links .admin_users:hover {
+  transform: scale(1.15);
+}
+
 .container_admin .all_data {
   display: flex;
   justify-content: center;
@@ -1217,7 +1251,7 @@ footer p {
 
 .container_admin .table {
   width: 1700px;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
   border-collapse: collapse;
 }
@@ -1526,15 +1560,12 @@ td {
   background-color: #cdcdcd;
 }
 
-/* .container_users .users .user_data {
-  display: flex;
-  width: 50%;
-  height: 75px;
-  background-color: var(--account_bckgr);
-  margin-top: 75px;
-} */
-
-/* .container_users .users .user_data .box {
-  width: 25%;
-  font-size: 22.5px;
-} */
+.container_users .users .user_data .table .ww {
+  width: 250px;
+  padding: 5px;
+  background-color: transparent;
+  border-color: #000000;
+  border-width: 0.6px;
+  border-radius: 5px;
+  font-size: 17.5px;
+}
