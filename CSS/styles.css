@@ -474,17 +474,17 @@ footer p {
 }
 
 .container_contact {
-	display: flex;
-	width: 100%;
-	height: 100vh;
-	color: var(--white);
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-		url("https://images.pexels.com/photos/2161449/pexels-photo-2161449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-	background-size: cover;
-	align-items: center;
-	justify-content: center;
-	font-family: sans-serif;
-	margin-bottom: -100px;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  color: var(--white);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("https://images.pexels.com/photos/2161449/pexels-photo-2161449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  margin-bottom: -100px;
 }
 
 .container_contact .all_contact {
@@ -644,15 +644,14 @@ footer p {
 
 /* INLOG */
 .login_page {
-	/* background-image: url("https://cdn.discordapp.com/attachments/968125920038776866/968125952418803752/pexels-photo-4356144.jpeg"); */
-	background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
-		url("https://cdn.discordapp.com/attachments/968125920038776866/968125952418803752/pexels-photo-4356144.jpeg");
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
+    url("https://cdn.discordapp.com/attachments/968125920038776866/968125952418803752/pexels-photo-4356144.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .login_page form {
@@ -1263,4 +1262,391 @@ footer p {
 
 .reis_pagina .add_review button:hover {
 	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), var(--main-blue);
+}
+
+/*admin page*/
+.container_admin {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container_admin .title {
+  width: 100%;
+  font-size: 45px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.container_admin .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container_admin .links .admin_review {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  transition: transform 0.5s;
+  background-color: var(--main-blue);
+  color: #fff;
+}
+
+.container_admin .links .admin_review:hover {
+  transform: scale(1.15);
+}
+
+.container_admin .links .admin_users {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+  transition: transform 0.5s;
+  background-color: var(--main-blue);
+  color: #fff;
+}
+
+.container_admin .links .admin_users:hover {
+  transform: scale(1.15);
+}
+
+.container_admin .all_data {
+  display: flex;
+  justify-content: center;
+}
+
+.container_admin .table {
+  width: 1700px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+}
+
+.container_admin .table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.container_admin .table tr,
+th,
+td {
+  width: auto;
+  padding: 7.5px;
+  text-align: center;
+  border-width: 0.8px;
+  border-color: #000000;
+  border-style: solid;
+}
+
+.container_admin .table .td_beschrijving {
+  font-size: 12px;
+}
+
+.container_admin .table .th_actions {
+  padding-right: 75px;
+}
+
+.container_admin .table .td_actions {
+  display: flex;
+  border: none;
+}
+
+.container_admin .table .td_actions {
+  margin-top: 5px;
+}
+
+.container_admin .table .td_actions .edit {
+  width: 25px;
+  border-radius: 5px;
+  padding: 7.5px;
+  margin-right: 3px;
+  background-color: orange;
+}
+
+.container_admin .table .td_actions .show {
+  width: 25px;
+  border-radius: 5px;
+  padding: 7.5px;
+  margin-right: 3px;
+  background-color: darkturquoise;
+}
+
+.container_admin .table .td_actions .create {
+  width: 25px;
+  border-radius: 5px;
+  padding: 7.5px;
+  margin-right: 3px;
+  background-color: var(--main-blue);
+}
+
+.container_admin .table .td_actions .delete {
+  width: 25px;
+  border-radius: 5px;
+  padding: 7.5px;
+  background-color: red;
+}
+
+/*container_bewerk*/
+.container_bewerk {
+  background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
+    url("https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container_bewerk .form .bewerk_titel {
+  width: 100%;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container_bewerk .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 525px;
+  height: 700px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 7.5px black;
+}
+
+.container_bewerk .form label {
+  font-size: 17.5px;
+  color: #cdcdcd;
+}
+
+.container_bewerk .form input {
+  width: 350px;
+  padding: 7.5px;
+  font-size: 17.5px;
+}
+
+.container_bewerk .form .label_input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.container_bewerk .form #beschrijving {
+  width: 340px;
+  height: 100px;
+  padding: 15px;
+  font-size: 17.5px;
+  resize: none;
+}
+
+.container_bewerk .form .btn_submit {
+  width: 370px;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 10px;
+  border-width: 1px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--main-blue);
+}
+
+/*container_show*/
+
+.container_show {
+  background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
+    url("https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container_show .show_titel {
+  width: 100%;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container_show .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 525px;
+  height: 700px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 7.5px black;
+}
+
+.container_show .form label {
+  font-size: 17.5px;
+  color: #cdcdcd;
+}
+
+.container_show .form input {
+  width: 350px;
+  padding: 7.5px;
+  font-size: 17.5px;
+}
+
+.container_show .form .label_input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.container_show .form #beschrijving {
+  width: 340px;
+  height: 150px;
+  padding: 15px;
+  font-size: 17.5px;
+  resize: none;
+}
+
+/*container_create*/
+
+.container_create {
+  background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
+    url("https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container_create .create_titel {
+  width: 100%;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container_create .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 525px;
+  height: 700px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 7.5px black;
+}
+
+.container_create .form label {
+  font-size: 17.5px;
+  color: #cdcdcd;
+}
+
+.container_create .form input {
+  width: 350px;
+  padding: 7.5px;
+  font-size: 17.5px;
+}
+
+.container_create .form .label_input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.container_create .form #beschrijving {
+  height: 175px;
+  padding: 15px;
+  resize: none;
+}
+
+.container_create .form .btn_submit {
+  width: 370px;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 10px;
+  border-width: 1px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--main-blue);
+}
+
+/*container reviews op admin*/
+
+.container_reviews {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.container_reviews .all_reviews {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+.container_reviews .all_reviews .recensie {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+
+.container_reviews .all_reviews .recensie .naam_sterren {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.container_reviews .all_reviews .recensie .beschrijving {
+  font-size: 17.5px;
+  padding: 10px;
+}
+
+/*container_users*/
+.container_users {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_users .user_titel {
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+
+.container_users .users {
+  display: flex;
+  justify-content: center;
+}
+
+.container_users .users .user_data .table {
+  width: 1000px;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+}
+
+.container_users .users .user_data .table tr:nth-child(even) {
+  background-color: #cdcdcd;
+}
+
+.container_users .users .user_data .table .ww {
+  width: 250px;
+  padding: 5px;
+  background-color: transparent;
+  border-color: #000000;
+  border-width: 0.6px;
+  border-radius: 5px;
+  font-size: 17.5px;
 }

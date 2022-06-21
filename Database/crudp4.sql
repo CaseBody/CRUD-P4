@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2022 at 03:02 PM
+-- Generation Time: Jun 15, 2022 at 02:06 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `crudp4`
 --
+CREATE DATABASE IF NOT EXISTS `crudp4` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `crudp4`;
 
 -- --------------------------------------------------------
 
