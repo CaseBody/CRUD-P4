@@ -6,6 +6,7 @@
 	* @var PDO $connect
 	*/
 
+	
 	$sql = 'INSERT INTO contact (first_name, last_name, email, tel, message)
 	VALUES (:first_name, :last_name, :email, :tel, :message)';
 

@@ -25,6 +25,19 @@
 				$stmt = $connect->prepare($sql);
 				$stmt->execute();
 				$result = $stmt->fetchAll();
+
+				session_start(); 
+
+				if (isset($_SESSION["loggedin"]))
+				{
+					$sql = 'SELECT * FROM opgeslagen_reizen 
+					WHERE opgeslagen_reizen.gebruikerid = :id';
+	
+					$stmt = $connect->prepare($sql);
+					$stmt->bindParam(":id", $_SESSION["id"]);
+					$stmt->execute();
+					$result_opgeslagen = $stmt->fetchAll(); 
+				}
 			?>
 			
 			<div class="top">
@@ -43,6 +56,34 @@
 
 								?>
 								<div class="item" onclick="window.location='<?php echo 'reis.php?id=' . $reis['id'] ?>'">
+								<?php 
+								if (isset($_SESSION['loggedin']))
+								{
+									$has_liked = false;
+
+									foreach ($result_opgeslagen as $opgeslagen)
+									{
+										if ($opgeslagen['reisid'] == $reis['id'])
+										{
+											$has_liked = true;
+										}
+									}
+
+									if ($has_liked)
+									{
+										?>
+										<img src="Assets/afbeeldingen/heart_unsave.png" onclick="toggleLike(event, <?php echo 'this, ' . $reis['id'] . ', ' . $_SESSION['id'] ?>)" class="save_heart" id="save_heart" alt="">
+
+										<?php
+									}
+									else
+									{
+										?>
+										<img src="Assets/afbeeldingen/heart_save.png" onclick="toggleLike(event, <?php echo 'this, ' . $reis['id'] . ', ' . $_SESSION['id'] ?>)" class="save_heart" id="save_heart" alt="">
+										<?php										
+									}
+								}
+								?>
 								<img src="<?php echo $reis['afbeelding'] ?>" alt="">
 								<p class="reis_id" style="display: none;"><?php echo $reis['id'] ?></p>
 								<div class="bottom">
@@ -64,5 +105,6 @@
 		</div>
 	</body>
 </html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <script src="js/destinations.js"></script>

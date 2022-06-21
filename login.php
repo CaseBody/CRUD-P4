@@ -44,7 +44,7 @@
 				<input type="submit" value="Login" />
 
 				<div class="links">
-					<a href="" class="password_forgot">Forgot password?</a>
+					<a href="contact.php" class="password_forgot">Forgot password?</a>
 					<a href="create_account.php" class="create_account">Create account</a>
 				</div>
 			</form>

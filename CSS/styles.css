@@ -1,162 +1,161 @@
 * {
-  margin: 0;
-  padding: 0;
-  /* fonts */
-  font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+	/* fonts */
+	font-family: "Open Sans", sans-serif;
 }
 
 html {
-  max-width: 100%;
-  scroll-behavior: smooth;
+	max-width: 100%;
+	scroll-behavior: smooth;
 }
 
 :root {
-  --main-blue: #34495e;
-  --white: #fff;
-  --contact_trans: #34495eb0;
-  --form_trans: #00122fb5;
-  --account_bckgr: #dbdce1;
-  --sterren: #fdcc0d;
-  --logo_blue: #00aeef;
+	--main-blue: #34495e;
+	--white: #fff;
+	--contact_trans: #34495eb0;
+	--form_trans: #00122fb5;
+	--account_bckgr: #dbdce1;
+	--sterren: #fdcc0d;
+	--logo_blue: #00aeef;
 }
 
 /* Header */
 
 header {
-  width: 100%;
-  height: 70px;
-  background-color: #00000047;
-  position: fixed;
-  top: 0;
-  z-index: 100;
+	width: 100%;
+	height: 70px;
+	background-color: #00000047;
+	position: fixed;
+	top: 0;
+	z-index: 100;
 }
 
 header nav ul {
-  width: 100%;
-  display: flex;
-  list-style-type: none;
-  justify-content: space-between;
+	width: 100%;
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
 }
 
 header nav ul .li_header {
-  padding: 15px;
+	padding: 15px;
 }
 
 header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 25px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
 }
 
 header nav ul li a:hover {
-  color: var(--logo_blue);
+	color: var(--logo_blue);
 }
 
 header .txt_logo {
-  display: flex;
+	display: flex;
 }
 
 header .txt_logo p {
-  font-size: 25px;
-  padding: 15px;
+	font-size: 25px;
+	padding: 15px;
 }
 /*hover TRAVELEGY*/
 header .txt_logo:hover {
-  color: var(--logo_blue);
+	color: var(--logo_blue);
 }
 
 header .img_logo {
-  width: 55px;
-  height: 55px;
-  margin-top: 7.5px;
-  margin-left: 25px;
+	width: 55px;
+	height: 55px;
+	margin-top: 7.5px;
+	margin-left: 25px;
 }
 
 /* HEADER - No Transparent */
 .header_no_trans header {
-  background-color: var(--main-blue);
+	background-color: var(--main-blue);
 }
 
 /* Footer */
 footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-  row-gap: 20px;
-  height: 200px;
-  background-color: var(--main-blue);
-  border-top-color: black;
-  border-top-style: solid;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+	row-gap: 20px;
+	height: 200px;
+	background-color: var(--main-blue);
+	border-top-color: black;
+	border-top-style: solid;
 }
 
 footer a {
-  text-decoration: none;
-  margin: 20px;
+	text-decoration: none;
+	margin: 20px;
 }
 
 footer img {
-  width: 75px;
+	width: 75px;
 }
 
 footer p {
-  color: white;
-  font-size: 25px;
+	color: white;
+	font-size: 25px;
 }
 
 /* Home */
 
 .container_startpage {
-  width: 100%;
-  height: 550px;
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)),
-    url("../Assets/afbeeldingen/sea.png");
-  background-size: cover;
-  background-position: center;
-  border-bottom: 2px solid var(--main-blue);
+	width: 100%;
+	height: 550px;
+	background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url("../Assets/afbeeldingen/sea.png");
+	background-size: cover;
+	background-position: center;
+	border-bottom: 2px solid var(--main-blue);
 }
 
 .container_startpage h2 {
-  display: flex;
-  justify-content: center;
-  padding-top: 194px;
-  font-size: 78px;
-  font-weight: normal;
-  color: #fff;
+	display: flex;
+	justify-content: center;
+	padding-top: 194px;
+	font-size: 78px;
+	font-weight: normal;
+	color: #fff;
 }
 
 .home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  scroll-behavior: smooth;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	scroll-behavior: smooth;
 }
 
 .home .search {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 50px;
-  width: 80%;
-  min-width: 700px;
-  height: 240px;
-  border-style: solid;
-  border-color: #cdcdcd;
-  border-radius: 5px;
-  border-width: 0.6px;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 50px;
+	width: 80%;
+	min-width: 700px;
+	height: 240px;
+	border-style: solid;
+	border-color: #cdcdcd;
+	border-radius: 5px;
+	border-width: 0.6px;
+	align-items: center;
 }
 
 .home .search .titel {
-  margin: 5px;
-  font-size: 35px;
+	margin: 5px;
+	font-size: 35px;
 }
 
 .home .search .sub_titel {
-  font-size: 23px;
-  margin: 5px;
+	font-size: 23px;
+	margin: 5px;
 }
 
 /* .home .search .search_bar form {
@@ -164,346 +163,316 @@ footer p {
 } */
 
 .home .search .search_bar {
-  width: 70%;
-  margin-top: 20px;
+	width: 70%;
+	margin-top: 20px;
 }
 
 .home .search .search_bar form {
-  display: flex;
-  width: 100%;
+	display: flex;
+	width: 100%;
 }
 
 .home .search .search_bar input {
-  width: 85%;
-  height: 40px;
-  border-color: #cdcdcd;
-  border-style: solid;
-  border-width: 0.6px;
-  font-size: 20px;
-  padding: 5px;
+	width: 85%;
+	height: 40px;
+	border-color: #cdcdcd;
+	border-style: solid;
+	border-width: 0.6px;
+	font-size: 20px;
+	padding: 5px;
 }
 
 .home .search .search_bar button {
-  width: 15%;
-  background-color: var(--main-blue);
-  border-color: var(--main-blue);
-  border-style: solid;
-  font-size: 20px;
-  color: white;
+	width: 15%;
+	background-color: var(--main-blue);
+	border-color: var(--main-blue);
+	border-style: solid;
+	font-size: 20px;
+	color: white;
 }
 
 .home .search .search_bar button:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    var(--main-blue);
-  cursor: pointer;
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), var(--main-blue);
+	cursor: pointer;
 }
 
 .home .search .search_bar input:focus {
-  outline: none;
-  border-color: black;
+	outline: none;
+	border-color: black;
 }
 
 .home .recommended {
-  margin-top: 50px;
-  width: 80%;
-  height: 600px;
-  display: flex;
-  color: var(--white);
+	margin-top: 50px;
+	width: 80%;
+	height: 600px;
+	display: flex;
+	color: var(--white);
 }
 
 .home .recommended .item {
-  background-size: cover !important;
-  border-radius: 5px;
-  position: relative;
+	background-size: cover !important;
+	border-radius: 5px;
+	position: relative;
 }
 
 .home .recommended .left .item {
-  width: 100%;
-  height: 100%;
-  transition: all 1s;
+	width: 100%;
+	height: 100%;
+	transition: all 1s;
 }
 
 .home .recommended .right .item {
-  width: 100%;
-  height: 50%;
+	width: 100%;
+	height: 50%;
 }
 
 .home .recommended .item:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .home .recommended .item:hover .price {
-  font-size: 35px;
+	font-size: 35px;
 }
 
 .home .recommended .left {
-  width: 50%;
-  height: 100%;
-  padding-right: 10px;
+	width: 50%;
+	height: 100%;
+	padding-right: 10px;
 }
 
 .home .recommended .right {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  width: 50%;
-  height: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	width: 50%;
+	height: 100%;
 }
 
 .home .recommended .item .titel {
-  font-size: 30px;
-  padding-left: 8px;
-  padding-top: 8px;
-  font-weight: bold;
+	font-size: 30px;
+	padding-left: 8px;
+	padding-top: 8px;
+	font-weight: bold;
 }
 
 .home .recommended .item .sub_titel {
-  padding-left: 8px;
-  font-size: 25px;
+	padding-left: 8px;
+	font-size: 25px;
 }
 
 .home .recommended .item .price {
-  position: absolute;
-  bottom: 5px;
-  right: 8px;
-  font-size: 30px;
-  font-weight: bold;
-  transition: all 1s;
+	position: absolute;
+	bottom: 5px;
+	right: 8px;
+	font-size: 30px;
+	font-weight: bold;
+	transition: all 1s;
 }
 
 /* Destinations Pagina */
 .destinations_pagina {
-  width: 100%;
-  max-width: 100%;
-  display: flex;
+	width: 100%;
+	max-width: 100%;
+	display: flex;
 }
 
 .destinations_pagina .content {
-  width: 100%;
-  max-width: 100%;
+	width: 100%;
+	max-width: 100%;
 }
 
 .destinations_pagina .content .top {
-  width: 100%;
-  height: 400px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../Assets/afbeeldingen/background_one.jpeg");
-  background-position: center top;
-  /* background-image: url("../Assets/afbeeldingen/background_one.jpeg"); */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-bottom-style: solid;
+	width: 100%;
+	height: 400px;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/afbeeldingen/background_one.jpeg");
+	background-position: center top;
+	/* background-image: url("../Assets/afbeeldingen/background_one.jpeg"); */
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-bottom-style: solid;
 }
 
 .destinations_pagina .content .top p {
-  font-size: 50px;
-  font-weight: bold;
-  margin-top: 40px;
-  text-align: center;
-  color: white;
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 40px;
+	text-align: center;
+	color: white;
 }
 
 .destinations_pagina .search_bar {
-  margin-top: 50px;
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
+	margin-top: 50px;
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 .destinations_pagina .search_bar input {
-  width: 35%;
-  min-width: 400px;
-  /* margin-right: 10px; */
-  font-size: 24px;
-  border: 0.6px solid #cdcdcd;
-  padding: 5px;
-  outline: none;
+	width: 35%;
+	min-width: 400px;
+	/* margin-right: 10px; */
+	font-size: 24px;
+	border: 0.6px solid #cdcdcd;
+	padding: 5px;
+	outline: none;
 }
 
 .destinations_pagina .search_bar input:focus {
-  outline: none;
+	outline: none;
 }
 
 .destinations_pagina .search_bar button {
-  width: 100px;
-  font-size: 20px;
-  background-color: var(--main-blue);
-  color: white;
-  border: none;
+	width: 100px;
+	font-size: 20px;
+	background-color: var(--main-blue);
+	color: white;
+	border: none;
 }
 
 .destinations_pagina .search_bar button:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    var(--main-blue);
-  cursor: pointer;
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), var(--main-blue);
+	cursor: pointer;
 }
 
 .destinations_pagina .categories {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .destinations_pagina .categories {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .destinations_pagina .categories .categorie .categorie_titel {
-  font-size: 60px;
-  margin-left: 20px;
+	font-size: 60px;
+	margin-left: 20px;
 }
 
 .destinations_pagina .categories .categorie .categorie_content {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  column-gap: 5%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	column-gap: 5%;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item {
-  position: relative;
-  display: flex;
-  box-sizing: border-box;
-  width: 20%;
-  min-width: 250px;
-  height: 350px;
-  border-color: var(--main-blue);
-  border-width: 3px;
-  flex-direction: column;
-  margin-bottom: 25px;
-  right: 0;
-  bottom: 0;
-  transition: all 0.8s;
-  overflow: hidden;
+	position: relative;
+	display: flex;
+	box-sizing: border-box;
+	width: 20%;
+	min-width: 250px;
+	height: 350px;
+	border-color: var(--main-blue);
+	border-width: 3px;
+	flex-direction: column;
+	margin-bottom: 25px;
+	right: 0;
+	bottom: 0;
+	transition: all 0.8s;
+	overflow: hidden;
+}
+
+.destinations_pagina .categories .categorie .categorie_content .item:hover .save_heart {
+	visibility: visible;
+	opacity: 1;
+}
+
+.destinations_pagina .categories .categorie .categorie_content .item .save_heart {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: 10px;
+	left: 10px;
+	width: 30px;
+	height: 30px;
+	transition: visibility 0s, opacity 0.5s;
+}
+
+.destinations_pagina .categories .categorie .categorie_content .item .save_heart:hover {
+	visibility: visible;
+	cursor: pointer;
+	opacity: 1;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item .bottom {
-  background-color: #f3f0ec;
-  height: 45%;
+	background-color: #f3f0ec;
+	height: 45%;
 }
 
-.destinations_pagina
-  .categories
-  .categorie
-  .categorie_content
-  .item
-  .bottom
-  .title {
-  margin: 5px;
-  margin-top: 5px;
+.destinations_pagina .categories .categorie .categorie_content .item .bottom .title {
+	margin: 5px;
+	margin-top: 5px;
 }
 
-.destinations_pagina
-  .categories
-  .categorie
-  .categorie_content
-  .item
-  .bottom
-  .locatie {
-  margin-left: 6px;
-  font-size: 23px;
+.destinations_pagina .categories .categorie .categorie_content .item .bottom .locatie {
+	margin-left: 6px;
+	font-size: 23px;
 }
 
-.destinations_pagina
-  .categories
-  .categorie
-  .categorie_content
-  .item
-  .bottom
-  .prijs {
-  position: absolute;
-  font-size: 30px;
-  bottom: 0;
-  right: 0;
-  margin: 5px;
-  font-weight: bold;
+.destinations_pagina .categories .categorie .categorie_content .item .bottom .prijs {
+	position: absolute;
+	font-size: 30px;
+	bottom: 0;
+	right: 0;
+	margin: 5px;
+	font-weight: bold;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item img {
-  width: 100%;
-  height: 55%;
-  object-fit: cover;
+	width: 100%;
+	height: 55%;
+	object-fit: cover;
 }
 
 .destinations_pagina .categories .categorie .categorie_content .item:hover {
-  right: 15px;
-  bottom: 15px;
-  cursor: pointer;
-  box-shadow: 15px 15px var(--main-blue);
+	right: 15px;
+	bottom: 15px;
+	cursor: pointer;
+	box-shadow: 15px 15px var(--main-blue);
 }
 
-.destinations_pagina
-  .categories
-  .categorie
-  .categorie_content
-  .item_invis:hover {
-  right: 0px;
-  bottom: 0px;
-  cursor: default;
-  box-shadow: none;
+.destinations_pagina .categories .categorie .categorie_content .item_invis:hover {
+	right: 0px;
+	bottom: 0px;
+	cursor: default;
+	box-shadow: none;
 }
 
 /* Query voor Destinations (Niet voor mobile!) */
 @media only screen and (max-width: 1220px) {
-  .destinations_pagina .categories .categorie .categorie_content .item {
-    width: 45%;
-  }
+	.destinations_pagina .categories .categorie .categorie_content .item {
+		width: 45%;
+	}
 
-  .destinations_pagina
-    .categories
-    .categorie
-    .categorie_content
-    .item
-    .item_titel {
-    font-size: 35px;
-  }
+	.destinations_pagina .categories .categorie .categorie_content .item .item_titel {
+		font-size: 35px;
+	}
 
-  .destinations_pagina
-    .categories
-    .categorie
-    .categorie_content
-    .item
-    .item_subtitel {
-    font-size: 35px;
-  }
+	.destinations_pagina .categories .categorie .categorie_content .item .item_subtitel {
+		font-size: 35px;
+	}
 
-  .destinations_pagina
-    .categories
-    .categorie
-    .categorie_content
-    .item
-    .item_subtitel
-    img {
-    width: 15px;
-  }
+	.destinations_pagina .categories .categorie .categorie_content .item .item_subtitel img {
+		width: 15px;
+	}
 
-  .destinations_pagina
-    .categories
-    .categorie
-    .categorie_content
-    .item:hover
-    .item_subtitel {
-    font-size: 40px;
-  }
+	.destinations_pagina .categories .categorie .categorie_content .item:hover .item_subtitel {
+		font-size: 40px;
+	}
 
-  .destinations_pagina
-    .categories
-    .categorie
-    .categorie_content
-    .item:hover
-    .item_subtitel
-    img {
-    width: 17px;
-  }
+	.destinations_pagina .categories .categorie .categorie_content .item:hover .item_subtitel img {
+		width: 17px;
+	}
 }
 
 .container_contact {
@@ -521,159 +490,158 @@ footer p {
 }
 
 .container_contact .all_contact {
-  display: flex;
-  width: auto;
-  height: 600px;
-  margin-top: 90px;
+	display: flex;
+	width: auto;
+	height: 600px;
+	margin-top: 90px;
 }
 
 .container_contact .contact_img {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 380px;
-  height: 600px;
-  background-color: var(--contact_trans);
-  border-top-left-radius: 7.5px;
-  border-bottom-left-radius: 7.5px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 380px;
+	height: 600px;
+	background-color: var(--contact_trans);
+	border-top-left-radius: 7.5px;
+	border-bottom-left-radius: 7.5px;
 }
 
 .container_contact .contact_img .title {
-  width: 100%;
-  height: 125px;
-  color: var(--white);
-  font-size: 40px;
-  margin-top: 150px;
-  text-align: center;
+	width: 100%;
+	height: 125px;
+	color: var(--white);
+	font-size: 40px;
+	margin-top: 150px;
+	text-align: center;
 }
 
 .container_contact .contact_img p {
-  color: var(--white);
-  font-size: 25px;
-  margin: 10px;
-  margin-top: 50px;
-  text-align: center;
+	color: var(--white);
+	font-size: 25px;
+	margin: 10px;
+	margin-top: 50px;
+	text-align: center;
 }
 
 .container_contact .form_label_input {
-  width: 800px;
-  height: 600px;
-  background-color: var(--form_trans);
-  border-top-right-radius: 7.5px;
-  border-bottom-right-radius: 7.5px;
+	width: 800px;
+	height: 600px;
+	background-color: var(--form_trans);
+	border-top-right-radius: 7.5px;
+	border-bottom-right-radius: 7.5px;
 }
 
 .container_contact input:focus {
-  outline: none;
-  border: 2.5px solid #000000;
+	outline: none;
+	border: 2.5px solid #000000;
 }
 
 .container_contact .form_label_input .form_name {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  padding-top: 10px;
+	display: flex;
+	width: 100%;
+	height: 100px;
+	padding-top: 10px;
 }
 
 .container_contact .form_label_input .form_name .fname {
-  display: flex;
-  width: 50%;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	width: 50%;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
 }
 
 .container_contact .form_label_input .form_name .fname .label_name {
-  font-size: 22.5px;
-  margin-top: 10px;
-  margin-left: -200px;
+	font-size: 22.5px;
+	margin-top: 10px;
+	margin-left: -200px;
 }
 
 .container_contact .form_label_input .form_name .fname .input_name {
-  width: 75%;
-  height: 40px;
-  padding-left: 10px;
-  margin-top: 5px;
-  font-size: 20px;
-  border-color: #cdcdcd;
-  border-style: solid;
-  border-width: 0.6px;
+	width: 75%;
+	height: 40px;
+	padding-left: 10px;
+	margin-top: 5px;
+	font-size: 20px;
+	border-color: #cdcdcd;
+	border-style: solid;
+	border-width: 0.6px;
 }
 
 .container_contact .form_label_input .form_other {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	width: 100%;
+	height: 100px;
+	flex-direction: column;
+	align-items: center;
 }
 
 .container_contact .label {
-  width: 100%;
-  height: 30px;
-  font-size: 22.5px;
-  margin-top: 5px;
-  margin-left: 105px;
+	width: 100%;
+	height: 30px;
+	font-size: 22.5px;
+	margin-top: 5px;
+	margin-left: 105px;
 }
 
 .container_contact .input {
-  width: 700px;
-  height: 40px;
-  font-size: 20px;
-  margin-top: 5px;
-  padding-left: 10px;
-  border-color: #cdcdcd;
-  border-style: solid;
-  border-width: 0.6px;
+	width: 700px;
+	height: 40px;
+	font-size: 20px;
+	margin-top: 5px;
+	padding-left: 10px;
+	border-color: #cdcdcd;
+	border-style: solid;
+	border-width: 0.6px;
 }
 
 .container_contact .form_description {
-  display: flex;
-  width: 100%;
-  height: 200px;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	width: 100%;
+	height: 200px;
+	flex-direction: column;
+	align-items: center;
 }
 
 .container_contact .form_label_input .form_description .form_des {
-  width: 700px;
-  height: 200px;
-  font-size: 20px;
-  margin-top: 5px;
-  padding-left: 10px;
-  padding-top: 10px;
-  resize: none;
-  border-color: #cdcdcd;
-  border-style: solid;
-  border-width: 0.6px;
+	width: 700px;
+	height: 200px;
+	font-size: 20px;
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-top: 10px;
+	resize: none;
+	border-color: #cdcdcd;
+	border-style: solid;
+	border-width: 0.6px;
 }
 
 .container_contact .form_label_input .form_description .form_des:focus {
-  outline: none;
-  border: 2.5px solid #000000;
+	outline: none;
+	border: 2.5px solid #000000;
 }
 
 .container_contact .submit_button {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .container_contact .submit {
-  margin-top: 20px;
-  width: 90%;
-  height: 55px;
-  box-shadow: 0px 0px 3px black;
-  background-color: var(--main-blue);
-  border-radius: 5px;
-  color: white;
-  font-size: 30px;
-  border-style: none;
+	margin-top: 20px;
+	width: 90%;
+	height: 55px;
+	box-shadow: 0px 0px 3px black;
+	background-color: var(--main-blue);
+	border-radius: 5px;
+	color: white;
+	font-size: 30px;
+	border-style: none;
 }
 
 .container_contact .submit_button .submit[type="submit"]:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    var(--main-blue);
-  cursor: pointer;
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), var(--main-blue);
+	cursor: pointer;
 }
 
 /* INLOG */
@@ -689,511 +657,613 @@ footer p {
 }
 
 .login_page form {
-  background-color: white;
-  width: 350px;
-  height: 350px;
-  /* background-color: var(--main-blue); */
-  /* border-color: white; */
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
-  box-shadow: 0px 0px 15px black;
+	background-color: white;
+	width: 350px;
+	height: 350px;
+	/* background-color: var(--main-blue); */
+	/* border-color: white; */
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	box-shadow: 0px 0px 15px black;
 }
 
 .create_account_page form {
-  background-color: white;
-  width: 350px;
-  height: 500px;
-  /* background-color: var(--main-blue); */
-  /* border-color: white; */
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
-  box-shadow: 0px 0px 15px black;
+	background-color: white;
+	width: 350px;
+	height: 500px;
+	/* background-color: var(--main-blue); */
+	/* border-color: white; */
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	box-shadow: 0px 0px 15px black;
 }
 
 .login_page form .title {
-  display: flex;
-  font-size: 30px;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  margin: 10px;
-  margin-top: 29px;
-  margin-bottom: 35px;
-  text-decoration: it;
+	display: flex;
+	font-size: 30px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px;
+	margin-top: 29px;
+	margin-bottom: 35px;
+	text-decoration: it;
 }
 
 .login_page form .label-input {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin-bottom: 10px;
 }
 
 .login_page form .label-input label {
-  color: #cdcdcd;
+	color: #cdcdcd;
 }
 
 .login_page form .label-input input {
-  font-size: 18px;
-  padding: 7px;
-  border-style: solid;
-  border-color: #cdcdcd;
-  border-width: 0.6px;
+	font-size: 18px;
+	padding: 7px;
+	border-style: solid;
+	border-color: #cdcdcd;
+	border-width: 0.6px;
 }
 
 .login_page form .label-input input:focus {
-  outline: none;
-  border-color: black;
-  border-width: 0.6px;
+	outline: none;
+	border-color: black;
+	border-width: 0.6px;
 }
 
 .login_page form .password_forgot,
 .login_page form .create_account,
 .login_page form .login_link {
-  color: var(--main-blue);
-  font-size: 15px;
-  width: 80%;
-  text-align: left;
-  text-decoration: none;
-  margin-bottom: 4px;
-  margin: 4px;
+	color: var(--main-blue);
+	font-size: 15px;
+	width: 80%;
+	text-align: left;
+	text-decoration: none;
+	margin-bottom: 4px;
+	margin: 4px;
 }
 
 .login_page form input[type="submit"] {
-  margin-top: 10px;
-  width: 80%;
-  height: 40px;
-  box-shadow: 0px 0px 3px black;
-  background-color: var(--main-blue);
-  border-radius: 5px;
-  color: white;
-  font-size: 20px;
-  border-style: none;
+	margin-top: 10px;
+	width: 80%;
+	height: 40px;
+	box-shadow: 0px 0px 3px black;
+	background-color: var(--main-blue);
+	border-radius: 5px;
+	color: white;
+	font-size: 20px;
+	border-style: none;
 }
 
 .login_page form input[type="submit"]:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    var(--main-blue);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), var(--main-blue);
 }
 
 .login_page form .links {
-  /* position: absolute;
+	/* position: absolute;
 	bottom: 5px; */
-  margin-top: 10px;
+	margin-top: 10px;
 }
 
 .login_page .login_link {
-  margin-right: 100px !important;
+	margin-right: 100px !important;
 }
 
 .login_page .logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 10px;
 }
 
 .login_page .logo img {
-  width: 80px;
+	width: 80px;
 }
 
 /*account*/
+
 .container_account {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--account_bckgr);
-  overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--account_bckgr);
+	overflow: hidden;
 }
 
 .container_account .bottom {
-  display: flex;
-  width: 100%;
-  height: 80vh;
-  margin-top: 150px;
+	display: flex;
+	width: 100%;
+	height: 80vh;
+	margin-top: 150px;
 }
 
 .container_account .left {
-  width: 17.5%;
-  height: 750px;
+	width: 17.5%;
+	height: 750px;
 }
 
 .container_account .right {
-  width: 77.5%;
-  height: 770px;
-  border-style: solid;
-  border-color: #cdcdcd;
-  border-radius: 5px;
-  border-width: 2px;
-  background-color: var(--white);
-  /*scroll*/
-  overflow-y: scroll;
+	width: 77.5%;
+	height: 770px;
+	border-style: solid;
+	border-color: #cdcdcd;
+	border-radius: 5px;
+	border-width: 2px;
+	background-color: var(--white);
+	/*scroll*/
+	overflow-y: scroll;
 }
 
 .container_account .bottom .left .nav_title {
-  width: 100%;
-  text-align: center;
-  font-size: 40px;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
 }
 
 .container_account .bottom .left .nav {
-  text-align: left;
-  margin-top: 50px;
+	text-align: left;
+	margin-top: 50px;
+	width: 100%;
 }
 
 .container_account .bottom .left .nav .link {
-  display: flex;
-  align-items: center;
-  margin-left: 75px;
-  margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	margin-left: 35px;
+	margin-bottom: 20px;
 }
 
-.container_account .bottom .left .nav .link a {
-  text-decoration: none;
-  padding: 10px;
+.container_account .bottom .left .nav .link:hover {
+	cursor: pointer;
+}
+
+.container_account .bottom .left .nav .link p {
+	text-decoration: none;
+	padding: 10px;
 }
 
 .container_account .bottom .left .nav .link img {
-  width: 30px;
+	width: 30px;
 }
 
 .container_account .bottom .account .cnt {
-  margin-top: 50px;
-  margin-left: 50px;
+	margin-top: 20px;
+	margin-left: 50px;
 }
 
 .container_account .bottom .right .account .cnt .acc_title {
-  width: 95%;
-  height: 50px;
-  border-bottom: 2px solid #cdcdcd;
-  font-size: 40px;
-  margin-bottom: 50px;
-  padding: 10px;
+	width: 95%;
+	height: 50px;
+	border-bottom: 2px solid #cdcdcd;
+	font-size: 40px;
+	margin-bottom: 50px;
+	padding: 10px;
 }
 
 .container_account .bottom .right .account .cnt .inputs {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
+	display: flex;
+	flex-direction: column;
 }
 
 .container_account .bottom .right .account .cnt .inputs .acc_lbl {
-  font-size: 25px;
+	font-size: 25px;
 }
 
 .container_account .bottom .right .account .cnt .inputs .acc_inp {
-  width: 350px;
-  padding: 7.5px;
-  font-size: 20px;
-  border-radius: 5px;
-  border-style: solid;
-  border-color: lightgrey;
-  margin-bottom: 30px;
+	width: 350px;
+	padding: 7.5px;
+	font-size: 20px;
+	border-style: solid;
+	border-color: lightgrey;
+	border-width: 0.8px;
+	margin-bottom: 30px;
+}
+
+.container_account .bottom .right .account .cnt .inputs .acc_inp:focus {
+	outline: none;
+	border-color: black;
 }
 
 .container_account .bottom .right .account .but_save {
-  width: 370px;
-  padding: 7.5px;
-  margin-left: 10px;
-  font-size: 20px;
-  color: var(--white);
-  background-color: var(--main-blue);
-  border: 1px solid #cdcdcd;
-  border-radius: 5px;
+	width: 370px;
+	padding: 7.5px;
+	font-size: 20px;
+	color: var(--white);
+	background-color: var(--main-blue);
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
 }
 
 /*opgeslagen reizen*/
 .container_account .bottom .right .opgeslagen_reizen .cnt {
-  margin-top: 20px;
-  margin-left: 50px;
+	display: none;
+	margin-top: 20px;
+	margin-left: 50px;
 }
 
 .container_account .bottom .right .opgeslagen_reizen .cnt .opgesl_title {
-  width: 95%;
-  height: 50px;
-  border-bottom: 2px solid #cdcdcd;
-  font-size: 40px;
-  margin-bottom: 20px;
-  padding: 10px;
+	width: 95%;
+	height: 50px;
+	border-bottom: 2px solid #cdcdcd;
+	font-size: 40px;
+	margin-bottom: 20px;
+	padding: 10px;
 }
 
 .container_account .bottom .right .cnt .reizen {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  column-gap: 40px;
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 40px;
+	column-gap: 40px;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .container_account .bottom .right .cnt .reizen .reis {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  height: 400px;
-  background-color: var(--account_bckgr);
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	width: 350px;
+	height: 400px;
+	background-color: var(--account_bckgr);
 }
 
-.container_account .bottom .right .cnt .reizen .reis img {
-  object-fit: cover;
-  width: 100%;
-  height: 55%;
+.container_account .bottom .right .cnt .reizen .reis:hover {
+	cursor: pointer;
+}
+
+.container_account .bottom .right .cnt .reizen .reis:hover .save_heart {
+	visibility: visible;
+	opacity: 1;
+}
+
+.container_account .bottom .right .cnt .reizen .reis .save_heart {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: 10px;
+	left: 10px;
+	width: 30px;
+	height: 30px;
+	transition: visibility 0s, opacity 0.5s;
+}
+
+.container_account .bottom .right .cnt .reizen .reis .save_heart:hover {
+	visibility: visible;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.container_account .bottom .right .cnt .reizen .reis .afbeelding {
+	object-fit: cover;
+	width: 100%;
+	height: 55%;
 }
 
 .container_account .bottom .right .cnt .reizen .reis .reis_hotel {
-  font-size: 35px;
-  margin-left: 5px;
-  margin-top: 5px;
+	font-size: 35px;
+	margin-left: 5px;
+	margin-top: 5px;
 }
 
 .container_account .bottom .right .cnt .reizen .reis .reis_plaats {
-  font-size: 25px;
-  margin-left: 6px;
+	font-size: 25px;
+	margin-left: 6px;
 }
 
 .container_account .bottom .right .cnt .reizen .reis .rt_pr {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 50px;
-  margin-top: 50px;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 50px;
+	margin-top: 50px;
 }
 
 .container_account .bottom .right .cnt .reizen .reis .rt_pr .rating {
-  font-size: 30px;
-  color: var(--white);
+	font-size: 30px;
+	color: var(--white);
 }
 
 .container_account .bottom .right .cnt .reizen .reis .rt_pr .prijs {
-  font-size: 30px;
+	font-size: 30px;
 }
 
 /*gebroekte reizen*/
 .container_account .bottom .right .geboekte_reizen .cnt {
-  margin-top: 20px;
-  margin-left: 50px;
+	margin-top: 20px;
+	margin-left: 50px;
+	display: none;
 }
 
 .container_account .bottom .right .geboekte_reizen .cnt .geboekte_title {
-  width: 95%;
-  height: 50px;
-  border-bottom: 2px solid #cdcdcd;
-  font-size: 40px;
-  margin-bottom: 20px;
-  padding: 10px;
+	width: 95%;
+	height: 50px;
+	border-bottom: 2px solid #cdcdcd;
+	font-size: 40px;
+	margin-bottom: 20px;
+	padding: 10px;
 }
 /*reviews*/
 .container_account .bottom .right .reviews .cnt {
-  margin-top: 20px;
-  margin-left: 50px;
+	display: none;
+	margin-top: 20px;
+	margin-left: 50px;
 }
 
 .container_account .bottom .right .reviews .cnt .review_title {
-  width: 95%;
-  height: 50px;
-  border-bottom: 2px solid #cdcdcd;
-  font-size: 40px;
-  margin-bottom: 30px;
-  padding: 10px;
+	width: 95%;
+	height: 50px;
+	border-bottom: 2px solid #cdcdcd;
+	font-size: 40px;
+	margin-bottom: 30px;
+	padding: 10px;
 }
 
 .container_account .bottom .right .reviews .cnt .review_persoon {
-  width: 95%;
-  background-color: var(--account_bckgr);
-  margin-top: 10px;
+	position: relative;
+	width: 95%;
+	background-color: var(--account_bckgr);
+	margin-top: 10px;
 }
 
 .container_account .bottom .right .reviews .cnt .review_persoon .naam {
-  font-size: 25px;
-  font-weight: bold;
-  padding-top: 10px;
-  padding-left: 10px;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 10px;
 }
 
 .container_account .bottom .right .reviews .cnt .review_persoon .reisnaam {
-  font-size: 22.5px;
-  margin-left: 10px;
+	font-size: 22.5px;
+	margin-left: 10px;
 }
 
 .container_account .bottom .right .reviews .cnt .review_persoon .rating {
-  padding-left: 10px;
-  color: var(--white);
-  font-size: 25px;
+	padding-left: 10px;
+	color: var(--sterren);
+	font-size: 25px;
 }
 
 .container_account .bottom .right .reviews .cnt .review_persoon .recensie {
-  font-size: 20px;
-  padding: 10px;
-  margin-bottom: 30px;
+	font-size: 20px;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+.container_account .bottom .right .reviews .review_persoon:hover .delete_icon {
+	visibility: visible;
+	opacity: 1;
+}
+
+.container_account .bottom .right .reviews .review_persoon .delete_icon {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: 10px;
+	right: 10px;
+	width: 45px;
+	height: 45px;
+	transition: visibility 0s, opacity 0.5s;
+}
+
+.container_account .bottom .right .reviews .review_persoon .delete_icon:hover {
+	visibility: visible;
+	cursor: pointer;
+	opacity: 1;
 }
 
 /* Reis Pagina */
 
 .reis_pagina main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .reis_pagina .main_content {
-  width: 70%;
-  min-width: 800px;
-  display: flex;
-  justify-content: center;
-  margin-top: 125px;
-  height: 500px;
+	width: 70%;
+	min-width: 800px;
+	display: flex;
+	justify-content: center;
+	margin-top: 125px;
+	height: 500px;
 }
 
 .reis_pagina .main_content .left {
-  width: 50%;
-  height: 100%;
+	width: 50%;
+	height: 100%;
 }
 
 .reis_pagina .main_content .left img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 .reis_pagina .main_content .right {
-  width: 50%;
-  position: relative;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: var(--main-blue);
+	width: 50%;
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: var(--main-blue);
 }
 
 .reis_pagina .main_content .right .title {
-  color: white;
-  margin-top: 25px;
-  margin-left: 8px;
-  font-size: calc(25px + 0.6vw);
+	color: white;
+	margin-top: 25px;
+	margin-left: 8px;
+	font-size: calc(25px + 0.6vw);
 }
 
 .reis_pagina .main_content .right .sub_title {
-  color: white;
-  font-size: calc(15px + 0.6vw);
-  margin-left: 8px;
+	color: white;
+	font-size: calc(15px + 0.6vw);
+	margin-left: 8px;
 }
 
 .reis_pagina .main_content .right .rating {
-  color: var(--sterren);
-  font-size: calc(15px + 0.6vw);
+	color: var(--sterren);
+	font-size: calc(15px + 0.6vw);
 }
 
 .reis_pagina .main_content .right .prijs-button {
-  position: absolute;
-  bottom: 25px;
-  width: 80%;
+	position: absolute;
+	bottom: 25px;
+	width: 80%;
 }
 
 .reis_pagina .main_content .right .prijs-button p {
-  font-size: calc(15px + 0.4vw);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+	font-size: calc(15px + 0.4vw);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
 }
 
 .reis_pagina .main_content .right .prijs-button span {
-  font-size: calc(25px + 0.7vw);
+	font-size: calc(25px + 0.7vw);
 }
 
 .reis_pagina .main_content .right .prijs-button button {
-  width: 100%;
-  height: 50px;
-  background-color: white;
-  border-style: none;
-  color: var(--main-blue);
-  font-size: 20px;
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	border-style: none;
+	color: var(--main-blue);
+	font-size: 20px;
 }
 
 .reis_pagina .main_content .right .prijs-button button:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), white;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), white;
 }
 
 .reis_pagina .tabs {
-  margin-top: 20px;
-  width: 70%;
-  min-width: 800px;
+	margin-top: 20px;
+	width: 70%;
+	min-width: 800px;
 }
 
 .reis_pagina .tabs ul {
-  display: flex;
-  list-style-type: none;
-  width: 100%;
-  column-gap: 30px;
+	display: flex;
+	list-style-type: none;
+	width: 100%;
+	column-gap: 30px;
 }
 
 .reis_pagina .tabs ul li {
-  font-size: 30px;
+	font-size: 30px;
 }
 
 .reis_pagina .tabs ul li:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .selected {
-  border-bottom-style: solid;
-  border-color: var(--main-blue);
-  padding-bottom: 5px;
-  border-width: 4px;
+	border-bottom-style: solid;
+	border-color: var(--main-blue);
+	padding-bottom: 5px;
+	border-width: 4px;
 }
 
 .reis_pagina .main_beschrijving {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
 }
 
 .reis_pagina .recensies {
-  width: 100%;
-  display: none;
-  flex-direction: column;
+	width: 100%;
+	display: none;
+	flex-direction: column;
 }
 
 .reis_pagina .recensies .recensie {
-  width: 100%;
-  height: 150px;
-  margin-top: 20px;
-  border-style: solid;
-  border-color: #cdcdcd;
-  border-radius: 5px;
-  border-width: 0.6px;
-  overflow-y: scroll;
-  margin-bottom: 20px;
+	width: 100%;
+	height: 150px;
+	margin-top: 20px;
+	border-style: solid;
+	border-color: #cdcdcd;
+	border-radius: 5px;
+	border-width: 0.6px;
+	overflow-y: scroll;
+	margin-bottom: 20px;
 }
 
 .reis_pagina .recensies .recensie .gebruiker_sterren {
-  font-size: 25px;
-  margin: 10px;
-  font-weight: bold;
+	font-size: 25px;
+	margin: 10px;
+	font-weight: bold;
 }
 
 .reis_pagina .recensies .recensie .gebruiker_sterren span {
-  color: var(--sterren);
+	color: var(--sterren);
 }
 
 .reis_pagina .recensies .recensie .beschrijving {
-  margin: 10px;
-  color: black;
+	margin: 10px;
+	color: black;
+}
+
+.reis_pagina .add_review {
+	margin: 10px;
+	display: none;
+	flex-direction: column;
+}
+
+.reis_pagina .add_review .stars {
+	display: flex;
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+
+.reis_pagina .add_review .stars:hover {
+	cursor: pointer;
+}
+
+.reis_pagina .add_review label {
+	font-size: 30px;
+	margin-bottom: 1px;
+}
+
+.reis_pagina .add_review textarea {
+	resize: none;
+	font-size: 20px;
+	width: 100%;
+	height: 150px;
+	margin-bottom: 20px;
+}
+
+.reis_pagina .add_review button {
+	width: 45%;
+	height: 50px;
+	background-color: var(--main-blue);
+	border-style: none;
+	color: white;
+	font-size: 20px;
+}
+
+.reis_pagina .add_review button:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), var(--main-blue);
 }
 
 /*admin page*/
