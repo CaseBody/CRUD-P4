@@ -86,10 +86,8 @@ footer {
 	justify-content: center;
 	margin-top: 100px;
 	row-gap: 20px;
-	height: 200px;
+	height: 170px;
 	background-color: var(--main-blue);
-	border-top-color: black;
-	border-top-style: solid;
 }
 
 footer a {
