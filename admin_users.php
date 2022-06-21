@@ -31,6 +31,7 @@
                 <div class="user_data">
                     <table class="table">
                         <tr>
+                            <th>ID</th>
                             <th>Email</th>
                             <th>Password</th>
                             <th>First Name</th>
@@ -41,11 +42,12 @@
                         <?php
                             foreach($result as $user){
                             ?>
+                            <td><?php echo $user['id'] ?></td>
                             <td><?php echo $user['email'] ?></td>
                             <td><input
                                 class="ww"
+                                id="bewerk_ww"
                                 type="text"
-                                value=""
                                 >
                             </td>
                             <td><?php echo $user['voornaam'] ?></td>
@@ -53,7 +55,13 @@
                             <td><input 
                                 id="isAdmin_box" 
                                 type="checkbox"
-                                value=""
+                                checked="<?php
+                                    if($user['isAdmin'] == 1) {
+                                        echo 'true';
+                                    } else {
+                                        echo 'false';
+                                    }
+                                ?>"
                                 >
                             </td>
                         </tr>

@@ -47,7 +47,7 @@
                             ?></span>
                     </p>
                     <p class="beschrijving">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iste incidunt voluptate error id, quas ratione, vitae dolores consectetur consequatur adipisci earum corporis, neque repudiandae! Nulla enim sed ipsum consequuntur itaque a assumenda veritatis delectus aliquid commodi blanditiis quo placeat, odio vitae amet? Ducimus distinctio molestias asperiores labore reprehenderit omnis.
+                        <?php echo $recensie['beschrijving'] ?>
                     </p>
                     <?php
                     }
