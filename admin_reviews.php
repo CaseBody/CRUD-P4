@@ -38,13 +38,12 @@
 					<p class="naam_sterren">
                         <?php echo $recensie['voornaam']?>
                         -
-                        <span>
-                            <?php
-                            for ($i = 0; $i < $recensie['sterren'], $i++;)
+                        <?php
+                            for ($i = 0; $i < $recensie['sterren']; $i++)
                             {
                                 echo "★";
-                            }
-                            ?></span>
+                            } 
+                        ?>
                     </p>
                     <p class="beschrijving">
                         <?php echo $recensie['beschrijving'] ?>
