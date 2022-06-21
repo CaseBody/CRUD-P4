@@ -47,6 +47,10 @@
                     </p>
                     <p class="beschrijving">
                         <?php echo $recensie['beschrijving'] ?>
+                        <div class="yes_no">
+                            <img class="img" src="Assets/afbeeldingen/red-cross.png" alt="decline">
+                            <img class="img" src="Assets/afbeeldingen/check.png" alt="accept">
+                        </div>
                     </p>
                     <?php
                     }
