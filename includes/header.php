@@ -29,7 +29,7 @@
             <a href="contact.php">Contact</a>
           </li>
           <li class="li_header">
-            <a href="about_us.php">About</a>
+            <a href="">About Us</a>
           </li>
         </ul>
       </li>
