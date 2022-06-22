@@ -28,6 +28,9 @@
           <li class="li_header">
             <a href="contact.php">Contact</a>
           </li>
+          <li class="li_header">
+            <a href="about_us.php">About</a>
+          </li>
         </ul>
       </li>
     </ul>

@@ -1584,22 +1584,20 @@ td {
 
 .container_reviews {
   display: flex;
-  flex-direction: column;
-  margin-top: 200px;
+  justify-content: center;
 }
 
 .container_reviews .all_reviews {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 70%;
+  margin-top: 175px
 }
 
 .container_reviews .all_reviews .recensie {
-  width: 100%;
+  width: 1000px;
   height: 100px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid black;
+  background-color: #cdcdcd;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
 .container_reviews .all_reviews .recensie .naam_sterren {
@@ -1609,8 +1607,17 @@ td {
 }
 
 .container_reviews .all_reviews .recensie .beschrijving {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
   font-size: 17.5px;
   padding: 10px;
+  padding-top: 0px;
+}
+
+.container_reviews .all_reviews .recensie .yes_no .img {
+	width: 30px;
+	margin-right: 5px;
 }
 
 /*container_users*/
