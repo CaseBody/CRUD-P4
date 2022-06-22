@@ -45,13 +45,13 @@
                             } 
                         ?>
                     </p>
-                    <p class="beschrijving">
-                        <?php echo $recensie['beschrijving'] ?>
+                    <div class="beschrijving">
+                        <p><?php echo $recensie['beschrijving'] ?></p>
                         <div class="yes_no">
                             <img class="img" src="Assets/afbeeldingen/red-cross.png" alt="decline">
                             <img class="img" src="Assets/afbeeldingen/check.png" alt="accept">
                         </div>
-                    </p>
+                    </div>
                     <?php
                     }
                 ?>

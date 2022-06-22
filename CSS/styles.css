@@ -1609,6 +1609,7 @@ td {
 }
 
 .container_reviews .all_reviews .recensie .beschrijving {
+  display: flex;
   width: 95%;
   font-size: 17.5px;
   padding: 10px;
