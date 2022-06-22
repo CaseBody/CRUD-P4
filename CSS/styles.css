@@ -1610,19 +1610,16 @@ td {
 
 .container_reviews .all_reviews .recensie .beschrijving {
   display: flex;
+  justify-content: space-between;
   width: 95%;
   font-size: 17.5px;
   padding: 10px;
   padding-top: 0px;
 }
 
-.container_reviews .all_reviews .recensie .beschrijving .yes_no {
-	margin-left: 0px;
-}
-
 .container_reviews .all_reviews .recensie .yes_no .img {
-	width: 20px;
-	margin-right: 15px;
+	width: 30px;
+	margin-right: 5px;
 }
 
 /*container_users*/

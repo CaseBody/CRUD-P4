@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css" />
     <!-- icon page -->
-    <link rel="icon" type="image/x-icon" href="Assets/afbeeldingen/.png" />
+    <link rel="icon" type="image/x-icon" href="Assets/afbeeldingen/logo.png" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,7 +51,7 @@
                             <img class="img" src="Assets/afbeeldingen/red-cross.png" alt="decline">
                             <img class="img" src="Assets/afbeeldingen/check.png" alt="accept">
                         </div>
-                    </div>
+                    </div>  
                     <?php
                     }
                 ?>
