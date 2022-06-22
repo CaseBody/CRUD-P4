@@ -16,6 +16,7 @@
 
 	<?php
 		require_once "includes/connect.php";
+        require_once("includes/admin_inlog.php");
         
         $sql = 'SELECT recensies.id, recensies.beschrijving, recensies.sterren, recensies.isbevestigd, gebruikers.voornaam FROM recensies 
         INNER JOIN gebruikers ON recensies.gebruikerid=gebruikers.id 

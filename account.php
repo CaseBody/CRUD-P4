@@ -89,6 +89,17 @@
 								<img src="Assets/afbeeldingen/star.png" alt="placeholder" />
 								<p href="" id="nav_review">Reviews</p>
 							</div>
+							<?php
+								if ($_SESSION['isAdmin'])
+								{
+									?>
+									<div class="link">
+										<img src="Assets/afbeeldingen/account.png" alt="placeholder" />
+										<a style='text-decoration: none; color: black; padding: 10px;' href="admin.php" id="nav_account">Admin Panel</a>
+									</div>
+									<?php
+								}
+							?>
 						</div>
 					</div>
 
