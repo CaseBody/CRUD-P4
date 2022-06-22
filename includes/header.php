@@ -17,9 +17,6 @@
             <a href="index.php">Home</a>
           </li>
           <li class="li_header">
-            <a href="">About Us</a>
-          </li>
-          <li class="li_header">
             <a href="index.php#recommended">Recommended</a>
           </li>
           <li class="li_header">
@@ -30,6 +27,9 @@
           </li>
           <li class="li_header">
             <a href="contact.php">Contact</a>
+          </li>
+          <li class="li_header">
+            <a href="">About Us</a>
           </li>
         </ul>
       </li>
