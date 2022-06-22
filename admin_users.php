@@ -14,8 +14,10 @@
     <title>Users</title>
 </head>
     <?php
-        require_once 'includes/header.php';
-        require_once "includes/connect.php";
+        require_once('includes/header.php');
+        require_once("includes/connect.php");
+        require_once("includes/admin_inlog.php");
+   
 
 		$sql = 'SELECT * FROM gebruikers';
         $stmt = $connect->prepare($sql);

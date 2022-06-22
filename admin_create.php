@@ -16,6 +16,7 @@
 <body>
     <?php
         require_once("includes/connect.php");
+        require_once("includes/admin_inlog.php");
         /**
          * @var PDO $connect
         */
