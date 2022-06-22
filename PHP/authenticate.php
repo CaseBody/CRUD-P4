@@ -37,6 +37,7 @@ if ($stmt = $con->prepare('SELECT id, wachtwoord, isAdmin FROM gebruikers WHERE 
             session_regenerate_id();
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['id'] = $id;
+            $_SESSION['isAdmin'] = $isAdmin;
             header("location: ../account.php");
         } else {
             // Incorrect password

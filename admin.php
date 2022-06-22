@@ -16,6 +16,7 @@
     <?php
         require_once 'includes/header.php';
         require_once "includes/connect.php";
+        require_once("includes/admin_inlog.php");
 
 		$sql = 'SELECT * FROM reis';
         $stmt = $connect->prepare($sql);

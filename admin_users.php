@@ -14,8 +14,10 @@
     <title>Users</title>
 </head>
     <?php
-        require_once 'includes/header.php';
-        require_once "includes/connect.php";
+        require_once('includes/header.php');
+        require_once("includes/connect.php");
+        require_once("includes/admin_inlog.php");
+   
 
 		$sql = 'SELECT * FROM gebruikers';
         $stmt = $connect->prepare($sql);
@@ -38,10 +40,10 @@
                             <th>Last Name</th>
                             <th>Make Admin</th>
                         </tr>
-                        <tr id="row_user_data">
                         <?php
                             foreach($result as $user){
                             ?>
+                            <tr class="row_user_data">
                             <td><?php echo $user['id'] ?></td>
                             <td><?php echo $user['email'] ?></td>
                             <td><input
@@ -51,17 +53,16 @@
                                 >
                             </td>
                             <td><?php echo $user['voornaam'] ?></td>
-                            <td><?php echo $user['achternaam'] ?></td>
+                            <td><?php echo $user['achternaam']?></td>
                             <td><input 
                                 id="isAdmin_box" 
                                 type="checkbox"
-                                checked="<?php
-                                    if($user['isAdmin'] == 1) {
-                                        echo 'true';
-                                    } else {
-                                        echo 'false';
-                                    }
-                                ?>"
+                                <?php
+                                    if($user['isAdmin'] == '1') 
+                                    {
+                                        echo 'checked="true"';
+                                    } 
+                                ?>
                                 >
                             </td>
                         </tr>
