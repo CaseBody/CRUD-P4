@@ -85,7 +85,6 @@
 								}
 								?>
 								<img src="<?php echo $reis['afbeelding'] ?>" alt="">
-								<p class="reis_id" style="display: none;"><?php echo $reis['id'] ?></p>
 								<div class="bottom">
 									<p class="title"><?php echo $reis['naam'] ?></p>
 									<p class="locatie"><?php echo $reis['locatie'] ?></p>
