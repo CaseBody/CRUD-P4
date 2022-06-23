@@ -32,6 +32,7 @@
             <p class="title">Welcome to TRAVELEGY - Admin Panel</p>
             
             <div class="links">
+                <a href="admin_boekingen.php" class="admin_boeking">Boekingen</a>
                 <a href="admin_reviews.php" class="admin_review">Reviews</a>
                 <a href="admin_users.php" class="admin_users">Users</a>
             </div>
