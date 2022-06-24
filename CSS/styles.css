@@ -1319,6 +1319,7 @@ footer p {
   width: 100%;
   height: 150px;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .reis_pagina .add_review button {
@@ -1970,5 +1971,63 @@ td {
   .container_about .content .info {
     max-width: 80%;
     margin-top: 30px;
+  }
+
+
+
+  .reis_pagina .main_content {
+    flex-direction: column;
+    width: 90%;
+    min-width: 385px;
+    height: 650px;
+    margin-top: 110px;
+  }
+
+  .reis_pagina .main_content .left {
+    width: 100%;
+  }
+
+  .reis_pagina .main_content .left img {
+    border-radius: 5px;
+  }
+
+  .reis_pagina .main_content .right {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+  }
+
+  .reis_pagina .tabs {
+    min-width: 400px;
+    margin-left: 15px;
+  }
+
+  .reis_pagina .main_beschrijving {
+    margin-bottom: 30px;
+    font-size: 17.5px;
+  }
+
+  .reis_pagina .recensies .recensie {
+    width: 95%;
+  }
+
+  .reis_pagina .recensies .recensie .gebruiker_sterren {
+    font-size: 22.5px;
+  }
+
+  .reis_pagina .add_review label {
+    font-size: 25px;
+  }
+
+  .reis_pagina .add_review textarea {
+    width: 90%;
+  }
+
+  .reis_pagina .add_review button {
+    margin-bottom: 20px
+  }
+
+  .login_page {
+    height: 89.5vh;
   }
 }
