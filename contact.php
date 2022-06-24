@@ -37,7 +37,7 @@
               We look forward to hearing from you!
             </p>
         </div>
-        <form method="post" id="form">
+        <form method="post" id="form" class="form">
           <div class="form_label_input">
             <div class="form_name">
               <div class="fname">

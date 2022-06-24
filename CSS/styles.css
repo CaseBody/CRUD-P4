@@ -1863,15 +1863,16 @@ td {
   }
 
   .container_contact .contact_img {
-    width: 45%;
+    width: 100%;
     max-width: 365px;
-    height: 100%;
+    height: 300px;
     border-radius: 5px;
     margin-bottom: 20px;
   }
 
   .container_contact .contact_img .title {
-    margin-top: 25px;
+    margin-top: 15px;
+    height: 100px;
   }
 
   .container_contact .contact_img p {
@@ -1879,128 +1880,81 @@ td {
     margin-top: 0px;
   }
 
-  .container_contact .form_label_input {
-    display: flex;
-    justify-content: center;
-    width: 85%;
-    height: 100%;
-    border-radius: 5px;
+  .container_contact .form {
+    width: 95%;
+    max-width: 350px;
+    height: 650px;
   }
 
-  .container_contact input:focus {
-    outline: none;
-    border: 2.5px solid #000000;
+  .container_contact .form_label_input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-bottom: 50px;
   }
 
   .container_contact .form_label_input .form_name {
     flex-direction: column;
-    width: 45%;
-    height: 100px;
-    padding-top: 10px;
+    width: 100%;
+    max-width: 365px;
+    height: 160px;
+    margin-left: 10px;
   }
 
   .container_contact .form_label_input .form_name .fname {
-    display: flex;
-    width: 50%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
+    align-items: unset;
+    width: 100%;
+    height: 85px;
   }
+
+   .container_contact .form_label_input .form_name .fname .input_name {
+    width: 90%;
+    max-width: 365px;
+   }
 
   .container_contact .form_label_input .form_name .fname .label_name {
-    font-size: 22.5px;
-    margin-top: 10px;
-    margin-left: -200px;
-  }
-
-  .container_contact .form_label_input .form_name .fname .input_name {
-    width: 75%;
-    height: 40px;
-    padding-left: 10px;
-    margin-top: 5px;
+    width: 105px;
     font-size: 20px;
-    border-color: #cdcdcd;
-    border-style: solid;
-    border-width: 0.6px;
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+
+  .container_contact .form_label_input .form_other {
+    align-items: unset;
+    margin-left: 10px;
+    height: 85px;
+  }
+
+  .container_contact .label {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+
+  .container_contact .input {
+    width: 90%;
+    height: 35px;
+    margin-top: 5px;
+    padding-left: 0px;
+    padding: 5px;
+  }
+
+  .container_contact .form_description {
+    width: 100%;
+    height: 200px;
+    align-items: unset;
+    margin-left: 10px;
+  }
+
+  .container_contact .form_label_input .form_description .form_des {
+    width: 90%;
+    height: 220px;
+  }
+
+  .container_contact .submit {
+    margin-top: 10px;
   }
 }
-
-
-/*
-
-.container_contact .form_label_input .form_other {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container_contact .label {
-  width: 100%;
-  height: 30px;
-  font-size: 22.5px;
-  margin-top: 5px;
-  margin-left: 105px;
-}
-
-.container_contact .input {
-  width: 700px;
-  height: 40px;
-  font-size: 20px;
-  margin-top: 5px;
-  padding-left: 10px;
-  border-color: #cdcdcd;
-  border-style: solid;
-  border-width: 0.6px;
-}
-
-.container_contact .form_description {
-  display: flex;
-  width: 100%;
-  height: 200px;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container_contact .form_label_input .form_description .form_des {
-  width: 700px;
-  height: 200px;
-  font-size: 20px;
-  margin-top: 5px;
-  padding-left: 10px;
-  padding-top: 10px;
-  resize: none;
-  border-color: #cdcdcd;
-  border-style: solid;
-  border-width: 0.6px;
-}
-
-.container_contact .form_label_input .form_description .form_des:focus {
-  outline: none;
-  border: 2.5px solid #000000;
-}
-
-.container_contact .submit_button {
-  display: flex;
-  justify-content: center;
-}
-
-.container_contact .submit {
-  margin-top: 20px;
-  width: 90%;
-  height: 55px;
-  box-shadow: 0px 0px 3px black;
-  background-color: var(--main-blue);
-  border-radius: 5px;
-  color: white;
-  font-size: 30px;
-  border-style: none;
-}
-
-.container_contact .submit_button .submit[type="submit"]:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    var(--main-blue);
-  cursor: pointer;
-}
-*/
