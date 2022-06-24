@@ -14,7 +14,6 @@
     <title>Users</title>
 </head>
     <?php
-        require_once('includes/header.php');
         require_once("includes/connect.php");
         require_once("includes/admin_inlog.php");
    
@@ -24,7 +23,10 @@
         $stmt->execute();
         $result = $stmt->fetchAll();
     ?>
-<body>
+<body class='header_no_trans'>
+    <?php 
+            require_once('includes/header.php');
+            ?>
     <main>
         <div class="container_users">
             <p class="user_titel">Users</p>
