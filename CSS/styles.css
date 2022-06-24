@@ -1768,3 +1768,250 @@ td {
   color: var(--white);
   margin-top: 50px;
 }
+
+@media only screen and (max-width: 414px) {
+  /* body {
+    
+  } */
+  .container_startpage h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 160px;
+    font-size: 60px;
+  }
+
+  .home .search {
+    margin-top: 25px;
+    width: 90%;
+    min-width: 100px;
+  }
+
+  .home .search .titel {
+    margin: 2px;
+    font-size: 40px;
+  }
+
+  .home .search .sub_titel {
+    font-size: 17.5px;
+    margin: 5px;
+  }
+
+  .home .search .search_bar {
+    width: 85%;
+  }
+
+  .home .search .search_bar input {
+    width: 80%;
+  }
+
+  .home .search .search_bar button {
+    width: 25%;
+    background-color: var(--main-blue);
+    border-color: var(--main-blue);
+    border-style: solid;
+    font-size: 20px;
+    color: white;
+  }
+
+  .home .recommended {
+    flex-direction: column;
+    margin-top: 35px;
+    width: 85%;
+    height: 1205px;
+    margin-bottom: -50px;
+  }
+
+  .home .recommended .right .item {
+    height: 395px;
+  }
+
+  .home .recommended .left {
+    width: 100%;
+    height: 395px;
+    margin-bottom: 10px;
+  }
+
+  .home .recommended .right {
+    width: 100%;
+    height: 800px;
+  }
+
+  .destinations_pagina .content .top {
+    display: flex;
+    justify-content: center;
+    height: 450px;
+  }
+
+  .destinations_pagina .search_bar {
+    width: 100%;
+  }
+
+  .destinations_pagina .search_bar input {
+    width: 30%;
+    min-width: 250px;
+  }
+
+  .destinations_pagina .categories {
+    margin-bottom: -70px;
+  }
+
+  .container_contact .all_contact {
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    margin-top: -75px;
+  }
+}
+
+
+/*
+
+.container_contact .contact_img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 380px;
+  height: 600px;
+  background-color: var(--contact_trans);
+  border-top-left-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
+}
+
+.container_contact .contact_img .title {
+  width: 100%;
+  height: 125px;
+  color: var(--white);
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.container_contact .contact_img p {
+  color: var(--white);
+  font-size: 25px;
+  margin: 10px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.container_contact .form_label_input {
+  width: 800px;
+  height: 600px;
+  background-color: var(--form_trans);
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+}
+
+.container_contact input:focus {
+  outline: none;
+  border: 2.5px solid #000000;
+}
+
+.container_contact .form_label_input .form_name {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.container_contact .form_label_input .form_name .fname {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_contact .form_label_input .form_name .fname .label_name {
+  font-size: 22.5px;
+  margin-top: 10px;
+  margin-left: -200px;
+}
+
+.container_contact .form_label_input .form_name .fname .input_name {
+  width: 75%;
+  height: 40px;
+  padding-left: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+  border-color: #cdcdcd;
+  border-style: solid;
+  border-width: 0.6px;
+}
+
+.container_contact .form_label_input .form_other {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_contact .label {
+  width: 100%;
+  height: 30px;
+  font-size: 22.5px;
+  margin-top: 5px;
+  margin-left: 105px;
+}
+
+.container_contact .input {
+  width: 700px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 5px;
+  padding-left: 10px;
+  border-color: #cdcdcd;
+  border-style: solid;
+  border-width: 0.6px;
+}
+
+.container_contact .form_description {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_contact .form_label_input .form_description .form_des {
+  width: 700px;
+  height: 200px;
+  font-size: 20px;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-top: 10px;
+  resize: none;
+  border-color: #cdcdcd;
+  border-style: solid;
+  border-width: 0.6px;
+}
+
+.container_contact .form_label_input .form_description .form_des:focus {
+  outline: none;
+  border: 2.5px solid #000000;
+}
+
+.container_contact .submit_button {
+  display: flex;
+  justify-content: center;
+}
+
+.container_contact .submit {
+  margin-top: 20px;
+  width: 90%;
+  height: 55px;
+  box-shadow: 0px 0px 3px black;
+  background-color: var(--main-blue);
+  border-radius: 5px;
+  color: white;
+  font-size: 30px;
+  border-style: none;
+}
+
+.container_contact .submit_button .submit[type="submit"]:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    var(--main-blue);
+  cursor: pointer;
+}
+*/
