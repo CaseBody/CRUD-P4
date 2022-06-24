@@ -1856,14 +1856,14 @@ td {
   }
 
   .container_contact {
-    height: 125vh;
+    height: 135vh;
   }
 
   .container_contact .all_contact {
     flex-direction: column;
     align-items: center;
     height: 600px;
-    margin-top: -100px;
+    margin-top: -180px;
   }
 
   .container_contact .contact_img {
