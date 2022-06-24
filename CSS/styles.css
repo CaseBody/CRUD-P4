@@ -29,6 +29,7 @@ header {
 	position: fixed;
 	top: 0;
 	z-index: 100;
+	transition: background-color 0.8s;
 }
 
 header nav ul {
@@ -70,6 +71,69 @@ header .img_logo {
 	height: 55px;
 	margin-top: 7.5px;
 	margin-left: 25px;
+}
+
+header .hamburger {
+	display: none;
+	width: 60px;
+	height: 60px;
+}
+
+header .hamburger:hover {
+	cursor: pointer;
+}
+
+.mobile-nav {
+	position: fixed;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	z-index: 5;
+	width: 100%;
+	height: calc(100% - 70px);
+	margin-top: 70px;
+	background-color: var(--main-blue);
+	top: -100vh;
+	transition: top 0.8s;
+}
+
+.mobile-nav ul {
+	list-style: none;
+}
+
+.mobile-nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 12vw;
+}
+
+@media only screen and (min-width: 700px) {
+	.mobile-nav ul li a {
+		color: white;
+		text-decoration: none;
+		font-size: 8vw;
+	}
+}
+
+/* Header Mobile */
+@media only screen and (max-width: 950px) {
+	.mobile-nav {
+		display: flex;
+	}
+
+	header .hamburger {
+		display: inline;
+	}
+
+	header .links {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header .links ul {
+		display: none;
+	}
 }
 
 /* HEADER - No Transparent */
