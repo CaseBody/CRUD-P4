@@ -1856,14 +1856,14 @@ td {
   }
 
   .container_contact {
-    height: 110vh;
+    height: 125vh;
   }
 
   .container_contact .all_contact {
     flex-direction: column;
     align-items: center;
     height: 600px;
-    margin-top: -160px;
+    margin-top: -100px;
   }
 
   .container_contact .contact_img {
@@ -1961,5 +1961,14 @@ td {
 
   .container_contact .submit {
     margin-top: 10px;
+  }
+
+  .container_about .titel {
+    margin-top: 25px;
+  }
+
+  .container_about .content .info {
+    max-width: 80%;
+    margin-top: 30px;
   }
 }
