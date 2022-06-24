@@ -1360,6 +1360,7 @@ footer p {
   border-radius: 5px;
   padding: 10px;
   margin-right: 10px;
+  margin-left: 10px;
   transition: transform 0.5s;
   background-color: var(--main-blue);
   color: #fff;
@@ -1380,6 +1381,20 @@ footer p {
 }
 
 .container_admin .links .admin_users:hover {
+  transform: scale(1.15);
+}
+
+.container_admin .links .admin_boeking {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  transition: transform 0.5s;
+  background-color: var(--main-blue);
+  color: #fff;
+}
+
+.container_admin .links .admin_boeking:hover {
   transform: scale(1.15);
 }
 
