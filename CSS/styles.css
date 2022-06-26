@@ -2035,6 +2035,14 @@ td {
     height: 89.5vh;
   }
 
+  .container_account {
+    height: 89vh;
+  }
+
+  .container_account .bottom {
+    margin-top: 100px;
+  }
+
   .container_account .bottom .left .nav_title {
     display: none;
   }
@@ -2054,6 +2062,10 @@ td {
 
   .container_account .bottom .account .cnt {
     margin-left: 20px;
+  }
+
+  .container_account .bottom .right {
+    height: 600px;
   }
 
   .container_account .bottom .right .account .cnt .acc_title {
