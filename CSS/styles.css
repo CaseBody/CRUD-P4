@@ -869,7 +869,6 @@ footer p {
   border-radius: 5px;
   border-width: 2px;
   background-color: var(--white);
-  /*scroll*/
   overflow-y: scroll;
 }
 
@@ -903,6 +902,10 @@ footer p {
 
 .container_account .bottom .left .nav .link img {
   width: 30px;
+}
+
+.container_account .bottom .left .nav .link .admin_img {
+  margin-left: -9px;
 }
 
 .container_account .bottom .account .cnt {
@@ -1999,10 +2002,11 @@ td {
 
   .reis_pagina .tabs {
     min-width: 400px;
-    margin-left: 15px;
+    margin-left: 25px;
   }
 
   .reis_pagina .main_beschrijving {
+    max-width: 370px;
     margin-bottom: 30px;
     font-size: 17.5px;
   }
@@ -2029,5 +2033,118 @@ td {
 
   .login_page {
     height: 89.5vh;
+  }
+
+  .container_account .bottom .left .nav_title {
+    display: none;
+  }
+
+  .container_account .bottom .left .nav .link {
+    margin-left: 25px;
+    margin-bottom: 50px;
+  }
+
+  .container_account .bottom .left .nav .link p {
+    display: none;
+  }
+
+  .container_account .bottom .left .nav .link .admin_txt {
+    display: none;
+  }
+
+  .container_account .bottom .account .cnt {
+    margin-left: 20px;
+  }
+
+  .container_account .bottom .right .account .cnt .acc_title {
+    width: 88%;
+    height: 100px;
+    font-size: 35px;
+  }
+
+  .container_account .bottom .right .account .cnt .inputs .acc_lbl {
+    margin-bottom: 5px;
+  }
+
+  .container_account .bottom .right .account .cnt .inputs .acc_inp {
+    width: 255px;
+  }
+
+  .container_account .bottom .right .account .but_save {
+    width: 275px;
+  }
+
+  /*opgeslagen reizen*/
+  .container_account .bottom .right .opgeslagen_reizen .cnt {
+    margin-left: 20px;
+  }
+
+  .container_account .bottom .right .opgeslagen_reizen .cnt .opgesl_title {
+    width: 88%;
+    height: 100px;
+    font-size: 35px;
+  }
+
+  .container_account .bottom .right .cnt .reizen {
+    width: 95%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container_account .bottom .right .cnt .reizen .reis {
+    height: 340px;
+  }
+
+  .container_account .bottom .right .cnt .reizen .reis .reis_hotel {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  .container_account .bottom .right .cnt .reizen .reis .reis_plaats {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .container_account .bottom .right .cnt .reizen .reis .rt_pr {
+    margin-top: 20px;
+  }
+
+  .container_account .bottom .right .cnt .reizen .reis .rt_pr .prijs {
+    font-size: 27.5px;
+  }
+
+  /*geboekte reizen*/
+  .container_account .bottom .right .geboekte_reizen .cnt {
+    margin-left: 20px;
+  }
+
+  .container_account .bottom .right .geboekte_reizen .cnt .geboekte_title {
+    width: 88%;
+    height: 100px;
+    font-size: 35px;
+  }
+
+  /*reviews*/
+  .container_account .bottom .right .reviews .cnt {
+    margin-left: 20px;
+  }
+
+  .container_account .bottom .right .reviews .cnt .review_title {
+    width: 88%;
+    height: 60px;
+  }
+
+
+  .container_account .bottom .right .reviews .cnt .review_persoon .reisnaam {
+    font-size: 20px;
+  }
+
+  .container_account .bottom .right .reviews .cnt .review_persoon .rating {
+    font-size: 30px;
+  }
+
+  .container_account .bottom .right .reviews .review_persoon .delete_icon {
+    width: 40px;
+    height: 40px;
   }
 }

@@ -73,29 +73,31 @@
 						</div>
 
 						<div class="nav">
-							<div class="link">
+							<div class="link" id="nav_account">
 								<img src="Assets/afbeeldingen/account.png" alt="placeholder" />
 								<p href="" id="nav_account">Account</p>
 							</div>
-							<div class="link">
+							<div class="link" id="nav_saved">
 								<img src="Assets/afbeeldingen/heart.png" alt="placeholder" />
-								<p href="" id="nav_saved">Saved Destinations</p>
+								<p href="">Saved Destinations</p>
 							</div>
-							<div class="link">
+							<div class="link" id="nav_booked">
 								<img src="Assets/afbeeldingen/dollar.png" alt="placeholder" />
-								<p href="" id="nav_booked">Booked Destinations</p>
+								<p href="">Booked Destinations</p>
 							</div>
-							<div class="link">
+							<div class="link" id="nav_review">
 								<img src="Assets/afbeeldingen/star.png" alt="placeholder" />
-								<p href="" id="nav_review">Reviews</p>
+								<p href="">Reviews</p>
 							</div>
 							<?php
 								if ($_SESSION['isAdmin'])
 								{
 									?>
 									<div class="link">
-										<img src="Assets/afbeeldingen/account.png" alt="placeholder" />
-										<a style='text-decoration: none; color: black; padding: 10px;' href="admin.php" id="nav_account">Admin Panel</a>
+										<a style='text-decoration: none; color: black; padding: 10px;' href="admin.php" id="nav_account">
+											<img class="admin_img" src="Assets/afbeeldingen/account.png" alt="placeholder" />
+											<a class="admin_txt">Admin Panel</a>
+										</a>
 									</div>
 									<?php
 								}
