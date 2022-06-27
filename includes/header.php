@@ -1,4 +1,5 @@
-  <nav>
+<header>
+	<nav>
 		<ul>
 			<li>
 				<a href="index.php" class="txt_logo">
