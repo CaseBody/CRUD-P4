@@ -25,7 +25,7 @@
 						<a href="contact.php">Contact</a>
 					</li>
 					<li class="li_header">
-						<a href="">About Us</a>
+						<a href="about_us.php">About us</a>
 					</li>
 				</ul>
 				<img id="hamburger" class="hamburger" src="Assets/afbeeldingen/hamburger.png" alt="" />
@@ -49,7 +49,7 @@
 			<a href="contact.php">Contact</a>
 		</li>
 		<li class="li_header">
-			<a href="">About Us</a>
+			<a href="about_us.php">About Us</a>
 		</li>
 	</ul>
 </div>
