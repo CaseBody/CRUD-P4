@@ -856,15 +856,14 @@ footer p {
 }
 
 .container_account .right {
-	width: 77.5%;
-	height: 770px;
-	border-style: solid;
-	border-color: #cdcdcd;
-	border-radius: 5px;
-	border-width: 2px;
-	background-color: var(--white);
-	/*scroll*/
-	overflow-y: scroll;
+  width: 77.5%;
+  height: 770px;
+  border-style: solid;
+  border-color: #cdcdcd;
+  border-radius: 5px;
+  border-width: 2px;
+  background-color: var(--white);
+  overflow-y: scroll;
 }
 
 .container_account .bottom .left .nav_title {
@@ -897,6 +896,10 @@ footer p {
 
 .container_account .bottom .left .nav .link img {
 	width: 30px;
+}
+
+.container_account .bottom .left .nav .link .admin_img {
+  margin-left: -9px;
 }
 
 .container_account .bottom .account .cnt {
@@ -1308,11 +1311,12 @@ footer p {
 }
 
 .reis_pagina .add_review textarea {
-	resize: none;
-	font-size: 20px;
-	width: 100%;
-	height: 150px;
-	margin-bottom: 20px;
+  resize: none;
+  font-size: 20px;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .reis_pagina .add_review button {
@@ -1801,4 +1805,392 @@ td {
 
 .admin_boekingen td {
 	border-width: 0.1px;
+}
+
+@media only screen and (max-width: 414px) {
+  /* body {
+    
+  } */
+  .container_startpage h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 160px;
+    font-size: 60px;
+  }
+
+  .home .search {
+    margin-top: 25px;
+    width: 90%;
+    min-width: 100px;
+  }
+
+  .home .search .titel {
+    margin: 2px;
+    font-size: 40px;
+  }
+
+  .home .search .sub_titel {
+    font-size: 17.5px;
+    margin: 5px;
+  }
+
+  .home .search .search_bar {
+    width: 85%;
+  }
+
+  .home .search .search_bar input {
+    width: 80%;
+  }
+
+  .home .search .search_bar button {
+    width: 25%;
+    background-color: var(--main-blue);
+    border-color: var(--main-blue);
+    border-style: solid;
+    font-size: 20px;
+    color: white;
+  }
+
+  .home .recommended {
+    flex-direction: column;
+    margin-top: 35px;
+    width: 85%;
+    height: 1205px;
+    margin-bottom: -50px;
+  }
+
+  .home .recommended .right .item {
+    height: 395px;
+  }
+
+  .home .recommended .left {
+    width: 100%;
+    height: 395px;
+    margin-bottom: 10px;
+  }
+
+  .home .recommended .right {
+    width: 100%;
+    height: 800px;
+  }
+
+  .destinations_pagina .content .top {
+    display: flex;
+    justify-content: center;
+    height: 450px;
+  }
+
+  .destinations_pagina .search_bar {
+    width: 100%;
+  }
+
+  .destinations_pagina .search_bar input {
+    width: 30%;
+    min-width: 250px;
+  }
+
+  .destinations_pagina .categories {
+    margin-bottom: -70px;
+  }
+
+  .container_contact {
+    height: 135vh;
+  }
+
+  .container_contact .all_contact {
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    margin-top: -180px;
+  }
+
+  .container_contact .contact_img {
+    width: 100%;
+    max-width: 365px;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: -40px;
+  }
+
+  .container_contact .contact_img .title {
+    margin-top: 15px;
+    height: 100px;
+  }
+
+  .container_contact .contact_img p {
+    margin: 15px;
+    margin-top: 0px;
+  }
+
+  .container_contact .form {
+    width: 95%;
+    max-width: 350px;
+    height: 630px;
+  }
+
+  .container_contact .form_label_input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-bottom: 50px;
+  }
+
+  .container_contact .form_label_input .form_name {
+    flex-direction: column;
+    width: 100%;
+    max-width: 365px;
+    height: 160px;
+    margin-left: 10px;
+  }
+
+  .container_contact .form_label_input .form_name .fname {
+    align-items: unset;
+    width: 100%;
+    height: 85px;
+  }
+
+   .container_contact .form_label_input .form_name .fname .input_name {
+    width: 90%;
+    max-width: 365px;
+   }
+
+  .container_contact .form_label_input .form_name .fname .label_name {
+    width: 105px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+
+  .container_contact .form_label_input .form_other {
+    align-items: unset;
+    margin-left: 10px;
+    height: 85px;
+  }
+
+  .container_contact .label {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+
+  .container_contact .input {
+    width: 90%;
+    height: 35px;
+    margin-top: 5px;
+    padding-left: 0px;
+    padding: 5px;
+  }
+
+  .container_contact .form_description {
+    width: 100%;
+    height: 200px;
+    align-items: unset;
+    margin-left: 10px;
+  }
+
+  .container_contact .form_label_input .form_description .form_des {
+    width: 90%;
+    height: 220px;
+  }
+
+  .container_contact .submit {
+    margin-top: 10px;
+  }
+
+  .container_about .titel {
+    margin-top: 25px;
+  }
+
+  .container_about .content .info {
+    max-width: 80%;
+    margin-top: 30px;
+  }
+
+
+
+  .reis_pagina .main_content {
+    flex-direction: column;
+    width: 90%;
+    min-width: 385px;
+    height: 650px;
+    margin-top: 110px;
+  }
+
+  .reis_pagina .main_content .left {
+    width: 100%;
+  }
+
+  .reis_pagina .main_content .left img {
+    border-radius: 5px;
+  }
+
+  .reis_pagina .main_content .right {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+  }
+
+  .reis_pagina .tabs {
+    min-width: 400px;
+    margin-left: 25px;
+  }
+
+  .reis_pagina .main_beschrijving {
+    max-width: 370px;
+    margin-bottom: 30px;
+    font-size: 17.5px;
+  }
+
+  .reis_pagina .recensies .recensie {
+    width: 95%;
+  }
+
+  .reis_pagina .recensies .recensie .gebruiker_sterren {
+    font-size: 22.5px;
+  }
+
+  .reis_pagina .add_review label {
+    font-size: 25px;
+  }
+
+  .reis_pagina .add_review textarea {
+    width: 90%;
+  }
+
+  .reis_pagina .add_review button {
+    margin-bottom: 20px
+  }
+
+  .login_page {
+    height: 89.5vh;
+  }
+
+  .container_account {
+    height: 89vh;
+  }
+
+  .container_account .bottom {
+    margin-top: 100px;
+  }
+
+  .container_account .bottom .left .nav_title {
+    display: none;
+  }
+
+  .container_account .bottom .left .nav .link {
+    margin-left: 25px;
+    margin-bottom: 50px;
+  }
+
+  .container_account .bottom .left .nav .link p {
+    display: none;
+  }
+
+  .container_account .bottom .left .nav .link .admin_txt {
+    display: none;
+  }
+
+  .container_account .bottom .account .cnt {
+    margin-left: 20px;
+  }
+
+  .container_account .bottom .right {
+    height: 600px;
+  }
+
+  .container_account .bottom .right .account .cnt .acc_title {
+    width: 88%;
+    height: 100px;
+    font-size: 35px;
+  }
+
+  .container_account .bottom .right .account .cnt .inputs .acc_lbl {
+    margin-bottom: 5px;
+  }
+
+  .container_account .bottom .right .account .cnt .inputs .acc_inp {
+    width: 255px;
+  }
+
+  .container_account .bottom .right .account .but_save {
+    width: 275px;
+  }
+
+  /*opgeslagen reizen*/
+  .container_account .bottom .right .opgeslagen_reizen .cnt {
+    margin-left: 20px;
+  }
+
+  .container_account .bottom .right .opgeslagen_reizen .cnt .opgesl_title {
+    width: 88%;
+    height: 100px;
+    font-size: 35px;
+  }
+
+  .container_account .bottom .right .cnt .reizen {
+    width: 95%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container_account .bottom .right .cnt .reizen .reis {
+    height: 340px;
+  }
+
+  .container_account .bottom .right .cnt .reizen .reis .reis_hotel {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  .container_account .bottom .right .cnt .reizen .reis .reis_plaats {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .container_account .bottom .right .cnt .reizen .reis .rt_pr {
+    margin-top: 20px;
+  }
+
+  .container_account .bottom .right .cnt .reizen .reis .rt_pr .prijs {
+    font-size: 27.5px;
+  }
+
+  /*geboekte reizen*/
+  .container_account .bottom .right .geboekte_reizen .cnt {
+    margin-left: 20px;
+  }
+
+  .container_account .bottom .right .geboekte_reizen .cnt .geboekte_title {
+    width: 88%;
+    height: 100px;
+    font-size: 35px;
+  }
+
+  /*reviews*/
+  .container_account .bottom .right .reviews .cnt {
+    margin-left: 20px;
+  }
+
+  .container_account .bottom .right .reviews .cnt .review_title {
+    width: 88%;
+    height: 60px;
+  }
+
+
+  .container_account .bottom .right .reviews .cnt .review_persoon .reisnaam {
+    font-size: 20px;
+  }
+
+  .container_account .bottom .right .reviews .cnt .review_persoon .rating {
+    font-size: 30px;
+  }
+
+  .container_account .bottom .right .reviews .review_persoon .delete_icon {
+    width: 40px;
+    height: 40px;
+  }
 }
